@@ -4,7 +4,7 @@ Daily Monster Energy prices from Estonian grocery e-shops, published as a static
 
     pip install -r requirements.txt
     python scrape.py --only rimi     # try one store, prints, saves nothing
-    python scrape.py                 # all stores -> prices.sqlite + docs/data.json
+    python scrape.py                 # all stores -> docs/data.json
 
 Publish: repo settings -> Pages -> deploy from branch `main`, folder `/docs`.
 
@@ -20,30 +20,61 @@ indistinguishable from real ones.
 
 ## Stores
 
-| adapter  | shop            | method                          | status  |
-|----------|-----------------|---------------------------------|---------|
-| rimi     | rimi.ee/epood   | HTML, `data-gtm-eec-product`    | wired   |
-| selver   | selver.ee       | Vue Storefront `_search` JSON   | wired   |
-| prisma   | prismamarket.ee | needs store id + XHR discovery  | stub    |
-| coop     | ecoop.ee        | regional, needs store selector  | stub    |
+| adapter  | shop             | method                          | status  |
+|----------|------------------|---------------------------------|---------|
+| rimi     | rimi.ee/epood    | HTML, `data-gtm-eec-product`    | wired   |
+| selver   | selver.ee        | Vue Storefront `_search` JSON   | wired   |
+| coop     | coophaapsalu.ee  | WooCommerce Store API           | wired   |
 
-Maxima/barbora.ee was removed: `/api/eshop/v1/cart/products` is gone (404) and
-search moved to Constructor.io, whose index carries no prices — only per-warehouse
-stock flags — so each product would need a second request.
+Coop is deliberately labelled **Coop Haapsalu**, not Coop. Haapsalu is the only
+regional cooperative running its own shop; Tallinn and Pärnu sell through Wolt
+and Tartu through Bolt Food, which are marketplace storefronts with their own
+pricing. Every Coop unit prices independently, so these are west-Estonian
+numbers and nothing more.
 
-Lidl has no adapter and cannot have one. Their search API works
+### Shops that cannot be adapters
+
+**Maxima / barbora.ee** — `/api/eshop/v1/cart/products` is gone (404) and search
+moved to Constructor.io, whose index carries no prices, only per-warehouse stock
+flags. Every product would need a second request.
+
+**Prisma** — ePrisma shut down on 1 August 2026. The site says so on the front
+page, `/otsi` and `/search` return 404, and `/tooted/joogid` renders with no
+prices in it. `graphql-api.prismamarket.ee` still answers (Apollo, introspection
+disabled) but there is no catalogue behind it. Tallinn/Tartu Prisma orders moved
+to Wolt until 31 August 2026. The adapter was removed rather than left as a stub.
+
+**Lidl** — their search API works
 (`/q/api/search?q=…&assortment=EE&locale=et_EE&version=2.0.0`, needs `Accept: */*`)
-but only indexes the current weekly offer leaflet, about 37 rotating items. The
-standing grocery range is not online at all — `coca-cola` returns zero hits too.
+but only indexes the current weekly offer leaflet, roughly 37 rotating items.
+`monster` has returned zero keyword hits on every check. Note the leaflet rotates:
+`coca-cola` returned zero in one check and two in a later one, purely because it
+was on offer that week. That is the point — there is no standing assortment
+online, only whatever is on promotion, so nothing here can be tracked daily.
+
+## What gets published
+
+`docs/data.json` is the only output, and every run replaces it wholesale. There
+is no database, no accumulation and no price history: whatever the shops list
+today is what the page shows, and a product a shop stops listing is simply
+absent next time rather than lingering at a price nobody charges any more.
+
+That is also why there is no `--export` flag any more - there is nothing stored
+to re-export from.
+
+The one thing carried between runs is `docs/data.json` itself, and only when a
+run collects nothing at all: the script leaves the previous file in place rather
+than publishing an empty page. Its timestamp then stops advancing, which is what
+makes the staleness warning on the page fire.
 
 ## Knowing when an adapter has broken
 
-Every run writes one row per adapter to `source_status` (ok / empty / failed /
-stub), and `docs/data.json` carries the latest of each as `sources`. The page
-turns that into the count behind each shop chip.
+`run()` returns one status row per adapter (ok / empty / failed / stub) and they
+go into `data.json` as `sources`. The page turns that into the count behind each
+shop chip.
 
 This exists because a wired adapter returning zero products is invisible
-otherwise: it writes no observations, so the shop just disappears from the page
+otherwise: it contributes no products, so the shop just disappears from the page
 and reads as "that shop has no Monster". A shop showing `0` in amber is a broken
 adapter; `–` in grey is a stub that was never wired.
 

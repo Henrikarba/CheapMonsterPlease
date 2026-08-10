@@ -3,12 +3,16 @@
 Monster index - collects Monster Energy prices from Estonian grocery e-shops.
 
 Usage:
-    python scrape.py                 # scrape all stores, write DB + docs/data.json
+    python scrape.py                 # scrape all stores, write docs/data.json
     python scrape.py --only rimi     # single store, prints results, writes nothing
-    python scrape.py --export        # re-export docs/data.json from existing DB
 
 Every adapter returns a list of Product. Adapters are allowed to fail; one
 broken store must never take down the run.
+
+Each run publishes a fresh snapshot and keeps nothing from the previous one.
+There is no database and no price history: a product a shop stops listing is
+gone from the page on the next run rather than lingering at a price nobody
+charges any more.
 """
 
 from __future__ import annotations
@@ -16,7 +20,6 @@ from __future__ import annotations
 import argparse
 import json
 import re
-import sqlite3
 import sys
 import time
 from dataclasses import dataclass, asdict, field
@@ -27,7 +30,6 @@ import requests
 from bs4 import BeautifulSoup
 
 ROOT = Path(__file__).parent
-DB_PATH = ROOT / "prices.sqlite"
 OUT_PATH = ROOT / "docs" / "data.json"
 
 UA = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
@@ -72,7 +74,7 @@ class Product:
 
 
 VOLUME_RE = re.compile(r"(\d+[.,]?\d*)\s*(l|ml|cl)\b", re.I)
-MULTIPACK_RE = re.compile(r"(\d+)\s*[x×]\s*(\d+[.,]?\d*)\s*(l|ml|cl)\b", re.I)
+MULTIPACK_RE = re.compile(r"(\d+)\s*[x×*]\s*(\d+[.,]?\d*)\s*(l|ml|cl)\b", re.I)
 
 
 def _litres(value: float, unit: str) -> float:
@@ -102,7 +104,8 @@ def parse_volume(name: str) -> float | None:
 # juice. None of them are Monster Energy.
 NOT_A_DRINK_RE = re.compile(
     r"nukk|m[äa]nguauto|hot\s*wheels|lego|monster\s*high|monster\s*jam|"
-    r"truck|rada|konstr|pusle|kost[üu]{1,2}m|capri\s*sun|monstera",
+    r"truck|rada|konstr|pusle|kost[üu]{1,2}m|capri[\s\-]*sun|monstera|"
+    r"viltpliiats|pliiats|colorpeps",
     re.I,
 )
 DRINK_RE = re.compile(r"energiajook|en\.?\s*j\w*\.?|energy|jook|drink", re.I)
@@ -188,7 +191,8 @@ ZERO_SUGAR_RE = re.compile(r"ultra|zero|absolutely|suhkruvaba|sugar\s*free", re.
 # words that carry no flavour information, stripped before the fallback guess
 NOISE_RE = re.compile(
     r"\b(energiajook|energiajoogid|energy\s*drink|energy|monster|drink|jook|"
-    r"karboniseeritud|gaseeritud|purk|purgis|can|pakend|kmpl|tk|import|"
+    r"karboniseeritud|karb[.\-]?tud|gaseeritud|purk|purgis|prk|can|pakend|"
+    r"kmpl|tk|import|"
     r"\d*\s*-?\s*pakk|mega)\b",
     re.I,
 )
@@ -347,23 +351,65 @@ def scrape_selver() -> list[Product]:
     return out
 
 
-def scrape_prisma() -> list[Product]:
-    """Prisma's assortment is per-store. Find the store id in the cookie the
-    site sets after you pick a shop, then look for the search XHR in DevTools
-    and fill this in."""
-    raise NotImplementedError("prisma: endpoint not wired up yet")
+def _minor_units(value, scale: int) -> float | None:
+    """WooCommerce sends prices as integer minor units: "169" is 1,69 EUR.
+
+    money() deliberately will not guess this - an int there is taken at face
+    value - so the conversion has to be explicit and driven by the
+    currency_minor_unit the API reports rather than an assumed 100.
+    """
+    if value in (None, ""):
+        return None
+    try:
+        return round(int(value) / scale, 2)
+    except (TypeError, ValueError):
+        return None
+
+
+# The only Coop cooperative running its own e-shop. Tallinn and Pärnu sell
+# through Wolt and Tartu through Bolt Food, which are marketplace storefronts
+# rather than a Coop-run catalogue.
+COOP_SHOP = "coophaapsalu.ee"
 
 
 def scrape_coop() -> list[Product]:
-    """ecoop.ee is regional - prices differ per Coop unit, so this adapter
-    needs a store selector before it means anything."""
-    raise NotImplementedError("coop: endpoint not wired up yet")
+    """Haapsalu eCoop. It runs WooCommerce, so the public Store API answers the
+    whole search in one request, no key and no store selector.
+
+    These are west-Estonian prices. Every Coop unit prices independently, so
+    this row is honest only as "Coop Haapsalu" and not as "Coop".
+    """
+    s = session()
+    r = s.get(f"https://{COOP_SHOP}/wp-json/wc/store/v1/products",
+              params={"search": "monster", "per_page": 100}, timeout=TIMEOUT)
+    r.raise_for_status()
+
+    out: list[Product] = []
+    for d in r.json():
+        name = d.get("name") or ""
+        if not is_monster(name):
+            continue
+        pr = d.get("prices") or {}
+        scale = 10 ** int(pr.get("currency_minor_unit") or 2)
+        shelf = _minor_units(pr.get("regular_price"), scale)
+        now = _minor_units(pr.get("price"), scale)
+        if shelf is None and now is None:
+            continue
+        out.append(Product(
+            store="Coop Haapsalu",
+            name=name,
+            price=shelf if shelf is not None else now,
+            loyalty_price=now if (now and shelf and now < shelf) else None,
+            url=d.get("permalink", ""),
+            image=(d.get("images") or [{}])[0].get("src", ""),
+            ext_id=str(d.get("sku", "")),
+        ))
+    return out
 
 
 ADAPTERS = {
     "rimi": scrape_rimi,
     "selver": scrape_selver,
-    "prisma": scrape_prisma,
     "coop": scrape_coop,
 }
 
@@ -372,126 +418,44 @@ ADAPTERS = {
 STORE_NAMES = {
     "rimi": "Rimi",
     "selver": "Selver",
-    "prisma": "Prisma",
-    "coop": "Coop",
+    "coop": "Coop Haapsalu",
 }
 
 
 # --------------------------------------------------------------------------
-# storage
+# output
+#
+# There is no database. Every run publishes a complete, fresh snapshot and
+# nothing carries over from the last one, so a product a shop stops listing is
+# simply absent next time. That is the behaviour we want, and storage was only
+# ever a way of failing to achieve it.
 # --------------------------------------------------------------------------
 
-SCHEMA = """
-CREATE TABLE IF NOT EXISTS observation (
-    id            INTEGER PRIMARY KEY,
-    seen_at       TEXT NOT NULL,
-    store         TEXT NOT NULL,
-    name          TEXT NOT NULL,
-    flavour       TEXT,
-    zero_sugar    INTEGER,
-    ext_id        TEXT,
-    price         REAL NOT NULL,
-    loyalty_price REAL,
-    volume_l      REAL,
-    per_litre     REAL,
-    url           TEXT,
-    image         TEXT
-);
-CREATE INDEX IF NOT EXISTS idx_obs_lookup ON observation (store, name, seen_at);
-
--- One row per adapter per run. Without this a store that returns nothing is
--- indistinguishable from a store that was never asked, both here and on the
--- page: it simply has no observations and vanishes.
-CREATE TABLE IF NOT EXISTS source_status (
-    id       INTEGER PRIMARY KEY,
-    seen_at  TEXT NOT NULL,
-    adapter  TEXT NOT NULL,
-    store    TEXT NOT NULL,
-    status   TEXT NOT NULL,   -- ok | empty | failed | stub
-    count    INTEGER NOT NULL,
-    detail   TEXT
-);
-CREATE INDEX IF NOT EXISTS idx_src_lookup ON source_status (adapter, seen_at);
-"""
-
-
-def connect() -> sqlite3.Connection:
-    conn = sqlite3.connect(DB_PATH)
-    conn.executescript(SCHEMA)
-    return conn
-
-
-def save(conn: sqlite3.Connection, products: list[Product]) -> None:
+def export(products: list[Product], report: list[dict]) -> dict:
+    """Write docs/data.json from this run's results."""
     now = datetime.now(timezone.utc).isoformat(timespec="seconds")
-    conn.executemany(
-        """INSERT INTO observation
-           (seen_at, store, name, flavour, zero_sugar, ext_id,
-            price, loyalty_price, volume_l, per_litre, url, image)
-           VALUES (?,?,?,?,?,?,?,?,?,?,?,?)""",
-        [(now, p.store, p.name, p.flavour, int(p.zero_sugar), p.ext_id,
-          p.price, p.loyalty_price, p.volume_l, p.per_litre, p.url, p.image)
-         for p in products],
-    )
-    conn.commit()
 
+    # a paginated shop search can return the same product twice; keep the cheaper
+    best: dict[tuple[str, str], Product] = {}
+    for p in products:
+        key = (p.store, p.name)
+        if key not in best or p.best_price < best[key].best_price:
+            best[key] = p
 
-def save_status(conn: sqlite3.Connection, report: list[dict]) -> None:
-    now = datetime.now(timezone.utc).isoformat(timespec="seconds")
-    conn.executemany(
-        """INSERT INTO source_status (seen_at, adapter, store, status, count, detail)
-           VALUES (?,?,?,?,?,?)""",
-        [(now, r["adapter"], r["store"], r["status"], r["count"], r.get("detail"))
-         for r in report],
-    )
-    conn.commit()
-
-
-def latest_status(conn: sqlite3.Connection) -> list[dict]:
-    """Most recent outcome per adapter, in ADAPTERS order."""
-    rows = conn.execute("""
-        SELECT adapter, store, status, count, detail, MAX(seen_at) AS seen_at
-        FROM source_status GROUP BY adapter
-    """).fetchall()
-    cols = ["adapter", "store", "status", "count", "detail", "seen_at"]
-    by_adapter = {r[0]: dict(zip(cols, r)) for r in rows}
-    order = list(ADAPTERS)
-    return sorted(by_adapter.values(),
-                  key=lambda r: order.index(r["adapter"]) if r["adapter"] in order else 99)
-
-
-def export(conn: sqlite3.Connection) -> dict:
-    """Latest snapshot per (store, name) plus a 90-day price history."""
-    rows = conn.execute("""
-        SELECT store, name, flavour, zero_sugar, ext_id, price, loyalty_price,
-               volume_l, per_litre, url, image, MAX(seen_at) AS seen_at
-        FROM observation
-        GROUP BY store, name
-        ORDER BY per_litre IS NULL, per_litre
-    """).fetchall()
-
-    cols = ["store", "name", "flavour", "zero_sugar", "ext_id", "price",
-            "loyalty_price", "volume_l", "per_litre", "url", "image", "seen_at"]
-    items = [dict(zip(cols, r)) for r in rows]
-    for it in items:
-        it["zero_sugar"] = bool(it["zero_sugar"])
-
-    history = {}
-    for it in items:
-        key = f"{it['store']}|{it['name']}"
-        h = conn.execute("""
-            SELECT DATE(seen_at) AS d, MIN(COALESCE(loyalty_price, price)) AS p
-            FROM observation
-            WHERE store = ? AND name = ? AND seen_at >= DATE('now', '-90 days')
-            GROUP BY d ORDER BY d
-        """, (it["store"], it["name"])).fetchall()
-        if len(h) > 1:
-            history[key] = [{"date": d, "price": p} for d, p in h]
+    items = []
+    for p in sorted(best.values(), key=lambda x: (x.per_litre is None, x.per_litre or 0)):
+        d = asdict(p)
+        d["per_litre"] = p.per_litre   # a property, so asdict() misses it
+        d["seen_at"] = now
+        items.append(d)
 
     payload = {
-        "updated": datetime.now(timezone.utc).isoformat(timespec="seconds"),
-        "sources": latest_status(conn),
+        "updated": now,
+        "sources": [{"adapter": r["adapter"], "store": r["store"],
+                     "status": r["status"], "count": r["count"],
+                     "detail": r.get("detail"), "seen_at": now}
+                    for r in report],
         "items": items,
-        "history": history,
     }
     OUT_PATH.parent.mkdir(parents=True, exist_ok=True)
     # explicit encoding: write_text() would otherwise use the locale codepage,
@@ -547,15 +511,8 @@ def run(only: str | None) -> tuple[list[Product], list[dict]]:
 
 def main() -> int:
     ap = argparse.ArgumentParser()
-    ap.add_argument("--only", help="run a single store adapter, do not save")
-    ap.add_argument("--export", action="store_true",
-                    help="rebuild docs/data.json from the existing database")
+    ap.add_argument("--only", help="run a single store adapter, write nothing")
     args = ap.parse_args()
-
-    if args.export:
-        payload = export(connect())
-        print(f"exported {len(payload['items'])} products")
-        return 0
 
     products, report = run(args.only)
 
@@ -566,14 +523,14 @@ def main() -> int:
         return 0
 
     if not products:
-        print("nothing collected, leaving the database alone", file=sys.stderr)
+        # leave the previous data.json in place rather than publishing an empty
+        # page; its timestamp stops advancing, which is what makes the staleness
+        # warning on the page fire
+        print("nothing collected, leaving the last data.json alone", file=sys.stderr)
         return 1
 
-    conn = connect()
-    save(conn, products)
-    save_status(conn, report)
-    export(conn)
-    print(f"saved {len(products)} observations")
+    export(products, report)
+    print(f"published {len(products)} products")
 
     # Deliberately still exit 0 when a store is down: the other stores' prices
     # are worth publishing, and failing here would stop the workflow before it

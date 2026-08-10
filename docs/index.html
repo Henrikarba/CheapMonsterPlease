@@ -216,7 +216,7 @@ function ageText(ms){
 /* Default to per-piece: nearly everything is a 0,5 l can, so per-litre just
    restates the shelf price. The toggle stays for the multipacks, where it is
    the only way to compare them against singles. */
-let DATA = {updated:null, sources:[], items:[], history:{}},
+let DATA = {updated:null, sources:[], items:[]},
     stores = new Set(), query = "", perLitre = false, dealsOnly = false, zeroOnly = false;
 
 /* A store that returns nothing has no items, so it cannot be derived from
