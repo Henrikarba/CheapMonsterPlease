@@ -200,7 +200,7 @@ const SOURCE_NOTE = {
    Actions:write, and any token shipped in a static page is readable by anyone
    who opens view-source. Running it from GitHub costs one extra click and no
    published credential. */
-const REPO = "";
+const REPO = "Henrikarba/CheapMonsterPlease";
 const WORKFLOW = "update.yml";
 
 // the daily cron fires at 04:00 UTC, so anything past ~26h means it missed
@@ -326,9 +326,10 @@ function alertBar(){
   el.append(mark, text);
 }
 
-/* Reads the last run of the workflow. Unauthenticated, so it only works on a
-   public repo and is rate limited per IP - a failure here is cosmetic and is
-   swallowed rather than shown. */
+/* Reads the last run of the workflow. Unauthenticated, so public repos only,
+   60 requests/hour per IP. Failures are reported rather than swallowed: a 404
+   here means the workflow is not registered at all, which is exactly the thing
+   you need told rather than left to guess at from an empty row. */
 function refreshRow(){
   if (!REPO) return;
   const row = document.getElementById("refreshRow");
@@ -336,17 +337,29 @@ function refreshRow(){
   document.getElementById("runLink").href =
     `https://github.com/${REPO}/actions/workflows/${WORKFLOW}`;
 
+  const el = document.getElementById("runState");
+  el.textContent = "…";
+
   fetch(`https://api.github.com/repos/${REPO}/actions/workflows/${WORKFLOW}/runs?per_page=1`)
     .then(r => r.ok ? r.json() : Promise.reject(r.status))
     .then(j => {
       const run = (j.workflow_runs || [])[0];
-      if (!run) return;
+      if (!run){
+        el.textContent = "pole veel kordagi käivitunud";
+        el.classList.add("bad");
+        return;
+      }
       const state = run.status === "completed" ? run.conclusion : run.status;
-      const el = document.getElementById("runState");
       el.textContent = `viimane korje: ${state} · ${ageText(Date.now() - new Date(run.updated_at))}`;
       el.classList.toggle("bad", state !== "success");
     })
-    .catch(() => {});
+    .catch(err => {
+      el.textContent =
+        err === 404 ? `workflow'it "${WORKFLOW}" ei leitud - kas see on .github/workflows all?` :
+        err === 403 ? "GitHubi API tunnilimiit täis" :
+        "staatust ei õnnestunud lugeda";
+      el.classList.add("bad");
+    });
 }
 
 function chips(){
