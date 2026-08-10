@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Monster index — Eesti poodide hinnad</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=IBM+Plex+Mono:wght@400;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#0B0F0C; --panel:#151A16; --line:#232B24;
+  --volt:#8FE81C; --bone:#EDF1E7; --ash:#79857A;
+  --warn:#E8B01C;
+  --pad:clamp(1rem,4vw,2.5rem);
+}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{background:var(--ink);color:var(--bone);
+  font:400 16px/1.5 "IBM Plex Sans",system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:0;
+  background:repeating-linear-gradient(90deg,rgba(255,255,255,.035) 0 1px,transparent 1px 9px)}
+main{position:relative;z-index:1;max-width:1120px;margin:0 auto;padding:var(--pad)}
+
+.masthead{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;flex-wrap:wrap;
+  border-bottom:1px solid var(--line);padding-bottom:.75rem}
+.wordmark{font:400 1.15rem/1 "Anton",sans-serif;letter-spacing:.14em;text-transform:uppercase}
+.wordmark span{color:var(--volt)}
+.stamp{font:400 .75rem/1 "IBM Plex Mono",monospace;color:var(--ash);letter-spacing:.06em}
+
+.lede{display:flex;align-items:center;gap:clamp(.75rem,3vw,1.75rem);margin:0;
+  padding:clamp(1.75rem,6vw,3.25rem) 0 clamp(1.25rem,4vw,2.25rem)}
+.claw{flex:0 0 auto;width:26px;height:clamp(80px,18vw,124px)}
+.claw i{display:block;height:100%;width:5px;margin-right:5px;float:left;background:var(--volt);
+  transform:skewX(-12deg);transform-origin:bottom}
+.claw i:nth-child(1){height:62%;margin-top:38%}
+.claw i:nth-child(3){height:78%;margin-top:22%}
+.lede h1{font:400 .78rem/1 "IBM Plex Mono",monospace;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--ash);margin:0 0 .55rem}
+.figure{display:flex;align-items:flex-start;gap:.5rem;line-height:.82}
+.figure b{font:400 clamp(3.75rem,15vw,8.5rem)/.82 "Anton",sans-serif;letter-spacing:-.02em}
+.figure u{font:600 .78rem/1 "IBM Plex Mono",monospace;text-decoration:none;color:var(--volt);
+  writing-mode:vertical-rl;letter-spacing:.14em;padding-top:.5rem}
+.lede figcaption{font-size:.95rem;color:var(--ash);max-width:24ch}
+.lede figcaption strong{display:block;color:var(--bone);font-weight:600}
+
+/* ---------- controls ---------- */
+.filters{display:flex;flex-direction:column;gap:.55rem;margin-bottom:1.5rem}
+.row{display:flex;gap:.4rem;flex-wrap:wrap;align-items:center}
+.row>label{font:600 .7rem/1 "IBM Plex Mono",monospace;letter-spacing:.1em;text-transform:uppercase;
+  color:var(--ash);width:4.5rem;flex:0 0 auto}
+button{font:600 .76rem/1 "IBM Plex Mono",monospace;letter-spacing:.05em;color:var(--ash);
+  background:transparent;border:1px solid var(--line);border-radius:999px;padding:.45rem .8rem;cursor:pointer}
+button:hover{color:var(--bone);border-color:var(--ash)}
+button[aria-pressed=true]{color:var(--ink);background:var(--volt);border-color:var(--volt)}
+button:focus-visible,input:focus-visible{outline:2px solid var(--volt);outline-offset:2px}
+input[type=search]{flex:1;min-width:9rem;background:var(--panel);border:1px solid var(--line);
+  border-radius:999px;padding:.45rem .85rem;color:var(--bone);font:400 .82rem/1 "IBM Plex Sans",sans-serif}
+input[type=search]::placeholder{color:var(--ash)}
+.count{font:400 .72rem/1 "IBM Plex Mono",monospace;color:var(--ash);margin-left:auto}
+a.btn{display:inline-block;text-decoration:none;font:600 .76rem/1 "IBM Plex Mono",monospace;
+  letter-spacing:.05em;color:var(--ash);background:transparent;border:1px solid var(--line);
+  border-radius:999px;padding:.45rem .8rem}
+a.btn:hover{color:var(--bone);border-color:var(--ash)}
+a.btn:focus-visible{outline:2px solid var(--volt);outline-offset:2px}
+.runstate{font:400 .72rem/1 "IBM Plex Mono",monospace;color:var(--ash)}
+.runstate.bad{color:var(--warn)}
+.stamp.stale{color:var(--warn)}
+
+/* store chips carry their product count; sources that came back with nothing
+   stay visible but inert, so a missing shop reads as a fault and not as
+   "that shop has no Monster" */
+button .n{margin-left:.45rem;font-weight:400;color:var(--ash)}
+button[aria-pressed=true] .n{color:var(--ink);opacity:.65}
+button.dead{border-style:dashed;cursor:default;color:#5F6A60}
+button.dead:hover{color:#5F6A60;border-color:var(--line)}
+button.dead .n{color:inherit}
+button.dead.bad{color:var(--warn);border-color:rgba(232,176,28,.35)}
+button.dead.bad:hover{color:var(--warn);border-color:rgba(232,176,28,.35)}
+button.dead.bad .n{color:inherit}
+.alert{display:flex;gap:.6rem;align-items:flex-start;margin:-.4rem 0 .2rem;
+  padding:.55rem .8rem;border:1px solid rgba(232,176,28,.3);border-left:2px solid var(--warn);
+  background:rgba(232,176,28,.05);
+  font:400 .76rem/1.5 "IBM Plex Mono",monospace;color:var(--ash)}
+.alert b{color:var(--warn);font-weight:600;flex:0 0 auto}
+.alert span{color:var(--ash)}
+
+/* ---------- shop panels ---------- */
+.shops{display:grid;gap:1px;background:var(--line);border:1px solid var(--line);
+  grid-template-columns:repeat(auto-fit,minmax(330px,1fr))}
+.shop{background:var(--ink);padding:1.1rem 1.1rem 1.4rem}
+.shop>h2{display:flex;align-items:baseline;justify-content:space-between;gap:.75rem;margin:0 0 .9rem;
+  font:400 1.35rem/1 "Anton",sans-serif;letter-spacing:.04em;text-transform:uppercase}
+.shop>h2 em{font:600 .74rem/1 "IBM Plex Mono",monospace;font-style:normal;color:var(--volt);letter-spacing:.04em}
+.shop ol{list-style:none;margin:0;padding:0}
+.shop li{border-top:1px solid var(--line);opacity:0;transform:translateY(5px);animation:in .4s ease forwards}
+@keyframes in{to{opacity:1;transform:none}}
+.shop li a{display:grid;grid-template-columns:1.6rem 1fr auto;gap:.2rem .7rem;align-items:baseline;
+  padding:.6rem .1rem;color:inherit;text-decoration:none}
+.shop li a[href]:hover{background:var(--panel)}
+.shop li a[href]:hover .lbl{text-decoration:underline;text-decoration-color:var(--volt);
+  text-underline-offset:3px}
+.shop li a[href]:hover .lbl::after{content:"↗";margin-left:.35em;color:var(--volt);
+  font-size:.82em;text-decoration:none;display:inline-block}
+.shop li a:focus-visible{outline:2px solid var(--volt);outline-offset:-2px}
+/* no product url from the shop, so nothing to open */
+.shop li a:not([href]){cursor:default}
+.rank{font:600 .74rem/1.4 "IBM Plex Mono",monospace;color:var(--ash)}
+li:first-child .rank{color:var(--volt)}
+.name{font-weight:500;font-size:.94rem}
+.name small{display:block;font-weight:400;font-size:.7rem;color:var(--ash);font-family:"IBM Plex Mono",monospace;
+  margin-top:.15rem;letter-spacing:.03em}
+.figures{text-align:right;font-family:"IBM Plex Mono",monospace;white-space:nowrap}
+.figures b{display:block;font-size:.98rem;font-weight:600}
+.figures span{font-size:.68rem;color:var(--ash)}
+.figures s{color:var(--ash);text-decoration:line-through}
+.figures em{font-style:normal;color:var(--volt)}
+.bar{grid-column:1/-1;height:2px;background:var(--line);margin-top:.35rem;position:relative}
+.bar i{position:absolute;inset:0 auto 0 0;background:var(--volt);width:0;
+  transition:width .7s cubic-bezier(.2,.8,.2,1)}
+.zero{border:1px solid var(--line);border-radius:2px;padding:0 .25rem;color:var(--bone)}
+
+.empty{padding:3rem 0;color:var(--ash);border-top:1px solid var(--line)}
+.empty b{display:block;color:var(--bone);font-weight:600;margin-bottom:.35rem}
+.empty.fail{border-top-color:rgba(232,176,28,.4);padding-left:.9rem;
+  border-left:2px solid var(--warn)}
+.empty.fail b{color:var(--warn)}
+footer{margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);
+  font:400 .72rem/1.6 "IBM Plex Mono",monospace;color:var(--ash)}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}
+  .shop li{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<main>
+  <header class="masthead">
+    <div class="wordmark">Monster <span>index</span></div>
+    <div class="stamp" id="stamp">laeb…</div>
+  </header>
+
+  <figure class="lede">
+    <div class="claw" aria-hidden="true"><i></i><i></i><i></i></div>
+    <div>
+      <h1 id="heroLabel">Odavaim praegu</h1>
+      <div class="figure"><b id="heroNum">—</b><u id="heroUnit">€/L</u></div>
+    </div>
+    <figcaption id="heroCap"></figcaption>
+  </figure>
+
+  <div class="filters">
+    <div class="row"><label for="q">Maitse</label>
+      <input type="search" id="q" placeholder="mango loco, ultra, espresso…" autocomplete="off">
+      <span class="count" id="count"></span>
+    </div>
+    <div class="row" id="flavours"><label>Kiirvalik</label></div>
+    <div class="row" id="stores"><label>Pood</label></div>
+    <div class="alert" id="alert" hidden></div>
+    <div class="row" id="refreshRow" hidden><label>Korje</label>
+      <a class="btn" id="runLink" target="_blank" rel="noopener">värskenda GitHubis ↗</a>
+      <span class="runstate" id="runState"></span>
+    </div>
+    <div class="row"><label>Vaade</label>
+      <button id="unit" aria-pressed="false">hind / tükk</button>
+      <button id="deals" aria-pressed="false">ainult soodus</button>
+      <button id="zero" aria-pressed="false">suhkruvaba</button>
+    </div>
+  </div>
+
+  <div class="shops" id="shops"></div>
+  <div class="empty" id="empty" hidden>
+    <b>Ühtegi toodet ei leitud.</b>
+    Tühjenda filtrid või kontrolli, kas viimane korje õnnestus.
+  </div>
+  <div class="empty fail" id="loadfail" hidden></div>
+
+  <footer>
+    Hinnad korjatakse poodide avalikelt lehtedelt kord päevas. Kliendikaardi hind on arvestatud, kui pood selle avaldab.<br>
+    Maitse loetakse tootenimest välja, seega haruldasem variant võib sattuda vale nime alla. Poe hind kassas on alati ülimuslik.
+  </footer>
+</main>
+
+<script>
+/* There is deliberately no sample/placeholder dataset here. A page whose job is
+   comparing prices must never render invented ones: they look exactly like real
+   prices, and the only signal that they were fake used to be a word in the
+   corner. If data.json will not load, the page says so and shows nothing. */
+
+// what each non-ok source status means, in the page's language
+const SOURCE_NOTE = {
+  empty:  "ei tagastanud ühtegi toodet",
+  failed: "korje ebaõnnestus",
+  stub:   "pole veel ühendatud"
+};
+
+/* Set to "kasutaja/repo" once this is on GitHub. It turns on the "Korje" row:
+   a link to the workflow_dispatch page, and the last run's outcome read from
+   the public API. Left empty the row stays hidden and nothing else changes.
+
+   Deliberately a link and not a button: triggering a run needs a token with
+   Actions:write, and any token shipped in a static page is readable by anyone
+   who opens view-source. Running it from GitHub costs one extra click and no
+   published credential. */
+const REPO = "";
+const WORKFLOW = "update.yml";
+
+// the daily cron fires at 04:00 UTC, so anything past ~26h means it missed
+const STALE_AFTER_H = 26;
+
+function ageText(ms){
+  const h = ms / 36e5;
+  if (h < 1)  return "äsja";
+  if (h < 24) return `${Math.round(h)} h tagasi`;
+  return `${Math.round(h / 24)} päeva tagasi`;
+}
+
+/* Default to per-piece: nearly everything is a 0,5 l can, so per-litre just
+   restates the shelf price. The toggle stays for the multipacks, where it is
+   the only way to compare them against singles. */
+let DATA = {updated:null, sources:[], items:[], history:{}},
+    stores = new Set(), query = "", perLitre = false, dealsOnly = false, zeroOnly = false;
+
+/* A store that returns nothing has no items, so it cannot be derived from
+   items alone - that is exactly the case worth showing. Fall back to counting
+   items only for a data.json written before sources existed. */
+function sources(){
+  if (Array.isArray(DATA.sources) && DATA.sources.length) return DATA.sources;
+  return [...new Set(DATA.items.map(i => i.store))].sort().map(store => ({
+    store, status:"ok", count: DATA.items.filter(i => i.store === store).length
+  }));
+}
+
+/* product titles and urls come from the shops, so they are untrusted text
+   going into innerHTML and into href/title attributes */
+const esc = s => String(s ?? "")
+  .replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;");
+
+const eur = n => n.toFixed(2).replace(".", ",");
+const best = it => Math.min(...[it.price, it.loyalty_price].filter(Boolean));
+const value = it => perLitre ? it.per_litre : best(it);
+const isDeal = it => it.loyalty_price && it.loyalty_price < it.price;
+
+function visible(){
+  const q = query.trim().toLowerCase();
+  return DATA.items
+    .filter(it => !stores.size || stores.has(it.store))
+    .filter(it => !dealsOnly || isDeal(it))
+    .filter(it => !zeroOnly || it.zero_sugar)
+    .filter(it => !perLitre || it.per_litre)
+    .filter(it => !q || (it.flavour + " " + it.name).toLowerCase().includes(q))
+    .sort((a,b) => value(a) - value(b));
+}
+
+function render(){
+  const items = visible();
+  const box = document.getElementById("shops");
+  document.getElementById("empty").hidden = items.length > 0;
+  document.getElementById("count").textContent =
+    items.length ? `${items.length} toodet · ${new Set(items.map(i=>i.store)).size} poodi` : "";
+
+  const top = items[0];
+  document.getElementById("heroLabel").textContent =
+    query.trim() ? `Odavaim · ${query.trim()}` : "Odavaim praegu";
+  document.getElementById("heroNum").textContent = top ? eur(value(top)) : "—";
+  document.getElementById("heroUnit").textContent = perLitre ? "€/L" : "€";
+  document.getElementById("heroCap").innerHTML =
+    top ? `<strong>${esc(top.store)}</strong>${esc(top.flavour)} · ${eur(best(top))} € tk` : "";
+
+  const max = Math.max(...items.map(value), .01);
+  const byStore = {};
+  items.forEach(it => (byStore[it.store] ||= []).push(it));
+
+  box.innerHTML = Object.entries(byStore)
+    .sort((a,b) => value(a[1][0]) - value(b[1][0]))
+    .map(([store, list]) => `
+      <section class="shop">
+        <h2>${esc(store)}<em>alates ${eur(value(list[0]))} ${perLitre ? "€/L" : "€"}</em></h2>
+        <ol>${list.map((it,i) => `
+          <li style="animation-delay:${Math.min(i*30,360)}ms">
+            <a ${it.url ? `href="${esc(it.url)}" target="_blank" rel="noopener"` : ""}
+               title="${esc(it.name || it.flavour)}">
+              <span class="rank">${String(i+1).padStart(2,"0")}</span>
+              <span class="name"><span class="lbl">${esc(it.flavour)}</span>
+                <small>${it.volume_l ? String(it.volume_l).replace(".", ",") + " l" : "?"}${it.zero_sugar ? ' · <span class="zero">0</span>' : ""}</small>
+              </span>
+              <span class="figures">
+                <b>${eur(value(it))} ${perLitre ? "€/L" : "€"}</b>
+                <span>${isDeal(it) ? `<s>${eur(it.price)}</s> <em>${eur(it.loyalty_price)} €</em>` : `${eur(it.price)} € tk`}</span>
+              </span>
+              <span class="bar"><i data-w="${(value(it)/max*100).toFixed(1)}"></i></span>
+            </a></li>`).join("")}
+        </ol>
+      </section>`).join("");
+
+  requestAnimationFrame(() =>
+    box.querySelectorAll(".bar i").forEach(el => el.style.width = el.dataset.w + "%"));
+}
+
+function staleness(){
+  const when = new Date(DATA.updated);
+  return isNaN(when) ? null : Date.now() - when;
+}
+
+function alertBar(){
+  const msgs = [];
+
+  // an old timestamp means the scheduled run never landed, which is a
+  // different failure from an adapter breaking and needs saying separately
+  const age = staleness();
+  if (age !== null && age > STALE_AFTER_H * 36e5)
+    msgs.push(`Andmed korjati ${ageText(age)} - igapäevane korje ei ole vahepeal õnnestunud.`);
+
+  const bad = sources().filter(s => s.status === "empty" || s.status === "failed");
+  if (bad.length)
+    msgs.push("Viimane korje jäi puudulikuks: "
+      + bad.map(s => `${s.store} ${SOURCE_NOTE[s.status] || s.status}`).join(", ")
+      + ". Allpool on ülejäänud poodide hinnad.");
+
+  const el = document.getElementById("alert");
+  el.hidden = !msgs.length;
+  if (!msgs.length) return;
+  el.textContent = "";
+  const mark = document.createElement("b");
+  mark.textContent = "!";
+  const text = document.createElement("span");
+  text.textContent = msgs.join(" ");
+  el.append(mark, text);
+}
+
+/* Reads the last run of the workflow. Unauthenticated, so it only works on a
+   public repo and is rate limited per IP - a failure here is cosmetic and is
+   swallowed rather than shown. */
+function refreshRow(){
+  if (!REPO) return;
+  const row = document.getElementById("refreshRow");
+  row.hidden = false;
+  document.getElementById("runLink").href =
+    `https://github.com/${REPO}/actions/workflows/${WORKFLOW}`;
+
+  fetch(`https://api.github.com/repos/${REPO}/actions/workflows/${WORKFLOW}/runs?per_page=1`)
+    .then(r => r.ok ? r.json() : Promise.reject(r.status))
+    .then(j => {
+      const run = (j.workflow_runs || [])[0];
+      if (!run) return;
+      const state = run.status === "completed" ? run.conclusion : run.status;
+      const el = document.getElementById("runState");
+      el.textContent = `viimane korje: ${state} · ${ageText(Date.now() - new Date(run.updated_at))}`;
+      el.classList.toggle("bad", state !== "success");
+    })
+    .catch(() => {});
+}
+
+function chips(){
+  const storeBox = document.getElementById("stores");
+  sources().forEach(src => {
+    const live = src.status === "ok" && src.count > 0;
+    const b = document.createElement("button");
+    b.append(src.store);
+    const n = document.createElement("span");
+    n.className = "n";
+    n.textContent = live ? src.count : src.status === "stub" ? "–" : "0";
+    b.append(n);
+
+    if (live){
+      b.setAttribute("aria-pressed", "false");
+      b.onclick = () => {
+        stores.has(src.store) ? stores.delete(src.store) : stores.add(src.store);
+        b.setAttribute("aria-pressed", stores.has(src.store));
+        render();
+      };
+    } else {
+      // kept focusable rather than disabled so the reason stays reachable
+      b.className = "dead" + (src.status === "stub" ? "" : " bad");
+      b.setAttribute("aria-disabled", "true");
+      b.title = `${src.store}: ${SOURCE_NOTE[src.status] || src.status}`
+        + (src.detail ? ` — ${src.detail}` : "");
+    }
+    storeBox.appendChild(b);
+  });
+
+  // the six flavours stocked in the most shops, so the shortcuts stay useful
+  const spread = {};
+  DATA.items.forEach(i => (spread[i.flavour] ||= new Set()).add(i.store));
+  const flavourBox = document.getElementById("flavours");
+  Object.entries(spread)
+    .sort((a,b) => b[1].size - a[1].size || a[0].localeCompare(b[0]))
+    .slice(0,6)
+    .forEach(([flavour]) => {
+      const b = document.createElement("button");
+      b.textContent = flavour;
+      b.setAttribute("aria-pressed", "false");
+      b.onclick = () => {
+        const on = b.getAttribute("aria-pressed") === "true";
+        flavourBox.querySelectorAll("button").forEach(x => x.setAttribute("aria-pressed","false"));
+        b.setAttribute("aria-pressed", !on);
+        query = on ? "" : flavour;
+        document.getElementById("q").value = query;
+        render();
+      };
+      flavourBox.appendChild(b);
+    });
+}
+
+document.getElementById("q").addEventListener("input", e => {
+  query = e.target.value;
+  document.querySelectorAll("#flavours button").forEach(x => x.setAttribute("aria-pressed","false"));
+  render();
+});
+document.getElementById("unit").onclick = e => {
+  perLitre = !perLitre;
+  e.target.setAttribute("aria-pressed", perLitre);
+  e.target.textContent = perLitre ? "hind / liiter" : "hind / tükk";
+  render();
+};
+document.getElementById("deals").onclick = e => {
+  dealsOnly = !dealsOnly; e.target.setAttribute("aria-pressed", dealsOnly); render();
+};
+document.getElementById("zero").onclick = e => {
+  zeroOnly = !zeroOnly; e.target.setAttribute("aria-pressed", zeroOnly); render();
+};
+
+function loadFailed(reason){
+  document.getElementById("stamp").textContent = "andmeid ei laetud";
+  document.getElementById("count").textContent = "";
+  document.getElementById("shops").innerHTML = "";
+  document.getElementById("alert").hidden = true;
+  document.getElementById("empty").hidden = true;
+
+  const box = document.getElementById("loadfail");
+  box.hidden = false;
+  box.textContent = "";
+  const head = document.createElement("b");
+  head.textContent = "Hinnad ei laadinud.";
+  const body = document.createElement("span");
+  body.textContent = `data.json ei ole loetav (${reason}). `
+    + "Leht ei näita hindu enne, kui korje on õnnestunud.";
+  box.append(head, body);
+}
+
+fetch("data.json", {cache:"no-store"})
+  .then(r => r.ok ? r.json() : Promise.reject(new Error("HTTP " + r.status)))
+  .then(d => {
+    DATA = d;
+    const when = new Date(DATA.updated), age = staleness();
+    const stamp = document.getElementById("stamp");
+    stamp.textContent = isNaN(when) ? "—"
+      : "uuendatud " + when.toLocaleString("et-EE",
+          {day:"2-digit",month:"2-digit",hour:"2-digit",minute:"2-digit"})
+        + " · " + ageText(age);
+    stamp.classList.toggle("stale", age !== null && age > STALE_AFTER_H * 36e5);
+    alertBar();
+    refreshRow();
+    chips();
+    render();
+  })
+  .catch(err => loadFailed(err.message || err));
+</script>
+</body>
+</html>

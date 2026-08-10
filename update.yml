@@ -1,0 +1,27 @@
+name: Update prices
+
+on:
+  schedule:
+    - cron: "0 4 * * *"   # 07:00 Tallinn (summer), 06:00 (winter)
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - run: python scrape.py
+      - name: Commit new snapshot
+        run: |
+          git config user.name  "monster-index-bot"
+          git config user.email "actions@github.com"
+          git add prices.sqlite docs/data.json
+          git diff --staged --quiet || git commit -m "prices $(date -u +%F)"
+          git push
