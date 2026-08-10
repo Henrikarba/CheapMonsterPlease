@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-10T12:57:09+00:00",
+ "updated": "2026-08-10T16:11:15+00:00",
  "sources": [
   {
    "adapter": "rimi",
@@ -7,7 +7,7 @@
    "status": "ok",
    "count": 15,
    "detail": null,
-   "seen_at": "2026-08-10T12:57:09+00:00"
+   "seen_at": "2026-08-10T16:11:15+00:00"
   },
   {
    "adapter": "selver",
@@ -15,7 +15,7 @@
    "status": "ok",
    "count": 11,
    "detail": null,
-   "seen_at": "2026-08-10T12:57:09+00:00"
+   "seen_at": "2026-08-10T16:11:15+00:00"
   },
   {
    "adapter": "prisma",
@@ -23,7 +23,7 @@
    "status": "stub",
    "count": 0,
    "detail": "prisma: endpoint not wired up yet",
-   "seen_at": "2026-08-10T12:57:09+00:00"
+   "seen_at": "2026-08-10T16:11:15+00:00"
   },
   {
    "adapter": "coop",
@@ -31,7 +31,7 @@
    "status": "stub",
    "count": 0,
    "detail": "coop: endpoint not wired up yet",
-   "seen_at": "2026-08-10T12:57:09+00:00"
+   "seen_at": "2026-08-10T16:11:15+00:00"
   }
  ],
  "items": [
@@ -47,7 +47,7 @@
    "per_litre": 3.095,
    "url": "https://www.selver.ee/energiajook-energy-4-pakk-monster-2-l",
    "image": "/5/0/5056784906347.jpg",
-   "seen_at": "2026-08-10T12:57:09+00:00"
+   "seen_at": "2026-08-10T16:11:15+00:00"
   },
   {
    "store": "Selver",
@@ -61,7 +61,7 @@
    "per_litre": 3.095,
    "url": "https://www.selver.ee/energiajook-zero-ultra-4-pakk-monster-2-l",
    "image": "/5/0/5056784906378.jpg",
-   "seen_at": "2026-08-10T12:57:09+00:00"
+   "seen_at": "2026-08-10T16:11:15+00:00"
   },
   {
    "store": "Selver",
@@ -75,7 +75,7 @@
    "per_litre": 3.237,
    "url": "https://www.selver.ee/energiajook-energy-mega-monster-553-ml",
    "image": "/5/0/5060335634481.jpg",
-   "seen_at": "2026-08-10T12:57:09+00:00"
+   "seen_at": "2026-08-10T16:11:15+00:00"
   },
   {
    "store": "Selver",
@@ -89,7 +89,7 @@
    "per_litre": 3.237,
    "url": "https://www.selver.ee/energiajook-ultra-mega-monster-553-ml",
    "image": "/5/0/5060517884062.jpg",
-   "seen_at": "2026-08-10T12:57:09+00:00"
+   "seen_at": "2026-08-10T16:11:15+00:00"
   },
   {
    "store": "Selver",
@@ -103,7 +103,7 @@
    "per_litre": 3.38,
    "url": "https://www.selver.ee/energiajook-energy-zero-monster-500-ml",
    "image": "/5/0/5061013940160.jpg",
-   "seen_at": "2026-08-10T12:57:09+00:00"
+   "seen_at": "2026-08-10T16:11:15+00:00"
   },
   {
    "store": "Selver",
@@ -117,7 +117,7 @@
    "per_litre": 3.38,
    "url": "https://www.selver.ee/energiajook-energy-monster-500-ml",
    "image": "/5/0/5060166696160.jpg",
-   "seen_at": "2026-08-10T12:57:09+00:00"
+   "seen_at": "2026-08-10T16:11:15+00:00"
   },
   {
    "store": "Selver",
@@ -131,7 +131,7 @@
    "per_litre": 3.38,
    "url": "https://www.selver.ee/energiajook-full-throttle-zero-sugar-monster-500-ml",
    "image": "/5/0/5060947544543.jpg",
-   "seen_at": "2026-08-10T12:57:09+00:00"
+   "seen_at": "2026-08-10T16:11:15+00:00"
   },
   {
    "store": "Selver",
@@ -145,7 +145,7 @@
    "per_litre": 3.38,
    "url": "https://www.selver.ee/energiajook-juice-monarch-monster-500-ml",
    "image": "/5/0/5060896622910.jpg",
-   "seen_at": "2026-08-10T12:57:09+00:00"
+   "seen_at": "2026-08-10T16:11:15+00:00"
   },
   {
    "store": "Selver",
@@ -159,7 +159,7 @@
    "per_litre": 3.38,
    "url": "https://www.selver.ee/energiajook-juiced-mango-loco-monster-500-ml",
    "image": "/5/0/5060639121489.jpg",
-   "seen_at": "2026-08-10T12:57:09+00:00"
+   "seen_at": "2026-08-10T16:11:15+00:00"
   },
   {
    "store": "Selver",
@@ -173,7 +173,7 @@
    "per_litre": 3.38,
    "url": "https://www.selver.ee/energiajook-monster-ultra-monster-500-ml",
    "image": "/5/0/5060337502085.jpg",
-   "seen_at": "2026-08-10T12:57:09+00:00"
+   "seen_at": "2026-08-10T16:11:15+00:00"
   },
   {
    "store": "Selver",
@@ -187,7 +187,7 @@
    "per_litre": 3.38,
    "url": "https://www.selver.ee/energiajook-ultra-rosa-zero-monster-500-ml",
    "image": "/5/0/5061013942218.jpg",
-   "seen_at": "2026-08-10T12:57:09+00:00"
+   "seen_at": "2026-08-10T16:11:15+00:00"
   },
   {
    "store": "Rimi",
@@ -201,7 +201,7 @@
    "per_litre": 3.5,
    "url": "https://www.rimi.ee/epood/ee/tooted/joogid/energiajook/en-j-monster-ultra-fiesta-mango-m-ain-0-5l/p/1368563",
    "image": "https://rimibaltic-res.cloudinary.com/image/upload/b_white,c_limit,dpr_auto,f_auto,h_216,q_1,w_216/d_ecommerce:backend-fallback.png/MAT_1368563_PCE_EE",
-   "seen_at": "2026-08-10T12:57:09+00:00"
+   "seen_at": "2026-08-10T16:11:15+00:00"
   },
   {
    "store": "Rimi",
@@ -215,7 +215,7 @@
    "per_litre": 3.5,
    "url": "https://www.rimi.ee/epood/ee/tooted/joogid/energiajook/en-j-monster-ultra-lando-norris-m-ain-0-5l/p/1375816",
    "image": "https://rimibaltic-res.cloudinary.com/image/upload/b_white,c_limit,dpr_auto,f_auto,h_216,q_1,w_216/d_ecommerce:backend-fallback.png/MAT_1375816_PCE_EE",
-   "seen_at": "2026-08-10T12:57:09+00:00"
+   "seen_at": "2026-08-10T16:11:15+00:00"
   },
   {
    "store": "Rimi",
@@ -229,7 +229,7 @@
    "per_litre": 3.5,
    "url": "https://www.rimi.ee/epood/ee/tooted/joogid/energiajook/en-j-monster-ultra-peachy-keen-mag-ain-0-5l/p/1375178",
    "image": "https://rimibaltic-res.cloudinary.com/image/upload/b_white,c_limit,dpr_auto,f_auto,h_216,q_1,w_216/d_ecommerce:backend-fallback.png/MAT_1375178_PCE_EE",
-   "seen_at": "2026-08-10T12:57:09+00:00"
+   "seen_at": "2026-08-10T16:11:15+00:00"
   },
   {
    "store": "Rimi",
@@ -243,7 +243,7 @@
    "per_litre": 3.5,
    "url": "https://www.rimi.ee/epood/ee/tooted/joogid/energiajook/en-jook-monster-juice-monarch-m-ain-0-5l/p/1370604",
    "image": "https://rimibaltic-res.cloudinary.com/image/upload/b_white,c_limit,dpr_auto,f_auto,h_216,q_1,w_216/d_ecommerce:backend-fallback.png/MAT_1370604_PCE_EE",
-   "seen_at": "2026-08-10T12:57:09+00:00"
+   "seen_at": "2026-08-10T16:11:15+00:00"
   },
   {
    "store": "Rimi",
@@ -257,7 +257,7 @@
    "per_litre": 3.5,
    "url": "https://www.rimi.ee/epood/ee/tooted/joogid/energiajook/en-jook-monster-aussie-lemonade-m-ain-0-5l/p/1374661",
    "image": "https://rimibaltic-res.cloudinary.com/image/upload/b_white,c_limit,dpr_auto,f_auto,h_216,q_1,w_216/d_ecommerce:backend-fallback.png/MAT_1374661_PCE_EE",
-   "seen_at": "2026-08-10T12:57:09+00:00"
+   "seen_at": "2026-08-10T16:11:15+00:00"
   },
   {
    "store": "Rimi",
@@ -271,7 +271,7 @@
    "per_litre": 3.5,
    "url": "https://www.rimi.ee/epood/ee/tooted/joogid/energiajook/energiajook-monster-bad-apple-m-a-0-5l/p/1376290",
    "image": "https://rimibaltic-res.cloudinary.com/image/upload/b_white,c_limit,dpr_auto,f_auto,h_216,q_1,w_216/d_ecommerce:backend-fallback.png/MAT_1376290_PCE_EE",
-   "seen_at": "2026-08-10T12:57:09+00:00"
+   "seen_at": "2026-08-10T16:11:15+00:00"
   },
   {
    "store": "Rimi",
@@ -285,7 +285,7 @@
    "per_litre": 3.5,
    "url": "https://www.rimi.ee/epood/ee/tooted/joogid/energiajook/energiajook-monster-energy-0-5l/p/1355076",
    "image": "https://rimibaltic-res.cloudinary.com/image/upload/b_white,c_limit,dpr_auto,f_auto,h_216,q_1,w_216/d_ecommerce:backend-fallback.png/MAT_1355076_PCE_EE",
-   "seen_at": "2026-08-10T12:57:09+00:00"
+   "seen_at": "2026-08-10T16:11:15+00:00"
   },
   {
    "store": "Rimi",
@@ -299,7 +299,7 @@
    "per_litre": 3.5,
    "url": "https://www.rimi.ee/epood/ee/tooted/joogid/energiajook/energiajook-monster-green-zero-mag-ain-0-5l/p/1374017",
    "image": "https://rimibaltic-res.cloudinary.com/image/upload/b_white,c_limit,dpr_auto,f_auto,h_216,q_1,w_216/d_ecommerce:backend-fallback.png/MAT_1374017_PCE_EE",
-   "seen_at": "2026-08-10T12:57:09+00:00"
+   "seen_at": "2026-08-10T16:11:15+00:00"
   },
   {
    "store": "Rimi",
@@ -313,7 +313,7 @@
    "per_litre": 3.5,
    "url": "https://www.rimi.ee/epood/ee/tooted/joogid/energiajook/energiajook-monster-juice-mango-loco-0-5l/p/1365350",
    "image": "https://rimibaltic-res.cloudinary.com/image/upload/b_white,c_limit,dpr_auto,f_auto,h_216,q_1,w_216/d_ecommerce:backend-fallback.png/MAT_1365350_PCE_EE",
-   "seen_at": "2026-08-10T12:57:09+00:00"
+   "seen_at": "2026-08-10T16:11:15+00:00"
   },
   {
    "store": "Rimi",
@@ -327,7 +327,7 @@
    "per_litre": 3.5,
    "url": "https://www.rimi.ee/epood/ee/tooted/joogid/energiajook/energiajook-monster-rio-punch-mag-ain-0-5l/p/1375180",
    "image": "https://rimibaltic-res.cloudinary.com/image/upload/b_white,c_limit,dpr_auto,f_auto,h_216,q_1,w_216/d_ecommerce:backend-fallback.png/MAT_1375180_PCE_EE",
-   "seen_at": "2026-08-10T12:57:09+00:00"
+   "seen_at": "2026-08-10T16:11:15+00:00"
   },
   {
    "store": "Rimi",
@@ -341,7 +341,7 @@
    "per_litre": 3.5,
    "url": "https://www.rimi.ee/epood/ee/tooted/joogid/energiajook/energiajook-monster-rossi-zero-vr46-m-a-0-5l/p/1376289",
    "image": "https://rimibaltic-res.cloudinary.com/image/upload/b_white,c_limit,dpr_auto,f_auto,h_216,q_1,w_216/d_ecommerce:backend-fallback.png/MAT_1376289_PCE_EE",
-   "seen_at": "2026-08-10T12:57:09+00:00"
+   "seen_at": "2026-08-10T16:11:15+00:00"
   },
   {
    "store": "Rimi",
@@ -355,7 +355,7 @@
    "per_litre": 3.5,
    "url": "https://www.rimi.ee/epood/ee/tooted/joogid/energiajook/energiajook-monster-ultra-gold-magusain-0-5l/p/1373404",
    "image": "https://rimibaltic-res.cloudinary.com/image/upload/b_white,c_limit,dpr_auto,f_auto,h_216,q_1,w_216/d_ecommerce:backend-fallback.png/MAT_1373404_PCE_EE",
-   "seen_at": "2026-08-10T12:57:09+00:00"
+   "seen_at": "2026-08-10T16:11:15+00:00"
   },
   {
    "store": "Rimi",
@@ -369,7 +369,7 @@
    "per_litre": 3.5,
    "url": "https://www.rimi.ee/epood/ee/tooted/joogid/energiajook/energiajook-monster-ultra-rosa-mag-ain-0-5l/p/1374656",
    "image": "https://rimibaltic-res.cloudinary.com/image/upload/b_white,c_limit,dpr_auto,f_auto,h_216,q_1,w_216/d_ecommerce:backend-fallback.png/MAT_1374656_PCE_EE",
-   "seen_at": "2026-08-10T12:57:09+00:00"
+   "seen_at": "2026-08-10T16:11:15+00:00"
   },
   {
    "store": "Rimi",
@@ -383,7 +383,7 @@
    "per_litre": 3.5,
    "url": "https://www.rimi.ee/epood/ee/tooted/joogid/energiajook/energiajook-monster-ultra-strawb-dreams-0-5l/p/1375080",
    "image": "https://rimibaltic-res.cloudinary.com/image/upload/b_white,c_limit,dpr_auto,f_auto,h_216,q_1,w_216/d_ecommerce:backend-fallback.png/MAT_1375080_PCE_EE",
-   "seen_at": "2026-08-10T12:57:09+00:00"
+   "seen_at": "2026-08-10T16:11:15+00:00"
   },
   {
    "store": "Rimi",
@@ -397,7 +397,7 @@
    "per_litre": 3.5,
    "url": "https://www.rimi.ee/epood/ee/tooted/joogid/energiajook/energiajook-monster-zero-ultra-suhkruvab-0-5l/p/1361974",
    "image": "https://rimibaltic-res.cloudinary.com/image/upload/b_white,c_limit,dpr_auto,f_auto,h_216,q_1,w_216/d_ecommerce:backend-fallback.png/MAT_1361974_PCE_EE",
-   "seen_at": "2026-08-10T12:57:09+00:00"
+   "seen_at": "2026-08-10T16:11:15+00:00"
   }
  ],
  "history": {
