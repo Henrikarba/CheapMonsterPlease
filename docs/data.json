@@ -1,13 +1,13 @@
 {
- "updated": "2026-08-19T04:42:25+00:00",
+ "updated": "2026-08-20T04:42:22+00:00",
  "sources": [
   {
    "adapter": "rimi",
    "store": "Rimi",
    "status": "ok",
-   "count": 16,
+   "count": 15,
    "detail": null,
-   "seen_at": "2026-08-19T04:42:25+00:00"
+   "seen_at": "2026-08-20T04:42:22+00:00"
   },
   {
    "adapter": "selver",
@@ -15,7 +15,7 @@
    "status": "ok",
    "count": 20,
    "detail": null,
-   "seen_at": "2026-08-19T04:42:25+00:00"
+   "seen_at": "2026-08-20T04:42:22+00:00"
   },
   {
    "adapter": "coop",
@@ -23,7 +23,7 @@
    "status": "ok",
    "count": 10,
    "detail": null,
-   "seen_at": "2026-08-19T04:42:25+00:00"
+   "seen_at": "2026-08-20T04:42:22+00:00"
   }
  ],
  "items": [
@@ -39,7 +39,7 @@
    "flavour": "Ultra",
    "zero_sugar": true,
    "per_litre": 3.056,
-   "seen_at": "2026-08-19T04:42:25+00:00"
+   "seen_at": "2026-08-20T04:42:22+00:00"
   },
   {
    "store": "Selver",
@@ -53,7 +53,7 @@
    "flavour": "Original",
    "zero_sugar": false,
    "per_litre": 3.095,
-   "seen_at": "2026-08-19T04:42:25+00:00"
+   "seen_at": "2026-08-20T04:42:22+00:00"
   },
   {
    "store": "Selver",
@@ -67,7 +67,7 @@
    "flavour": "Ultra Zero",
    "zero_sugar": true,
    "per_litre": 3.095,
-   "seen_at": "2026-08-19T04:42:25+00:00"
+   "seen_at": "2026-08-20T04:42:22+00:00"
   },
   {
    "store": "Selver",
@@ -81,7 +81,7 @@
    "flavour": "Ultra",
    "zero_sugar": true,
    "per_litre": 3.237,
-   "seen_at": "2026-08-19T04:42:25+00:00"
+   "seen_at": "2026-08-20T04:42:22+00:00"
   },
   {
    "store": "Selver",
@@ -95,7 +95,7 @@
    "flavour": "Original",
    "zero_sugar": false,
    "per_litre": 3.237,
-   "seen_at": "2026-08-19T04:42:25+00:00"
+   "seen_at": "2026-08-20T04:42:22+00:00"
   },
   {
    "store": "Coop Haapsalu",
@@ -109,7 +109,7 @@
    "flavour": "Original",
    "zero_sugar": false,
    "per_litre": 3.237,
-   "seen_at": "2026-08-19T04:42:25+00:00"
+   "seen_at": "2026-08-20T04:42:22+00:00"
   },
   {
    "store": "Selver",
@@ -123,7 +123,7 @@
    "flavour": "Aussie Lemonade",
    "zero_sugar": false,
    "per_litre": 3.3,
-   "seen_at": "2026-08-19T04:42:25+00:00"
+   "seen_at": "2026-08-20T04:42:22+00:00"
   },
   {
    "store": "Selver",
@@ -137,7 +137,7 @@
    "flavour": "Ultra Peachy Keen",
    "zero_sugar": true,
    "per_litre": 3.3,
-   "seen_at": "2026-08-19T04:42:25+00:00"
+   "seen_at": "2026-08-20T04:42:22+00:00"
   },
   {
    "store": "Selver",
@@ -151,21 +151,7 @@
    "flavour": "Lando Norris",
    "zero_sugar": true,
    "per_litre": 3.3,
-   "seen_at": "2026-08-19T04:42:25+00:00"
-  },
-  {
-   "store": "Rimi",
-   "name": "Energiajook Monster Zero Ultra m.a. 4x0,5l",
-   "price": 6.69,
-   "url": "https://www.rimi.ee/epood/ee/tooted/joogid/energiajook/energiajook-monster-zero-ultra-m-a-4x0-5l/p/1376152",
-   "image": "",
-   "loyalty_price": null,
-   "volume_l": 2.0,
-   "ext_id": "",
-   "flavour": "Ultra Zero",
-   "zero_sugar": true,
-   "per_litre": 3.345,
-   "seen_at": "2026-08-19T04:42:25+00:00"
+   "seen_at": "2026-08-20T04:42:22+00:00"
   },
   {
    "store": "Selver",
@@ -179,21 +165,7 @@
    "flavour": "Ultra",
    "zero_sugar": true,
    "per_litre": 3.38,
-   "seen_at": "2026-08-19T04:42:25+00:00"
-  },
-  {
-   "store": "Selver",
-   "name": "Energiajook Energy, MONSTER, 500 ml",
-   "price": 1.69,
-   "url": "https://www.selver.ee/energiajook-energy-monster-500-ml",
-   "image": "/5/0/5060166696160.jpg",
-   "loyalty_price": null,
-   "volume_l": 0.5,
-   "ext_id": "T000016800",
-   "flavour": "Original",
-   "zero_sugar": false,
-   "per_litre": 3.38,
-   "seen_at": "2026-08-19T04:42:25+00:00"
+   "seen_at": "2026-08-20T04:42:22+00:00"
   },
   {
    "store": "Selver",
@@ -207,7 +179,21 @@
    "flavour": "Ultra Strawberry",
    "zero_sugar": true,
    "per_litre": 3.38,
-   "seen_at": "2026-08-19T04:42:25+00:00"
+   "seen_at": "2026-08-20T04:42:22+00:00"
+  },
+  {
+   "store": "Selver",
+   "name": "Energiajook Energy, MONSTER, 500 ml",
+   "price": 1.69,
+   "url": "https://www.selver.ee/energiajook-energy-monster-500-ml",
+   "image": "/5/0/5060166696160.jpg",
+   "loyalty_price": null,
+   "volume_l": 0.5,
+   "ext_id": "T000016800",
+   "flavour": "Original",
+   "zero_sugar": false,
+   "per_litre": 3.38,
+   "seen_at": "2026-08-20T04:42:22+00:00"
   },
   {
    "store": "Selver",
@@ -221,7 +207,7 @@
    "flavour": "Zero Sugar",
    "zero_sugar": true,
    "per_litre": 3.38,
-   "seen_at": "2026-08-19T04:42:25+00:00"
+   "seen_at": "2026-08-20T04:42:22+00:00"
   },
   {
    "store": "Selver",
@@ -235,7 +221,7 @@
    "flavour": "Zero Sugar",
    "zero_sugar": true,
    "per_litre": 3.38,
-   "seen_at": "2026-08-19T04:42:25+00:00"
+   "seen_at": "2026-08-20T04:42:22+00:00"
   },
   {
    "store": "Selver",
@@ -249,7 +235,7 @@
    "flavour": "Ultra Rosá",
    "zero_sugar": true,
    "per_litre": 3.38,
-   "seen_at": "2026-08-19T04:42:25+00:00"
+   "seen_at": "2026-08-20T04:42:22+00:00"
   },
   {
    "store": "Selver",
@@ -263,21 +249,7 @@
    "flavour": "Ultra",
    "zero_sugar": true,
    "per_litre": 3.38,
-   "seen_at": "2026-08-19T04:42:25+00:00"
-  },
-  {
-   "store": "Selver",
-   "name": "Energiajook Full Throttle Zero Sugar, MONSTER, 500 ml",
-   "price": 1.69,
-   "url": "https://www.selver.ee/energiajook-full-throttle-zero-sugar-monster-500-ml",
-   "image": "/5/0/5060947544543.jpg",
-   "loyalty_price": null,
-   "volume_l": 0.5,
-   "ext_id": "T000075728",
-   "flavour": "Zero Sugar",
-   "zero_sugar": true,
-   "per_litre": 3.38,
-   "seen_at": "2026-08-19T04:42:25+00:00"
+   "seen_at": "2026-08-20T04:42:22+00:00"
   },
   {
    "store": "Selver",
@@ -291,7 +263,21 @@
    "flavour": "Punch",
    "zero_sugar": false,
    "per_litre": 3.38,
-   "seen_at": "2026-08-19T04:42:25+00:00"
+   "seen_at": "2026-08-20T04:42:22+00:00"
+  },
+  {
+   "store": "Selver",
+   "name": "Energiajook Full Throttle Zero Sugar, MONSTER, 500 ml",
+   "price": 1.69,
+   "url": "https://www.selver.ee/energiajook-full-throttle-zero-sugar-monster-500-ml",
+   "image": "/5/0/5060947544543.jpg",
+   "loyalty_price": null,
+   "volume_l": 0.5,
+   "ext_id": "T000075728",
+   "flavour": "Zero Sugar",
+   "zero_sugar": true,
+   "per_litre": 3.38,
+   "seen_at": "2026-08-20T04:42:22+00:00"
   },
   {
    "store": "Selver",
@@ -305,7 +291,7 @@
    "flavour": "Monarch",
    "zero_sugar": false,
    "per_litre": 3.38,
-   "seen_at": "2026-08-19T04:42:25+00:00"
+   "seen_at": "2026-08-20T04:42:22+00:00"
   },
   {
    "store": "Selver",
@@ -319,7 +305,7 @@
    "flavour": "Bad Apple",
    "zero_sugar": false,
    "per_litre": 3.38,
-   "seen_at": "2026-08-19T04:42:25+00:00"
+   "seen_at": "2026-08-20T04:42:22+00:00"
   },
   {
    "store": "Selver",
@@ -333,7 +319,7 @@
    "flavour": "Mango Loco",
    "zero_sugar": false,
    "per_litre": 3.38,
-   "seen_at": "2026-08-19T04:42:25+00:00"
+   "seen_at": "2026-08-20T04:42:22+00:00"
   },
   {
    "store": "Selver",
@@ -347,7 +333,7 @@
    "flavour": "Ultra Gold",
    "zero_sugar": true,
    "per_litre": 3.38,
-   "seen_at": "2026-08-19T04:42:25+00:00"
+   "seen_at": "2026-08-20T04:42:22+00:00"
   },
   {
    "store": "Coop Haapsalu",
@@ -361,7 +347,7 @@
    "flavour": "Punch",
    "zero_sugar": false,
    "per_litre": 3.38,
-   "seen_at": "2026-08-19T04:42:25+00:00"
+   "seen_at": "2026-08-20T04:42:22+00:00"
   },
   {
    "store": "Coop Haapsalu",
@@ -375,7 +361,7 @@
    "flavour": "Ultra Strawberry",
    "zero_sugar": true,
    "per_litre": 3.38,
-   "seen_at": "2026-08-19T04:42:25+00:00"
+   "seen_at": "2026-08-20T04:42:22+00:00"
   },
   {
    "store": "Coop Haapsalu",
@@ -389,7 +375,7 @@
    "flavour": "Aussie Lemonade",
    "zero_sugar": false,
    "per_litre": 3.38,
-   "seen_at": "2026-08-19T04:42:25+00:00"
+   "seen_at": "2026-08-20T04:42:22+00:00"
   },
   {
    "store": "Coop Haapsalu",
@@ -403,7 +389,7 @@
    "flavour": "Zero Sugar",
    "zero_sugar": true,
    "per_litre": 3.38,
-   "seen_at": "2026-08-19T04:42:25+00:00"
+   "seen_at": "2026-08-20T04:42:22+00:00"
   },
   {
    "store": "Coop Haapsalu",
@@ -417,7 +403,7 @@
    "flavour": "Mango Loco",
    "zero_sugar": false,
    "per_litre": 3.38,
-   "seen_at": "2026-08-19T04:42:25+00:00"
+   "seen_at": "2026-08-20T04:42:22+00:00"
   },
   {
    "store": "Coop Haapsalu",
@@ -431,7 +417,7 @@
    "flavour": "Monarch",
    "zero_sugar": false,
    "per_litre": 3.38,
-   "seen_at": "2026-08-19T04:42:25+00:00"
+   "seen_at": "2026-08-20T04:42:22+00:00"
   },
   {
    "store": "Coop Haapsalu",
@@ -445,7 +431,7 @@
    "flavour": "Ultra Zero",
    "zero_sugar": true,
    "per_litre": 3.38,
-   "seen_at": "2026-08-19T04:42:25+00:00"
+   "seen_at": "2026-08-20T04:42:22+00:00"
   },
   {
    "store": "Coop Haapsalu",
@@ -459,7 +445,7 @@
    "flavour": "Original",
    "zero_sugar": false,
    "per_litre": 3.38,
-   "seen_at": "2026-08-19T04:42:25+00:00"
+   "seen_at": "2026-08-20T04:42:22+00:00"
   },
   {
    "store": "Rimi",
@@ -473,7 +459,7 @@
    "flavour": "Ultra Zero",
    "zero_sugar": true,
    "per_litre": 3.5,
-   "seen_at": "2026-08-19T04:42:25+00:00"
+   "seen_at": "2026-08-20T04:42:22+00:00"
   },
   {
    "store": "Rimi",
@@ -487,7 +473,7 @@
    "flavour": "Original",
    "zero_sugar": false,
    "per_litre": 3.5,
-   "seen_at": "2026-08-19T04:42:25+00:00"
+   "seen_at": "2026-08-20T04:42:22+00:00"
   },
   {
    "store": "Rimi",
@@ -501,7 +487,7 @@
    "flavour": "Mango Loco",
    "zero_sugar": false,
    "per_litre": 3.5,
-   "seen_at": "2026-08-19T04:42:25+00:00"
+   "seen_at": "2026-08-20T04:42:22+00:00"
   },
   {
    "store": "Rimi",
@@ -515,7 +501,7 @@
    "flavour": "Ultra Strawberry",
    "zero_sugar": true,
    "per_litre": 3.5,
-   "seen_at": "2026-08-19T04:42:25+00:00"
+   "seen_at": "2026-08-20T04:42:22+00:00"
   },
   {
    "store": "Rimi",
@@ -529,7 +515,7 @@
    "flavour": "Zero Sugar",
    "zero_sugar": true,
    "per_litre": 3.5,
-   "seen_at": "2026-08-19T04:42:25+00:00"
+   "seen_at": "2026-08-20T04:42:22+00:00"
   },
   {
    "store": "Rimi",
@@ -543,21 +529,7 @@
    "flavour": "Bad Apple",
    "zero_sugar": false,
    "per_litre": 3.5,
-   "seen_at": "2026-08-19T04:42:25+00:00"
-  },
-  {
-   "store": "Rimi",
-   "name": "En.jook. Monster Aussie Lemonade m.ain. 0,5l",
-   "price": 1.75,
-   "url": "https://www.rimi.ee/epood/ee/tooted/joogid/energiajook/en-jook-monster-aussie-lemonade-m-ain-0-5l/p/1374661",
-   "image": "https://rimibaltic-res.cloudinary.com/image/upload/b_white,c_limit,dpr_auto,f_webp,h_216,q_1,w_216/d_ecommerce:backend-fallback.png/MAT_1374661_PCE_EE",
-   "loyalty_price": null,
-   "volume_l": 0.5,
-   "ext_id": "",
-   "flavour": "Aussie Lemonade",
-   "zero_sugar": false,
-   "per_litre": 3.5,
-   "seen_at": "2026-08-19T04:42:25+00:00"
+   "seen_at": "2026-08-20T04:42:22+00:00"
   },
   {
    "store": "Rimi",
@@ -571,21 +543,7 @@
    "flavour": "Ultra Rosá",
    "zero_sugar": true,
    "per_litre": 3.5,
-   "seen_at": "2026-08-19T04:42:25+00:00"
-  },
-  {
-   "store": "Rimi",
-   "name": "En.jook Monster Juice Monarch m.ain. 0,5l",
-   "price": 1.75,
-   "url": "https://www.rimi.ee/epood/ee/tooted/joogid/energiajook/en-jook-monster-juice-monarch-m-ain-0-5l/p/1370604",
-   "image": "https://rimibaltic-res.cloudinary.com/image/upload/b_white,c_limit,dpr_auto,f_webp,h_216,q_1,w_216/d_ecommerce:backend-fallback.png/MAT_1370604_PCE_EE",
-   "loyalty_price": null,
-   "volume_l": 0.5,
-   "ext_id": "",
-   "flavour": "Monarch",
-   "zero_sugar": false,
-   "per_litre": 3.5,
-   "seen_at": "2026-08-19T04:42:25+00:00"
+   "seen_at": "2026-08-20T04:42:22+00:00"
   },
   {
    "store": "Rimi",
@@ -599,7 +557,35 @@
    "flavour": "Ultra Peachy Keen",
    "zero_sugar": true,
    "per_litre": 3.5,
-   "seen_at": "2026-08-19T04:42:25+00:00"
+   "seen_at": "2026-08-20T04:42:22+00:00"
+  },
+  {
+   "store": "Rimi",
+   "name": "En.jook. Monster Aussie Lemonade m.ain. 0,5l",
+   "price": 1.75,
+   "url": "https://www.rimi.ee/epood/ee/tooted/joogid/energiajook/en-jook-monster-aussie-lemonade-m-ain-0-5l/p/1374661",
+   "image": "https://rimibaltic-res.cloudinary.com/image/upload/b_white,c_limit,dpr_auto,f_webp,h_216,q_1,w_216/d_ecommerce:backend-fallback.png/MAT_1374661_PCE_EE",
+   "loyalty_price": null,
+   "volume_l": 0.5,
+   "ext_id": "",
+   "flavour": "Aussie Lemonade",
+   "zero_sugar": false,
+   "per_litre": 3.5,
+   "seen_at": "2026-08-20T04:42:22+00:00"
+  },
+  {
+   "store": "Rimi",
+   "name": "En.jook Monster Juice Monarch m.ain. 0,5l",
+   "price": 1.75,
+   "url": "https://www.rimi.ee/epood/ee/tooted/joogid/energiajook/en-jook-monster-juice-monarch-m-ain-0-5l/p/1370604",
+   "image": "https://rimibaltic-res.cloudinary.com/image/upload/b_white,c_limit,dpr_auto,f_webp,h_216,q_1,w_216/d_ecommerce:backend-fallback.png/MAT_1370604_PCE_EE",
+   "loyalty_price": null,
+   "volume_l": 0.5,
+   "ext_id": "",
+   "flavour": "Monarch",
+   "zero_sugar": false,
+   "per_litre": 3.5,
+   "seen_at": "2026-08-20T04:42:22+00:00"
   },
   {
    "store": "Rimi",
@@ -613,7 +599,7 @@
    "flavour": "Ultra Fiesta Mango",
    "zero_sugar": true,
    "per_litre": 3.5,
-   "seen_at": "2026-08-19T04:42:25+00:00"
+   "seen_at": "2026-08-20T04:42:22+00:00"
   },
   {
    "store": "Rimi",
@@ -627,7 +613,7 @@
    "flavour": "Punch",
    "zero_sugar": false,
    "per_litre": 3.5,
-   "seen_at": "2026-08-19T04:42:25+00:00"
+   "seen_at": "2026-08-20T04:42:22+00:00"
   },
   {
    "store": "Rimi",
@@ -641,7 +627,7 @@
    "flavour": "Ultra Gold",
    "zero_sugar": true,
    "per_litre": 3.5,
-   "seen_at": "2026-08-19T04:42:25+00:00"
+   "seen_at": "2026-08-20T04:42:22+00:00"
   },
   {
    "store": "Rimi",
@@ -655,7 +641,7 @@
    "flavour": "Lando Norris",
    "zero_sugar": true,
    "per_litre": 3.5,
-   "seen_at": "2026-08-19T04:42:25+00:00"
+   "seen_at": "2026-08-20T04:42:22+00:00"
   },
   {
    "store": "Rimi",
@@ -669,7 +655,7 @@
    "flavour": "The Doctor",
    "zero_sugar": true,
    "per_litre": 3.5,
-   "seen_at": "2026-08-19T04:42:25+00:00"
+   "seen_at": "2026-08-20T04:42:22+00:00"
   }
  ]
 }
