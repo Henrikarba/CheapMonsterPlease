@@ -24,15 +24,16 @@ indistinguishable from real ones.
 |----------|------------------|---------------------------------|---------|
 | rimi     | rimi.ee/epood    | HTML, `data-gtm-eec-product`    | wired   |
 | selver   | selver.ee        | Vue Storefront `_search` JSON   | wired   |
-| coop     | coophaapsalu.ee  | WooCommerce Store API           | wired   |
-
-Coop is deliberately labelled **Coop Haapsalu**, not Coop. Haapsalu is the only
-regional cooperative running its own shop; Tallinn and Pärnu sell through Wolt
-and Tartu through Bolt Food, which are marketplace storefronts with their own
-pricing. Every Coop unit prices independently, so these are west-Estonian
-numbers and nothing more.
 
 ### Shops that cannot be adapters
+
+**Coop** — there is no national Coop e-shop. Coop Eesti is a federation of
+independent regional cooperatives, and [coop.ee/coopi-e-poed](https://www.coop.ee/coopi-e-poed)
+lists only four: Haapsalu runs its own WooCommerce shop, while Tallinn and
+Pärnu sell through Wolt and Tartu through Bolt Food. The marketplace three
+carry platform pricing over a courier-picked subset, which is not a shelf price.
+coophaapsalu.ee was wired up and then removed: it worked, but it published
+west-Estonian prices under a chain name that has no single price.
 
 **Maxima / barbora.ee** — `/api/eshop/v1/cart/products` is gone (404) and search
 moved to Constructor.io, whose index carries no prices, only per-warehouse stock
@@ -47,7 +48,10 @@ to Wolt until 31 August 2026. The adapter was removed rather than left as a stub
 **Lidl** — their search API works
 (`/q/api/search?q=…&assortment=EE&locale=et_EE&version=2.0.0`, needs `Accept: */*`)
 but only indexes the current weekly offer leaflet, roughly 37 rotating items.
-`monster` has returned zero keyword hits on every check. Note the leaflet rotates:
+`monster` has never returned an actual Monster product. Search is fuzzy, so it
+does return hits — 5 as of 2 September 2026, all semantic noise (Mustikas,
+Banaan, Porgand, hakkliha) — and a hit count alone must not be read as stock.
+Note the leaflet rotates:
 `coca-cola` returned zero in one check and two in a later one, purely because it
 was on offer that week. That is the point — there is no standing assortment
 online, only whatever is on promotion, so nothing here can be tracked daily.
@@ -114,8 +118,6 @@ instead and prefer stable data attributes over price CSS classes.
 
 - Loyalty price (Partnerkaart / Säästukaart / Rimi kaart) is stored separately from
   the shelf price; the ladder sorts on whichever is lower.
-- Coop and Prisma assortments are per store, so those numbers are only meaningful
-  once a specific shop is pinned.
 - One request every 1.5 s, once a day. Keep it that way.
 
 ## Flavours

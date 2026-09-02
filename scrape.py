@@ -365,66 +365,9 @@ def scrape_selver() -> list[Product]:
     return out
 
 
-def _minor_units(value, scale: int) -> float | None:
-    """WooCommerce sends prices as integer minor units: "169" is 1,69 EUR.
-
-    money() deliberately will not guess this - an int there is taken at face
-    value - so the conversion has to be explicit and driven by the
-    currency_minor_unit the API reports rather than an assumed 100.
-    """
-    if value in (None, ""):
-        return None
-    try:
-        return round(int(value) / scale, 2)
-    except (TypeError, ValueError):
-        return None
-
-
-# The only Coop cooperative running its own e-shop. Tallinn and Pärnu sell
-# through Wolt and Tartu through Bolt Food, which are marketplace storefronts
-# rather than a Coop-run catalogue.
-COOP_SHOP = "coophaapsalu.ee"
-
-
-def scrape_coop() -> list[Product]:
-    """Haapsalu eCoop. It runs WooCommerce, so the public Store API answers the
-    whole search in one request, no key and no store selector.
-
-    These are west-Estonian prices. Every Coop unit prices independently, so
-    this row is honest only as "Coop Haapsalu" and not as "Coop".
-    """
-    s = session()
-    r = s.get(f"https://{COOP_SHOP}/wp-json/wc/store/v1/products",
-              params={"search": "monster", "per_page": 100}, timeout=TIMEOUT)
-    r.raise_for_status()
-
-    out: list[Product] = []
-    for d in r.json():
-        name = d.get("name") or ""
-        if not is_monster(name):
-            continue
-        pr = d.get("prices") or {}
-        scale = 10 ** int(pr.get("currency_minor_unit") or 2)
-        shelf = _minor_units(pr.get("regular_price"), scale)
-        now = _minor_units(pr.get("price"), scale)
-        if shelf is None and now is None:
-            continue
-        out.append(Product(
-            store="Coop Haapsalu",
-            name=name,
-            price=shelf if shelf is not None else now,
-            loyalty_price=now if (now and shelf and now < shelf) else None,
-            url=d.get("permalink", ""),
-            image=(d.get("images") or [{}])[0].get("src", ""),
-            ext_id=str(d.get("sku", "")),
-        ))
-    return out
-
-
 ADAPTERS = {
     "rimi": scrape_rimi,
     "selver": scrape_selver,
-    "coop": scrape_coop,
 }
 
 # Display name per adapter. Needed for the run report: an adapter that returns
@@ -432,7 +375,6 @@ ADAPTERS = {
 STORE_NAMES = {
     "rimi": "Rimi",
     "selver": "Selver",
-    "coop": "Coop Haapsalu",
 }
 
 
