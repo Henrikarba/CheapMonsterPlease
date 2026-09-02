@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-02T07:58:49+00:00",
+ "updated": "2026-09-02T08:39:48+00:00",
  "sources": [
   {
    "adapter": "rimi",
@@ -7,7 +7,7 @@
    "status": "ok",
    "count": 15,
    "detail": null,
-   "seen_at": "2026-09-02T07:58:49+00:00"
+   "seen_at": "2026-09-02T08:39:48+00:00"
   },
   {
    "adapter": "selver",
@@ -15,7 +15,7 @@
    "status": "ok",
    "count": 20,
    "detail": null,
-   "seen_at": "2026-09-02T07:58:49+00:00"
+   "seen_at": "2026-09-02T08:39:48+00:00"
   }
  ],
  "items": [
@@ -31,7 +31,7 @@
    "flavour": "Ultra Zero",
    "zero_sugar": true,
    "per_litre": 1.98,
-   "seen_at": "2026-09-02T07:58:49+00:00"
+   "seen_at": "2026-09-02T08:39:48+00:00"
   },
   {
    "store": "Rimi",
@@ -45,7 +45,7 @@
    "flavour": "Original",
    "zero_sugar": false,
    "per_litre": 1.98,
-   "seen_at": "2026-09-02T07:58:49+00:00"
+   "seen_at": "2026-09-02T08:39:48+00:00"
   },
   {
    "store": "Rimi",
@@ -59,7 +59,7 @@
    "flavour": "Mango Loco",
    "zero_sugar": false,
    "per_litre": 1.98,
-   "seen_at": "2026-09-02T07:58:49+00:00"
+   "seen_at": "2026-09-02T08:39:48+00:00"
   },
   {
    "store": "Rimi",
@@ -73,7 +73,7 @@
    "flavour": "Zero Sugar",
    "zero_sugar": true,
    "per_litre": 1.98,
-   "seen_at": "2026-09-02T07:58:49+00:00"
+   "seen_at": "2026-09-02T08:39:48+00:00"
   },
   {
    "store": "Rimi",
@@ -87,7 +87,7 @@
    "flavour": "Ultra Strawberry",
    "zero_sugar": true,
    "per_litre": 1.98,
-   "seen_at": "2026-09-02T07:58:49+00:00"
+   "seen_at": "2026-09-02T08:39:48+00:00"
   },
   {
    "store": "Rimi",
@@ -101,7 +101,7 @@
    "flavour": "Ultra Rosá",
    "zero_sugar": true,
    "per_litre": 1.98,
-   "seen_at": "2026-09-02T07:58:49+00:00"
+   "seen_at": "2026-09-02T08:39:48+00:00"
   },
   {
    "store": "Rimi",
@@ -115,7 +115,7 @@
    "flavour": "Ultra Gold",
    "zero_sugar": true,
    "per_litre": 1.98,
-   "seen_at": "2026-09-02T07:58:49+00:00"
+   "seen_at": "2026-09-02T08:39:48+00:00"
   },
   {
    "store": "Rimi",
@@ -129,7 +129,7 @@
    "flavour": "Ultra Peachy Keen",
    "zero_sugar": true,
    "per_litre": 1.98,
-   "seen_at": "2026-09-02T07:58:49+00:00"
+   "seen_at": "2026-09-02T08:39:48+00:00"
   },
   {
    "store": "Rimi",
@@ -143,7 +143,7 @@
    "flavour": "Punch",
    "zero_sugar": false,
    "per_litre": 1.98,
-   "seen_at": "2026-09-02T07:58:49+00:00"
+   "seen_at": "2026-09-02T08:39:48+00:00"
   },
   {
    "store": "Rimi",
@@ -157,7 +157,7 @@
    "flavour": "Lando Norris",
    "zero_sugar": true,
    "per_litre": 1.98,
-   "seen_at": "2026-09-02T07:58:49+00:00"
+   "seen_at": "2026-09-02T08:39:48+00:00"
   },
   {
    "store": "Selver",
@@ -171,7 +171,7 @@
    "flavour": "Ultra",
    "zero_sugar": true,
    "per_litre": 2.333,
-   "seen_at": "2026-09-02T07:58:49+00:00"
+   "seen_at": "2026-09-02T08:39:48+00:00"
   },
   {
    "store": "Selver",
@@ -185,7 +185,7 @@
    "flavour": "Original",
    "zero_sugar": false,
    "per_litre": 2.333,
-   "seen_at": "2026-09-02T07:58:49+00:00"
+   "seen_at": "2026-09-02T08:39:48+00:00"
   },
   {
    "store": "Selver",
@@ -199,7 +199,7 @@
    "flavour": "Aussie Lemonade",
    "zero_sugar": false,
    "per_litre": 2.38,
-   "seen_at": "2026-09-02T07:58:49+00:00"
+   "seen_at": "2026-09-02T08:39:48+00:00"
   },
   {
    "store": "Selver",
@@ -213,7 +213,7 @@
    "flavour": "Ultra",
    "zero_sugar": true,
    "per_litre": 2.38,
-   "seen_at": "2026-09-02T07:58:49+00:00"
+   "seen_at": "2026-09-02T08:39:48+00:00"
   },
   {
    "store": "Selver",
@@ -227,7 +227,7 @@
    "flavour": "Original",
    "zero_sugar": false,
    "per_litre": 2.38,
-   "seen_at": "2026-09-02T07:58:49+00:00"
+   "seen_at": "2026-09-02T08:39:48+00:00"
   },
   {
    "store": "Selver",
@@ -241,7 +241,7 @@
    "flavour": "Ultra Strawberry",
    "zero_sugar": true,
    "per_litre": 2.38,
-   "seen_at": "2026-09-02T07:58:49+00:00"
+   "seen_at": "2026-09-02T08:39:48+00:00"
   },
   {
    "store": "Selver",
@@ -255,7 +255,7 @@
    "flavour": "Zero Sugar",
    "zero_sugar": true,
    "per_litre": 2.38,
-   "seen_at": "2026-09-02T07:58:49+00:00"
+   "seen_at": "2026-09-02T08:39:48+00:00"
   },
   {
    "store": "Selver",
@@ -269,7 +269,7 @@
    "flavour": "Zero Sugar",
    "zero_sugar": true,
    "per_litre": 2.38,
-   "seen_at": "2026-09-02T07:58:49+00:00"
+   "seen_at": "2026-09-02T08:39:48+00:00"
   },
   {
    "store": "Selver",
@@ -283,7 +283,7 @@
    "flavour": "Ultra Peachy Keen",
    "zero_sugar": true,
    "per_litre": 2.38,
-   "seen_at": "2026-09-02T07:58:49+00:00"
+   "seen_at": "2026-09-02T08:39:48+00:00"
   },
   {
    "store": "Selver",
@@ -297,7 +297,7 @@
    "flavour": "Lando Norris",
    "zero_sugar": true,
    "per_litre": 2.38,
-   "seen_at": "2026-09-02T07:58:49+00:00"
+   "seen_at": "2026-09-02T08:39:48+00:00"
   },
   {
    "store": "Selver",
@@ -311,7 +311,7 @@
    "flavour": "Ultra Rosá",
    "zero_sugar": true,
    "per_litre": 2.38,
-   "seen_at": "2026-09-02T07:58:49+00:00"
+   "seen_at": "2026-09-02T08:39:48+00:00"
   },
   {
    "store": "Selver",
@@ -325,7 +325,7 @@
    "flavour": "Ultra",
    "zero_sugar": true,
    "per_litre": 2.38,
-   "seen_at": "2026-09-02T07:58:49+00:00"
+   "seen_at": "2026-09-02T08:39:48+00:00"
   },
   {
    "store": "Selver",
@@ -339,7 +339,7 @@
    "flavour": "Zero Sugar",
    "zero_sugar": true,
    "per_litre": 2.38,
-   "seen_at": "2026-09-02T07:58:49+00:00"
+   "seen_at": "2026-09-02T08:39:48+00:00"
   },
   {
    "store": "Selver",
@@ -353,7 +353,7 @@
    "flavour": "Punch",
    "zero_sugar": false,
    "per_litre": 2.38,
-   "seen_at": "2026-09-02T07:58:49+00:00"
+   "seen_at": "2026-09-02T08:39:48+00:00"
   },
   {
    "store": "Selver",
@@ -367,7 +367,7 @@
    "flavour": "Monarch",
    "zero_sugar": false,
    "per_litre": 2.38,
-   "seen_at": "2026-09-02T07:58:49+00:00"
+   "seen_at": "2026-09-02T08:39:48+00:00"
   },
   {
    "store": "Selver",
@@ -381,7 +381,7 @@
    "flavour": "Bad Apple",
    "zero_sugar": false,
    "per_litre": 2.38,
-   "seen_at": "2026-09-02T07:58:49+00:00"
+   "seen_at": "2026-09-02T08:39:48+00:00"
   },
   {
    "store": "Selver",
@@ -395,7 +395,7 @@
    "flavour": "Mango Loco",
    "zero_sugar": false,
    "per_litre": 2.38,
-   "seen_at": "2026-09-02T07:58:49+00:00"
+   "seen_at": "2026-09-02T08:39:48+00:00"
   },
   {
    "store": "Selver",
@@ -409,7 +409,7 @@
    "flavour": "Ultra Gold",
    "zero_sugar": true,
    "per_litre": 2.38,
-   "seen_at": "2026-09-02T07:58:49+00:00"
+   "seen_at": "2026-09-02T08:39:48+00:00"
   },
   {
    "store": "Selver",
@@ -423,7 +423,7 @@
    "flavour": "Original",
    "zero_sugar": false,
    "per_litre": 3.095,
-   "seen_at": "2026-09-02T07:58:49+00:00"
+   "seen_at": "2026-09-02T08:39:48+00:00"
   },
   {
    "store": "Selver",
@@ -437,7 +437,7 @@
    "flavour": "Ultra Zero",
    "zero_sugar": true,
    "per_litre": 3.095,
-   "seen_at": "2026-09-02T07:58:49+00:00"
+   "seen_at": "2026-09-02T08:39:48+00:00"
   },
   {
    "store": "Rimi",
@@ -451,7 +451,7 @@
    "flavour": "Bad Apple",
    "zero_sugar": false,
    "per_litre": 3.5,
-   "seen_at": "2026-09-02T07:58:49+00:00"
+   "seen_at": "2026-09-02T08:39:48+00:00"
   },
   {
    "store": "Rimi",
@@ -465,7 +465,7 @@
    "flavour": "Aussie Lemonade",
    "zero_sugar": false,
    "per_litre": 3.5,
-   "seen_at": "2026-09-02T07:58:49+00:00"
+   "seen_at": "2026-09-02T08:39:48+00:00"
   },
   {
    "store": "Rimi",
@@ -479,7 +479,7 @@
    "flavour": "Monarch",
    "zero_sugar": false,
    "per_litre": 3.5,
-   "seen_at": "2026-09-02T07:58:49+00:00"
+   "seen_at": "2026-09-02T08:39:48+00:00"
   },
   {
    "store": "Rimi",
@@ -493,7 +493,7 @@
    "flavour": "Ultra Fiesta Mango",
    "zero_sugar": true,
    "per_litre": 3.5,
-   "seen_at": "2026-09-02T07:58:49+00:00"
+   "seen_at": "2026-09-02T08:39:48+00:00"
   },
   {
    "store": "Rimi",
@@ -507,7 +507,7 @@
    "flavour": "The Doctor",
    "zero_sugar": true,
    "per_litre": 3.5,
-   "seen_at": "2026-09-02T07:58:49+00:00"
+   "seen_at": "2026-09-02T08:39:48+00:00"
   }
  ]
 }
