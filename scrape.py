@@ -313,6 +313,11 @@ def scrape_selver() -> list[Product]:
     - every bare price field is ex-VAT: `price` reads 1.3629 where the shelf
       says 1.69. Only the *_incl_tax fields are comparable to the other shops,
       and using the wrong one hands Selver the ladder on a VAT artefact.
+    - the Partnerkaart price is NOT a campaign price. final_price_incl_tax
+      equals the shelf price even when the product page shows a
+      "*Partnerkaardiga" badge at 1.19; that number lives in
+      `product_group_price` (incl VAT already). Reading only final_price loses
+      every loyalty discount Selver runs.
 
     If this ever 404s, fall back to parsing https://www.selver.ee/search?q=monster.
     """
@@ -339,11 +344,20 @@ def scrape_selver() -> list[Product]:
         final = money(d.get("final_price_incl_tax"))
         if base is None and final is None:
             continue
+        shelf = base if base is not None else final
+
+        # Both discounts are optional and independent; a product can carry a
+        # campaign price, a Partnerkaart price, or both. Take whichever is
+        # actually cheaper than the shelf. product_group_price is 0 or absent
+        # for items with no card price, so a falsy value is "none", not "free".
+        card = money(d.get("product_group_price"))
+        candidates = [c for c in (final, card) if c and c < shelf]
+
         out.append(Product(
             store="Selver",
             name=name,
-            price=base if base is not None else final,
-            loyalty_price=final if (final and base and final < base) else None,
+            price=shelf,
+            loyalty_price=min(candidates) if candidates else None,
             url=f"https://www.selver.ee/{d.get('url_key', '')}",
             image=d.get("image", ""),
             ext_id=str(d.get("sku", "")),
