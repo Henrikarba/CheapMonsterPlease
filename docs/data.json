@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-09T08:51:57+00:00",
+ "updated": "2026-09-10T08:50:53+00:00",
  "sources": [
   {
    "adapter": "rimi",
@@ -7,7 +7,7 @@
    "status": "ok",
    "count": 15,
    "detail": null,
-   "seen_at": "2026-09-09T08:51:57+00:00"
+   "seen_at": "2026-09-10T08:50:53+00:00"
   },
   {
    "adapter": "selver",
@@ -15,7 +15,7 @@
    "status": "ok",
    "count": 20,
    "detail": null,
-   "seen_at": "2026-09-09T08:51:57+00:00"
+   "seen_at": "2026-09-10T08:50:53+00:00"
   }
  ],
  "items": [
@@ -31,7 +31,7 @@
    "flavour": "Ultra",
    "zero_sugar": true,
    "per_litre": 2.152,
-   "seen_at": "2026-09-09T08:51:57+00:00"
+   "seen_at": "2026-09-10T08:50:53+00:00"
   },
   {
    "store": "Selver",
@@ -45,7 +45,7 @@
    "flavour": "Original",
    "zero_sugar": false,
    "per_litre": 2.152,
-   "seen_at": "2026-09-09T08:51:57+00:00"
+   "seen_at": "2026-09-10T08:50:53+00:00"
   },
   {
    "store": "Selver",
@@ -59,7 +59,7 @@
    "flavour": "Aussie Lemonade",
    "zero_sugar": false,
    "per_litre": 2.38,
-   "seen_at": "2026-09-09T08:51:57+00:00"
+   "seen_at": "2026-09-10T08:50:53+00:00"
   },
   {
    "store": "Selver",
@@ -73,7 +73,7 @@
    "flavour": "Ultra",
    "zero_sugar": true,
    "per_litre": 2.38,
-   "seen_at": "2026-09-09T08:51:57+00:00"
+   "seen_at": "2026-09-10T08:50:53+00:00"
   },
   {
    "store": "Selver",
@@ -87,7 +87,7 @@
    "flavour": "Ultra Strawberry",
    "zero_sugar": true,
    "per_litre": 2.38,
-   "seen_at": "2026-09-09T08:51:57+00:00"
+   "seen_at": "2026-09-10T08:50:53+00:00"
   },
   {
    "store": "Selver",
@@ -101,7 +101,7 @@
    "flavour": "Original",
    "zero_sugar": false,
    "per_litre": 2.38,
-   "seen_at": "2026-09-09T08:51:57+00:00"
+   "seen_at": "2026-09-10T08:50:53+00:00"
   },
   {
    "store": "Selver",
@@ -115,7 +115,7 @@
    "flavour": "Zero Sugar",
    "zero_sugar": true,
    "per_litre": 2.38,
-   "seen_at": "2026-09-09T08:51:57+00:00"
+   "seen_at": "2026-09-10T08:50:53+00:00"
   },
   {
    "store": "Selver",
@@ -129,7 +129,7 @@
    "flavour": "Zero Sugar",
    "zero_sugar": true,
    "per_litre": 2.38,
-   "seen_at": "2026-09-09T08:51:57+00:00"
+   "seen_at": "2026-09-10T08:50:53+00:00"
   },
   {
    "store": "Selver",
@@ -143,7 +143,7 @@
    "flavour": "Ultra Peachy Keen",
    "zero_sugar": true,
    "per_litre": 2.38,
-   "seen_at": "2026-09-09T08:51:57+00:00"
+   "seen_at": "2026-09-10T08:50:53+00:00"
   },
   {
    "store": "Selver",
@@ -157,7 +157,7 @@
    "flavour": "Lando Norris",
    "zero_sugar": true,
    "per_litre": 2.38,
-   "seen_at": "2026-09-09T08:51:57+00:00"
+   "seen_at": "2026-09-10T08:50:53+00:00"
   },
   {
    "store": "Selver",
@@ -171,7 +171,7 @@
    "flavour": "Ultra Rosá",
    "zero_sugar": true,
    "per_litre": 2.38,
-   "seen_at": "2026-09-09T08:51:57+00:00"
+   "seen_at": "2026-09-10T08:50:53+00:00"
   },
   {
    "store": "Selver",
@@ -185,21 +185,7 @@
    "flavour": "Ultra",
    "zero_sugar": true,
    "per_litre": 2.38,
-   "seen_at": "2026-09-09T08:51:57+00:00"
-  },
-  {
-   "store": "Selver",
-   "name": "Energiajook Full Throttle Zero Sugar, MONSTER, 500 ml",
-   "price": 1.69,
-   "url": "https://www.selver.ee/energiajook-full-throttle-zero-sugar-monster-500-ml",
-   "image": "/5/0/5060947544543.jpg",
-   "loyalty_price": 1.19,
-   "volume_l": 0.5,
-   "ext_id": "T000075728",
-   "flavour": "Zero Sugar",
-   "zero_sugar": true,
-   "per_litre": 2.38,
-   "seen_at": "2026-09-09T08:51:57+00:00"
+   "seen_at": "2026-09-10T08:50:53+00:00"
   },
   {
    "store": "Selver",
@@ -213,7 +199,21 @@
    "flavour": "Punch",
    "zero_sugar": false,
    "per_litre": 2.38,
-   "seen_at": "2026-09-09T08:51:57+00:00"
+   "seen_at": "2026-09-10T08:50:53+00:00"
+  },
+  {
+   "store": "Selver",
+   "name": "Energiajook Full Throttle Zero Sugar, MONSTER, 500 ml",
+   "price": 1.69,
+   "url": "https://www.selver.ee/energiajook-full-throttle-zero-sugar-monster-500-ml",
+   "image": "/5/0/5060947544543.jpg",
+   "loyalty_price": 1.19,
+   "volume_l": 0.5,
+   "ext_id": "T000075728",
+   "flavour": "Zero Sugar",
+   "zero_sugar": true,
+   "per_litre": 2.38,
+   "seen_at": "2026-09-10T08:50:53+00:00"
   },
   {
    "store": "Selver",
@@ -227,7 +227,7 @@
    "flavour": "Monarch",
    "zero_sugar": false,
    "per_litre": 2.38,
-   "seen_at": "2026-09-09T08:51:57+00:00"
+   "seen_at": "2026-09-10T08:50:53+00:00"
   },
   {
    "store": "Selver",
@@ -241,7 +241,7 @@
    "flavour": "Bad Apple",
    "zero_sugar": false,
    "per_litre": 2.38,
-   "seen_at": "2026-09-09T08:51:57+00:00"
+   "seen_at": "2026-09-10T08:50:53+00:00"
   },
   {
    "store": "Selver",
@@ -255,7 +255,7 @@
    "flavour": "Mango Loco",
    "zero_sugar": false,
    "per_litre": 2.38,
-   "seen_at": "2026-09-09T08:51:57+00:00"
+   "seen_at": "2026-09-10T08:50:53+00:00"
   },
   {
    "store": "Selver",
@@ -269,7 +269,7 @@
    "flavour": "Ultra Gold",
    "zero_sugar": true,
    "per_litre": 2.38,
-   "seen_at": "2026-09-09T08:51:57+00:00"
+   "seen_at": "2026-09-10T08:50:53+00:00"
   },
   {
    "store": "Selver",
@@ -283,7 +283,7 @@
    "flavour": "Original",
    "zero_sugar": false,
    "per_litre": 3.095,
-   "seen_at": "2026-09-09T08:51:57+00:00"
+   "seen_at": "2026-09-10T08:50:53+00:00"
   },
   {
    "store": "Selver",
@@ -297,7 +297,7 @@
    "flavour": "Ultra Zero",
    "zero_sugar": true,
    "per_litre": 3.095,
-   "seen_at": "2026-09-09T08:51:57+00:00"
+   "seen_at": "2026-09-10T08:50:53+00:00"
   },
   {
    "store": "Rimi",
@@ -311,7 +311,7 @@
    "flavour": "Ultra Zero",
    "zero_sugar": true,
    "per_litre": 3.5,
-   "seen_at": "2026-09-09T08:51:57+00:00"
+   "seen_at": "2026-09-10T08:50:53+00:00"
   },
   {
    "store": "Rimi",
@@ -325,7 +325,7 @@
    "flavour": "Original",
    "zero_sugar": false,
    "per_litre": 3.5,
-   "seen_at": "2026-09-09T08:51:57+00:00"
+   "seen_at": "2026-09-10T08:50:53+00:00"
   },
   {
    "store": "Rimi",
@@ -339,161 +339,7 @@
    "flavour": "Mango Loco",
    "zero_sugar": false,
    "per_litre": 3.5,
-   "seen_at": "2026-09-09T08:51:57+00:00"
-  },
-  {
-   "store": "Rimi",
-   "name": "Energiajook Monster Ultra Strawb. Dreams 0,5l",
-   "price": 1.75,
-   "url": "https://www.rimi.ee/epood/ee/tooted/joogid/energiajook/energiajook-monster-ultra-strawb-dreams-0-5l/p/1375080",
-   "image": "https://rimibaltic-res.cloudinary.com/image/upload/b_white,c_limit,dpr_auto,f_webp,h_216,q_1,w_216/d_ecommerce:backend-fallback.png/MAT_1375080_PCE_EE",
-   "loyalty_price": null,
-   "volume_l": 0.5,
-   "ext_id": "",
-   "flavour": "Ultra Strawberry",
-   "zero_sugar": true,
-   "per_litre": 3.5,
-   "seen_at": "2026-09-09T08:51:57+00:00"
-  },
-  {
-   "store": "Rimi",
-   "name": "Energiajook Monster Ultra Gold magusain. 0,5l",
-   "price": 1.75,
-   "url": "https://www.rimi.ee/epood/ee/tooted/joogid/energiajook/energiajook-monster-ultra-gold-magusain-0-5l/p/1373404",
-   "image": "https://rimibaltic-res.cloudinary.com/image/upload/b_white,c_limit,dpr_auto,f_webp,h_216,q_1,w_216/d_ecommerce:backend-fallback.png/MAT_1373404_PCE_EE",
-   "loyalty_price": null,
-   "volume_l": 0.5,
-   "ext_id": "",
-   "flavour": "Ultra Gold",
-   "zero_sugar": true,
-   "per_litre": 3.5,
-   "seen_at": "2026-09-09T08:51:57+00:00"
-  },
-  {
-   "store": "Rimi",
-   "name": "Energiajook Monster Ultra Rosa mag.ain. 0,5l",
-   "price": 1.75,
-   "url": "https://www.rimi.ee/epood/ee/tooted/joogid/energiajook/energiajook-monster-ultra-rosa-mag-ain-0-5l/p/1374656",
-   "image": "https://rimibaltic-res.cloudinary.com/image/upload/b_white,c_limit,dpr_auto,f_webp,h_216,q_1,w_216/d_ecommerce:backend-fallback.png/MAT_1374656_PCE_EE",
-   "loyalty_price": null,
-   "volume_l": 0.5,
-   "ext_id": "",
-   "flavour": "Ultra Rosá",
-   "zero_sugar": true,
-   "per_litre": 3.5,
-   "seen_at": "2026-09-09T08:51:57+00:00"
-  },
-  {
-   "store": "Rimi",
-   "name": "En.j. Monster Ultra Peachy Keen mag.ain. 0,5l",
-   "price": 1.75,
-   "url": "https://www.rimi.ee/epood/ee/tooted/joogid/energiajook/en-j-monster-ultra-peachy-keen-mag-ain-0-5l/p/1375178",
-   "image": "https://rimibaltic-res.cloudinary.com/image/upload/b_white,c_limit,dpr_auto,f_webp,h_216,q_1,w_216/d_ecommerce:backend-fallback.png/MAT_1375178_PCE_EE",
-   "loyalty_price": null,
-   "volume_l": 0.5,
-   "ext_id": "",
-   "flavour": "Ultra Peachy Keen",
-   "zero_sugar": true,
-   "per_litre": 3.5,
-   "seen_at": "2026-09-09T08:51:57+00:00"
-  },
-  {
-   "store": "Rimi",
-   "name": "En.j. Monster Ultra Lando Norris m.ain. 0,5l",
-   "price": 1.75,
-   "url": "https://www.rimi.ee/epood/ee/tooted/joogid/energiajook/en-j-monster-ultra-lando-norris-m-ain-0-5l/p/1375816",
-   "image": "https://rimibaltic-res.cloudinary.com/image/upload/b_white,c_limit,dpr_auto,f_webp,h_216,q_1,w_216/d_ecommerce:backend-fallback.png/MAT_1375816_PCE_EE",
-   "loyalty_price": null,
-   "volume_l": 0.5,
-   "ext_id": "",
-   "flavour": "Lando Norris",
-   "zero_sugar": true,
-   "per_litre": 3.5,
-   "seen_at": "2026-09-09T08:51:57+00:00"
-  },
-  {
-   "store": "Rimi",
-   "name": "Energiajook Monster Rio Punch mag.ain. 0,5l",
-   "price": 1.75,
-   "url": "https://www.rimi.ee/epood/ee/tooted/joogid/energiajook/energiajook-monster-rio-punch-mag-ain-0-5l/p/1375180",
-   "image": "https://rimibaltic-res.cloudinary.com/image/upload/b_white,c_limit,dpr_auto,f_webp,h_216,q_1,w_216/d_ecommerce:backend-fallback.png/MAT_1375180_PCE_EE",
-   "loyalty_price": null,
-   "volume_l": 0.5,
-   "ext_id": "",
-   "flavour": "Punch",
-   "zero_sugar": false,
-   "per_litre": 3.5,
-   "seen_at": "2026-09-09T08:51:57+00:00"
-  },
-  {
-   "store": "Rimi",
-   "name": "Energiajook Monster Bad Apple m.a. 0,5l",
-   "price": 1.75,
-   "url": "https://www.rimi.ee/epood/ee/tooted/joogid/energiajook/energiajook-monster-bad-apple-m-a-0-5l/p/1376290",
-   "image": "https://rimibaltic-res.cloudinary.com/image/upload/b_white,c_limit,dpr_auto,f_webp,h_216,q_1,w_216/d_ecommerce:backend-fallback.png/MAT_1376290_PCE_EE",
-   "loyalty_price": null,
-   "volume_l": 0.5,
-   "ext_id": "",
-   "flavour": "Bad Apple",
-   "zero_sugar": false,
-   "per_litre": 3.5,
-   "seen_at": "2026-09-09T08:51:57+00:00"
-  },
-  {
-   "store": "Rimi",
-   "name": "En.jook. Monster Aussie Lemonade m.ain. 0,5l",
-   "price": 1.75,
-   "url": "https://www.rimi.ee/epood/ee/tooted/joogid/energiajook/en-jook-monster-aussie-lemonade-m-ain-0-5l/p/1374661",
-   "image": "https://rimibaltic-res.cloudinary.com/image/upload/b_white,c_limit,dpr_auto,f_webp,h_216,q_1,w_216/d_ecommerce:backend-fallback.png/MAT_1374661_PCE_EE",
-   "loyalty_price": null,
-   "volume_l": 0.5,
-   "ext_id": "",
-   "flavour": "Aussie Lemonade",
-   "zero_sugar": false,
-   "per_litre": 3.5,
-   "seen_at": "2026-09-09T08:51:57+00:00"
-  },
-  {
-   "store": "Rimi",
-   "name": "En.jook Monster Juice Monarch m.ain. 0,5l",
-   "price": 1.75,
-   "url": "https://www.rimi.ee/epood/ee/tooted/joogid/energiajook/en-jook-monster-juice-monarch-m-ain-0-5l/p/1370604",
-   "image": "https://rimibaltic-res.cloudinary.com/image/upload/b_white,c_limit,dpr_auto,f_webp,h_216,q_1,w_216/d_ecommerce:backend-fallback.png/MAT_1370604_PCE_EE",
-   "loyalty_price": null,
-   "volume_l": 0.5,
-   "ext_id": "",
-   "flavour": "Monarch",
-   "zero_sugar": false,
-   "per_litre": 3.5,
-   "seen_at": "2026-09-09T08:51:57+00:00"
-  },
-  {
-   "store": "Rimi",
-   "name": "En.j.  Monster Ultra Fiesta Mango m.ain. 0,5l",
-   "price": 1.75,
-   "url": "https://www.rimi.ee/epood/ee/tooted/joogid/energiajook/en-j-monster-ultra-fiesta-mango-m-ain-0-5l/p/1368563",
-   "image": "https://rimibaltic-res.cloudinary.com/image/upload/b_white,c_limit,dpr_auto,f_webp,h_216,q_1,w_216/d_ecommerce:backend-fallback.png/MAT_1368563_PCE_EE",
-   "loyalty_price": null,
-   "volume_l": 0.5,
-   "ext_id": "",
-   "flavour": "Ultra Fiesta Mango",
-   "zero_sugar": true,
-   "per_litre": 3.5,
-   "seen_at": "2026-09-09T08:51:57+00:00"
-  },
-  {
-   "store": "Rimi",
-   "name": "Energiajook Monster Rossi Zero VR46 m.a. 0,5l",
-   "price": 1.75,
-   "url": "https://www.rimi.ee/epood/ee/tooted/joogid/energiajook/energiajook-monster-rossi-zero-vr46-m-a-0-5l/p/1376289",
-   "image": "https://rimibaltic-res.cloudinary.com/image/upload/b_white,c_limit,dpr_auto,f_webp,h_216,q_1,w_216/d_ecommerce:backend-fallback.png/MAT_1376289_PCE_EE",
-   "loyalty_price": null,
-   "volume_l": 0.5,
-   "ext_id": "",
-   "flavour": "The Doctor",
-   "zero_sugar": true,
-   "per_litre": 3.5,
-   "seen_at": "2026-09-09T08:51:57+00:00"
+   "seen_at": "2026-09-10T08:50:53+00:00"
   },
   {
    "store": "Rimi",
@@ -507,7 +353,161 @@
    "flavour": "Zero Sugar",
    "zero_sugar": true,
    "per_litre": 3.5,
-   "seen_at": "2026-09-09T08:51:57+00:00"
+   "seen_at": "2026-09-10T08:50:53+00:00"
+  },
+  {
+   "store": "Rimi",
+   "name": "Energiajook Monster Ultra Strawb. Dreams 0,5l",
+   "price": 1.75,
+   "url": "https://www.rimi.ee/epood/ee/tooted/joogid/energiajook/energiajook-monster-ultra-strawb-dreams-0-5l/p/1375080",
+   "image": "https://rimibaltic-res.cloudinary.com/image/upload/b_white,c_limit,dpr_auto,f_webp,h_216,q_1,w_216/d_ecommerce:backend-fallback.png/MAT_1375080_PCE_EE",
+   "loyalty_price": null,
+   "volume_l": 0.5,
+   "ext_id": "",
+   "flavour": "Ultra Strawberry",
+   "zero_sugar": true,
+   "per_litre": 3.5,
+   "seen_at": "2026-09-10T08:50:53+00:00"
+  },
+  {
+   "store": "Rimi",
+   "name": "Energiajook Monster Ultra Gold magusain. 0,5l",
+   "price": 1.75,
+   "url": "https://www.rimi.ee/epood/ee/tooted/joogid/energiajook/energiajook-monster-ultra-gold-magusain-0-5l/p/1373404",
+   "image": "https://rimibaltic-res.cloudinary.com/image/upload/b_white,c_limit,dpr_auto,f_webp,h_216,q_1,w_216/d_ecommerce:backend-fallback.png/MAT_1373404_PCE_EE",
+   "loyalty_price": null,
+   "volume_l": 0.5,
+   "ext_id": "",
+   "flavour": "Ultra Gold",
+   "zero_sugar": true,
+   "per_litre": 3.5,
+   "seen_at": "2026-09-10T08:50:53+00:00"
+  },
+  {
+   "store": "Rimi",
+   "name": "Energiajook Monster Ultra Rosa mag.ain. 0,5l",
+   "price": 1.75,
+   "url": "https://www.rimi.ee/epood/ee/tooted/joogid/energiajook/energiajook-monster-ultra-rosa-mag-ain-0-5l/p/1374656",
+   "image": "https://rimibaltic-res.cloudinary.com/image/upload/b_white,c_limit,dpr_auto,f_webp,h_216,q_1,w_216/d_ecommerce:backend-fallback.png/MAT_1374656_PCE_EE",
+   "loyalty_price": null,
+   "volume_l": 0.5,
+   "ext_id": "",
+   "flavour": "Ultra Rosá",
+   "zero_sugar": true,
+   "per_litre": 3.5,
+   "seen_at": "2026-09-10T08:50:53+00:00"
+  },
+  {
+   "store": "Rimi",
+   "name": "En.j. Monster Ultra Peachy Keen mag.ain. 0,5l",
+   "price": 1.75,
+   "url": "https://www.rimi.ee/epood/ee/tooted/joogid/energiajook/en-j-monster-ultra-peachy-keen-mag-ain-0-5l/p/1375178",
+   "image": "https://rimibaltic-res.cloudinary.com/image/upload/b_white,c_limit,dpr_auto,f_webp,h_216,q_1,w_216/d_ecommerce:backend-fallback.png/MAT_1375178_PCE_EE",
+   "loyalty_price": null,
+   "volume_l": 0.5,
+   "ext_id": "",
+   "flavour": "Ultra Peachy Keen",
+   "zero_sugar": true,
+   "per_litre": 3.5,
+   "seen_at": "2026-09-10T08:50:53+00:00"
+  },
+  {
+   "store": "Rimi",
+   "name": "Energiajook Monster Rio Punch mag.ain. 0,5l",
+   "price": 1.75,
+   "url": "https://www.rimi.ee/epood/ee/tooted/joogid/energiajook/energiajook-monster-rio-punch-mag-ain-0-5l/p/1375180",
+   "image": "https://rimibaltic-res.cloudinary.com/image/upload/b_white,c_limit,dpr_auto,f_webp,h_216,q_1,w_216/d_ecommerce:backend-fallback.png/MAT_1375180_PCE_EE",
+   "loyalty_price": null,
+   "volume_l": 0.5,
+   "ext_id": "",
+   "flavour": "Punch",
+   "zero_sugar": false,
+   "per_litre": 3.5,
+   "seen_at": "2026-09-10T08:50:53+00:00"
+  },
+  {
+   "store": "Rimi",
+   "name": "En.j. Monster Ultra Lando Norris m.ain. 0,5l",
+   "price": 1.75,
+   "url": "https://www.rimi.ee/epood/ee/tooted/joogid/energiajook/en-j-monster-ultra-lando-norris-m-ain-0-5l/p/1375816",
+   "image": "https://rimibaltic-res.cloudinary.com/image/upload/b_white,c_limit,dpr_auto,f_webp,h_216,q_1,w_216/d_ecommerce:backend-fallback.png/MAT_1375816_PCE_EE",
+   "loyalty_price": null,
+   "volume_l": 0.5,
+   "ext_id": "",
+   "flavour": "Lando Norris",
+   "zero_sugar": true,
+   "per_litre": 3.5,
+   "seen_at": "2026-09-10T08:50:53+00:00"
+  },
+  {
+   "store": "Rimi",
+   "name": "Energiajook Monster Bad Apple m.a. 0,5l",
+   "price": 1.75,
+   "url": "https://www.rimi.ee/epood/ee/tooted/joogid/energiajook/energiajook-monster-bad-apple-m-a-0-5l/p/1376290",
+   "image": "https://rimibaltic-res.cloudinary.com/image/upload/b_white,c_limit,dpr_auto,f_webp,h_216,q_1,w_216/d_ecommerce:backend-fallback.png/MAT_1376290_PCE_EE",
+   "loyalty_price": null,
+   "volume_l": 0.5,
+   "ext_id": "",
+   "flavour": "Bad Apple",
+   "zero_sugar": false,
+   "per_litre": 3.5,
+   "seen_at": "2026-09-10T08:50:53+00:00"
+  },
+  {
+   "store": "Rimi",
+   "name": "En.jook. Monster Aussie Lemonade m.ain. 0,5l",
+   "price": 1.75,
+   "url": "https://www.rimi.ee/epood/ee/tooted/joogid/energiajook/en-jook-monster-aussie-lemonade-m-ain-0-5l/p/1374661",
+   "image": "https://rimibaltic-res.cloudinary.com/image/upload/b_white,c_limit,dpr_auto,f_webp,h_216,q_1,w_216/d_ecommerce:backend-fallback.png/MAT_1374661_PCE_EE",
+   "loyalty_price": null,
+   "volume_l": 0.5,
+   "ext_id": "",
+   "flavour": "Aussie Lemonade",
+   "zero_sugar": false,
+   "per_litre": 3.5,
+   "seen_at": "2026-09-10T08:50:53+00:00"
+  },
+  {
+   "store": "Rimi",
+   "name": "En.jook Monster Juice Monarch m.ain. 0,5l",
+   "price": 1.75,
+   "url": "https://www.rimi.ee/epood/ee/tooted/joogid/energiajook/en-jook-monster-juice-monarch-m-ain-0-5l/p/1370604",
+   "image": "https://rimibaltic-res.cloudinary.com/image/upload/b_white,c_limit,dpr_auto,f_webp,h_216,q_1,w_216/d_ecommerce:backend-fallback.png/MAT_1370604_PCE_EE",
+   "loyalty_price": null,
+   "volume_l": 0.5,
+   "ext_id": "",
+   "flavour": "Monarch",
+   "zero_sugar": false,
+   "per_litre": 3.5,
+   "seen_at": "2026-09-10T08:50:53+00:00"
+  },
+  {
+   "store": "Rimi",
+   "name": "En.j.  Monster Ultra Fiesta Mango m.ain. 0,5l",
+   "price": 1.75,
+   "url": "https://www.rimi.ee/epood/ee/tooted/joogid/energiajook/en-j-monster-ultra-fiesta-mango-m-ain-0-5l/p/1368563",
+   "image": "https://rimibaltic-res.cloudinary.com/image/upload/b_white,c_limit,dpr_auto,f_webp,h_216,q_1,w_216/d_ecommerce:backend-fallback.png/MAT_1368563_PCE_EE",
+   "loyalty_price": null,
+   "volume_l": 0.5,
+   "ext_id": "",
+   "flavour": "Ultra Fiesta Mango",
+   "zero_sugar": true,
+   "per_litre": 3.5,
+   "seen_at": "2026-09-10T08:50:53+00:00"
+  },
+  {
+   "store": "Rimi",
+   "name": "Energiajook Monster Rossi Zero VR46 m.a. 0,5l",
+   "price": 1.75,
+   "url": "https://www.rimi.ee/epood/ee/tooted/joogid/energiajook/energiajook-monster-rossi-zero-vr46-m-a-0-5l/p/1376289",
+   "image": "https://rimibaltic-res.cloudinary.com/image/upload/b_white,c_limit,dpr_auto,f_webp,h_216,q_1,w_216/d_ecommerce:backend-fallback.png/MAT_1376289_PCE_EE",
+   "loyalty_price": null,
+   "volume_l": 0.5,
+   "ext_id": "",
+   "flavour": "The Doctor",
+   "zero_sugar": true,
+   "per_litre": 3.5,
+   "seen_at": "2026-09-10T08:50:53+00:00"
   }
  ]
 }
