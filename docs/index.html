@@ -78,6 +78,7 @@ button.dead .n{color:inherit}
 button.dead.bad{color:var(--warn);border-color:rgba(232,176,28,.35)}
 button.dead.bad:hover{color:var(--warn);border-color:rgba(232,176,28,.35)}
 button.dead.bad .n{color:inherit}
+[hidden]{display:none!important}
 .alert{display:flex;gap:.6rem;align-items:flex-start;margin:-.4rem 0 .2rem;
   padding:.55rem .8rem;border:1px solid rgba(232,176,28,.3);border-left:2px solid var(--warn);
   background:rgba(232,176,28,.05);
@@ -107,9 +108,10 @@ button.dead.bad .n{color:inherit}
 .shop li a:not([href]){cursor:default}
 .rank{font:600 .74rem/1.4 "IBM Plex Mono",monospace;color:var(--ash)}
 li:first-child .rank{color:var(--volt)}
-.name{font-weight:500;font-size:.94rem}
+.name{font-weight:500;font-size:.94rem;min-width:0}
 .name small{display:block;font-weight:400;font-size:.7rem;color:var(--ash);font-family:"IBM Plex Mono",monospace;
   margin-top:.15rem;letter-spacing:.03em}
+.name .deal{font-style:normal;color:var(--volt)}
 .figures{text-align:right;font-family:"IBM Plex Mono",monospace;white-space:nowrap}
 .figures b{display:block;font-size:.98rem;font-weight:600}
 .figures span{font-size:.68rem;color:var(--ash)}
@@ -280,11 +282,11 @@ function render(){
                title="${esc(it.name || it.flavour)}">
               <span class="rank">${String(i+1).padStart(2,"0")}</span>
               <span class="name"><span class="lbl">${esc(it.flavour)}</span>
-                <small>${it.volume_l ? String(it.volume_l).replace(".", ",") + " l" : "?"}${it.zero_sugar ? ' · <span class="zero">0</span>' : ""}</small>
+                <small>${it.volume_l ? String(it.volume_l).replace(".", ",") + " l" : "?"}${it.zero_sugar ? ' · <span class="zero">0</span>' : ""}${it.deal ? ` · <em class="deal">${esc(it.deal)}</em>` : ""}</small>
               </span>
               <span class="figures">
                 <b>${eur(value(it))} ${perLitre ? "€/L" : "€"}</b>
-                <span>${it.deal ? `${eur(best(it))} € tk · ${esc(it.deal)}` : it.loyalty_price && it.loyalty_price < it.price ? `<s>${eur(it.price)}</s> <em>${eur(it.loyalty_price)} €</em>` : `${eur(it.price)} € tk`}</span>
+                <span>${it.deal ? `${eur(best(it))} € tk` : it.loyalty_price && it.loyalty_price < it.price ? `<s>${eur(it.price)}</s> <em>${eur(it.loyalty_price)} €</em>` : `${eur(it.price)} € tk`}</span>
               </span>
               <span class="bar"><i data-w="${(value(it)/max*100).toFixed(1)}"></i></span>
             </a></li>`).join("")}
