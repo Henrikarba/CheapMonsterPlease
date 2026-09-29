@@ -54,6 +54,8 @@ class Product:
     ext_id: str = ""
     flavour: str = ""
     zero_sugar: bool = False
+    deal: str = ""                    # e.g. "Osta 2 · kuni 05.10"
+    any_flavour: bool = False         # one offer covering the whole range
 
     def __post_init__(self):
         if self.volume_l is None:
@@ -365,9 +367,83 @@ def scrape_selver() -> list[Product]:
     return out
 
 
+MAXIMA = "https://www.maxima.ee"
+
+
+def scrape_maxima() -> list[Product]:
+    """Maxima has no e-shop, only the weekly offers page. The list endpoint
+    returns every offer as HTML; the site's search box filters it client-side.
+
+    "Osta 2 / 2.00 €" is the total for two, not the price of one.
+    """
+    s = session()
+    r = s.get(f"{MAXIMA}/webservices/marketing-offers/general/list/rendered",
+              params={"locale": "et"}, timeout=TIMEOUT)
+    r.raise_for_status()
+    cards = BeautifulSoup(r.text, "html.parser").select("[data-controller=offerCard]")
+    if not cards:
+        raise RuntimeError("no offer cards on the page")
+
+    out: list[Product] = []
+    for card in cards:
+        h = card.select_one("h4")
+        name = h.get_text(" ", strip=True) if h else ""
+        if not is_monster(name):
+            continue
+        eur = card.select_one(".price-eur")
+        cents = card.select_one(".price-cents")
+        if not eur:
+            continue
+        price = money(f"{eur.get_text(strip=True)}.{cents.get_text(strip=True) if cents else '00'}")
+        old = card.select_one(".price-old")
+        old_price = money(old.get_text()) if old else None
+
+        badge = card.select_one(".benefit-icon")
+        badge = badge.get_text(strip=True) if badge else ""
+        m = re.search(r"Osta\s*(\d+)", badge)
+        if m:
+            price = round(price / int(m.group(1)), 2)
+            old_price = round(old_price / int(m.group(1)), 2) if old_price else None
+
+        until = card.select_one(".offer-dateTo-wrapper")
+        deal = " · ".join(filter(None, [
+            badge if m else "",
+            "Aitäh" if card.select_one("img[alt=AITAH]") else "",
+            until.get_text(" ", strip=True).lower() if until else "",
+        ]))
+
+        # one offer often covers a whole range; the detail says "erinevad maitsed"
+        flavour, any_flavour = "", False
+        detail_url = card.get("data-offercard-url-value")
+        if detail_url:
+            time.sleep(DELAY)
+            d = s.get(MAXIMA + detail_url, timeout=TIMEOUT)
+            if d.ok:
+                note = BeautifulSoup(d.text, "html.parser").find("h4", string=re.compile("Loe l"))
+                note = note.find_next_sibling("div").get_text(strip=True) if note else ""
+                if re.search(r"erinevad\s*maitsed", note, re.I):
+                    flavour, any_flavour = "Erinevad maitsed", True
+
+        img = card.select_one(".offer-image img")
+        out.append(Product(
+            store="Maxima",
+            name=name,
+            price=old_price or price,
+            loyalty_price=price if old_price else None,
+            url=f"{MAXIMA}/pakkumised",
+            image=img.get("src", "") if img else "",
+            ext_id=card.get("data-offercard-offer-id", ""),
+            flavour=flavour,
+            deal=deal,
+            any_flavour=any_flavour,
+        ))
+    return out
+
+
 ADAPTERS = {
     "rimi": scrape_rimi,
     "selver": scrape_selver,
+    "maxima": scrape_maxima,
 }
 
 # Display name per adapter. Needed for the run report: an adapter that returns
@@ -375,7 +451,11 @@ ADAPTERS = {
 STORE_NAMES = {
     "rimi": "Rimi",
     "selver": "Selver",
+    "maxima": "Maxima",
 }
+
+# offers-only sources: zero Monster just means no deal this week
+MAY_BE_EMPTY = {"maxima"}
 
 
 # --------------------------------------------------------------------------
@@ -442,7 +522,7 @@ def run(only: str | None) -> tuple[list[Product], list[dict]]:
         try:
             items = fn()
             found.extend(items)
-            if items:
+            if items or name in MAY_BE_EMPTY:
                 print(f"{name:8s} {len(items):3d} products")
                 report.append({"adapter": name, "store": store,
                                "status": "ok", "count": len(items)})

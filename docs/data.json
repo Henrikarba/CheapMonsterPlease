@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-29T10:32:07+00:00",
+ "updated": "2026-09-29T12:24:36+00:00",
  "sources": [
   {
    "adapter": "rimi",
@@ -7,7 +7,7 @@
    "status": "ok",
    "count": 15,
    "detail": null,
-   "seen_at": "2026-09-29T10:32:07+00:00"
+   "seen_at": "2026-09-29T12:24:36+00:00"
   },
   {
    "adapter": "selver",
@@ -15,10 +15,34 @@
    "status": "ok",
    "count": 11,
    "detail": null,
-   "seen_at": "2026-09-29T10:32:07+00:00"
+   "seen_at": "2026-09-29T12:24:36+00:00"
+  },
+  {
+   "adapter": "maxima",
+   "store": "Maxima",
+   "status": "ok",
+   "count": 1,
+   "detail": null,
+   "seen_at": "2026-09-29T12:24:36+00:00"
   }
  ],
  "items": [
+  {
+   "store": "Maxima",
+   "name": "Energiajook Monster, 500 ml",
+   "price": 1.0,
+   "url": "https://www.maxima.ee/pakkumised",
+   "image": "https://offers.maxima.ee/media/MarketingOffer/6abb632668be6.png",
+   "loyalty_price": null,
+   "volume_l": 0.5,
+   "ext_id": "a8d5954d-5d4f-49fb-a4e2-783fa0f4d660",
+   "flavour": "Erinevad maitsed",
+   "zero_sugar": false,
+   "deal": "Osta 2 · Aitäh · kuni 05.10",
+   "any_flavour": true,
+   "per_litre": 2.0,
+   "seen_at": "2026-09-29T12:24:36+00:00"
+  },
   {
    "store": "Selver",
    "name": "Energiajook Energy 4-pakk, MONSTER, 2 l",
@@ -30,8 +54,10 @@
    "ext_id": "T000089195",
    "flavour": "Original",
    "zero_sugar": false,
+   "deal": "",
+   "any_flavour": false,
    "per_litre": 2.145,
-   "seen_at": "2026-09-29T10:32:07+00:00"
+   "seen_at": "2026-09-29T12:24:36+00:00"
   },
   {
    "store": "Selver",
@@ -44,8 +70,10 @@
    "ext_id": "T000089194",
    "flavour": "Ultra Zero",
    "zero_sugar": true,
+   "deal": "",
+   "any_flavour": false,
    "per_litre": 2.145,
-   "seen_at": "2026-09-29T10:32:07+00:00"
+   "seen_at": "2026-09-29T12:24:36+00:00"
   },
   {
    "store": "Selver",
@@ -58,8 +86,10 @@
    "ext_id": "T000048775",
    "flavour": "Ultra",
    "zero_sugar": true,
+   "deal": "",
+   "any_flavour": false,
    "per_litre": 3.237,
-   "seen_at": "2026-09-29T10:32:07+00:00"
+   "seen_at": "2026-09-29T12:24:36+00:00"
   },
   {
    "store": "Selver",
@@ -72,8 +102,10 @@
    "ext_id": "T000036903",
    "flavour": "Original",
    "zero_sugar": false,
+   "deal": "",
+   "any_flavour": false,
    "per_litre": 3.237,
-   "seen_at": "2026-09-29T10:32:07+00:00"
+   "seen_at": "2026-09-29T12:24:36+00:00"
   },
   {
    "store": "Selver",
@@ -86,8 +118,10 @@
    "ext_id": "T000042130",
    "flavour": "Ultra",
    "zero_sugar": true,
+   "deal": "",
+   "any_flavour": false,
    "per_litre": 3.38,
-   "seen_at": "2026-09-29T10:32:07+00:00"
+   "seen_at": "2026-09-29T12:24:36+00:00"
   },
   {
    "store": "Selver",
@@ -100,8 +134,10 @@
    "ext_id": "T000016800",
    "flavour": "Original",
    "zero_sugar": false,
+   "deal": "",
+   "any_flavour": false,
    "per_litre": 3.38,
-   "seen_at": "2026-09-29T10:32:07+00:00"
+   "seen_at": "2026-09-29T12:24:36+00:00"
   },
   {
    "store": "Selver",
@@ -114,8 +150,10 @@
    "ext_id": "T000081809",
    "flavour": "Zero Sugar",
    "zero_sugar": true,
+   "deal": "",
+   "any_flavour": false,
    "per_litre": 3.38,
-   "seen_at": "2026-09-29T10:32:07+00:00"
+   "seen_at": "2026-09-29T12:24:36+00:00"
   },
   {
    "store": "Selver",
@@ -128,8 +166,10 @@
    "ext_id": "T000082046",
    "flavour": "Ultra Rosá",
    "zero_sugar": true,
+   "deal": "",
+   "any_flavour": false,
    "per_litre": 3.38,
-   "seen_at": "2026-09-29T10:32:07+00:00"
+   "seen_at": "2026-09-29T12:24:36+00:00"
   },
   {
    "store": "Selver",
@@ -142,8 +182,10 @@
    "ext_id": "T000075728",
    "flavour": "Zero Sugar",
    "zero_sugar": true,
+   "deal": "",
+   "any_flavour": false,
    "per_litre": 3.38,
-   "seen_at": "2026-09-29T10:32:07+00:00"
+   "seen_at": "2026-09-29T12:24:36+00:00"
   },
   {
    "store": "Selver",
@@ -156,8 +198,10 @@
    "ext_id": "T000071201",
    "flavour": "Monarch",
    "zero_sugar": false,
+   "deal": "",
+   "any_flavour": false,
    "per_litre": 3.38,
-   "seen_at": "2026-09-29T10:32:07+00:00"
+   "seen_at": "2026-09-29T12:24:36+00:00"
   },
   {
    "store": "Selver",
@@ -170,8 +214,10 @@
    "ext_id": "T000053008",
    "flavour": "Mango Loco",
    "zero_sugar": false,
+   "deal": "",
+   "any_flavour": false,
    "per_litre": 3.38,
-   "seen_at": "2026-09-29T10:32:07+00:00"
+   "seen_at": "2026-09-29T12:24:36+00:00"
   },
   {
    "store": "Rimi",
@@ -184,8 +230,10 @@
    "ext_id": "",
    "flavour": "Ultra Zero",
    "zero_sugar": true,
+   "deal": "",
+   "any_flavour": false,
    "per_litre": 3.5,
-   "seen_at": "2026-09-29T10:32:07+00:00"
+   "seen_at": "2026-09-29T12:24:36+00:00"
   },
   {
    "store": "Rimi",
@@ -198,8 +246,10 @@
    "ext_id": "",
    "flavour": "Original",
    "zero_sugar": false,
+   "deal": "",
+   "any_flavour": false,
    "per_litre": 3.5,
-   "seen_at": "2026-09-29T10:32:07+00:00"
+   "seen_at": "2026-09-29T12:24:36+00:00"
   },
   {
    "store": "Rimi",
@@ -212,8 +262,10 @@
    "ext_id": "",
    "flavour": "Mango Loco",
    "zero_sugar": false,
+   "deal": "",
+   "any_flavour": false,
    "per_litre": 3.5,
-   "seen_at": "2026-09-29T10:32:07+00:00"
+   "seen_at": "2026-09-29T12:24:36+00:00"
   },
   {
    "store": "Rimi",
@@ -226,8 +278,10 @@
    "ext_id": "",
    "flavour": "Zero Sugar",
    "zero_sugar": true,
+   "deal": "",
+   "any_flavour": false,
    "per_litre": 3.5,
-   "seen_at": "2026-09-29T10:32:07+00:00"
+   "seen_at": "2026-09-29T12:24:36+00:00"
   },
   {
    "store": "Rimi",
@@ -240,8 +294,10 @@
    "ext_id": "",
    "flavour": "Ultra Strawberry",
    "zero_sugar": true,
+   "deal": "",
+   "any_flavour": false,
    "per_litre": 3.5,
-   "seen_at": "2026-09-29T10:32:07+00:00"
+   "seen_at": "2026-09-29T12:24:36+00:00"
   },
   {
    "store": "Rimi",
@@ -254,8 +310,10 @@
    "ext_id": "",
    "flavour": "Ultra Gold",
    "zero_sugar": true,
+   "deal": "",
+   "any_flavour": false,
    "per_litre": 3.5,
-   "seen_at": "2026-09-29T10:32:07+00:00"
+   "seen_at": "2026-09-29T12:24:36+00:00"
   },
   {
    "store": "Rimi",
@@ -268,8 +326,10 @@
    "ext_id": "",
    "flavour": "Ultra Rosá",
    "zero_sugar": true,
+   "deal": "",
+   "any_flavour": false,
    "per_litre": 3.5,
-   "seen_at": "2026-09-29T10:32:07+00:00"
+   "seen_at": "2026-09-29T12:24:36+00:00"
   },
   {
    "store": "Rimi",
@@ -282,8 +342,10 @@
    "ext_id": "",
    "flavour": "Ultra Peachy Keen",
    "zero_sugar": true,
+   "deal": "",
+   "any_flavour": false,
    "per_litre": 3.5,
-   "seen_at": "2026-09-29T10:32:07+00:00"
+   "seen_at": "2026-09-29T12:24:36+00:00"
   },
   {
    "store": "Rimi",
@@ -296,8 +358,10 @@
    "ext_id": "",
    "flavour": "Lando Norris",
    "zero_sugar": true,
+   "deal": "",
+   "any_flavour": false,
    "per_litre": 3.5,
-   "seen_at": "2026-09-29T10:32:07+00:00"
+   "seen_at": "2026-09-29T12:24:36+00:00"
   },
   {
    "store": "Rimi",
@@ -310,8 +374,10 @@
    "ext_id": "",
    "flavour": "Punch",
    "zero_sugar": false,
+   "deal": "",
+   "any_flavour": false,
    "per_litre": 3.5,
-   "seen_at": "2026-09-29T10:32:07+00:00"
+   "seen_at": "2026-09-29T12:24:36+00:00"
   },
   {
    "store": "Rimi",
@@ -324,8 +390,10 @@
    "ext_id": "",
    "flavour": "Bad Apple",
    "zero_sugar": false,
+   "deal": "",
+   "any_flavour": false,
    "per_litre": 3.5,
-   "seen_at": "2026-09-29T10:32:07+00:00"
+   "seen_at": "2026-09-29T12:24:36+00:00"
   },
   {
    "store": "Rimi",
@@ -338,8 +406,10 @@
    "ext_id": "",
    "flavour": "Monarch",
    "zero_sugar": false,
+   "deal": "",
+   "any_flavour": false,
    "per_litre": 3.5,
-   "seen_at": "2026-09-29T10:32:07+00:00"
+   "seen_at": "2026-09-29T12:24:36+00:00"
   },
   {
    "store": "Rimi",
@@ -352,8 +422,10 @@
    "ext_id": "",
    "flavour": "Aussie Lemonade",
    "zero_sugar": false,
+   "deal": "",
+   "any_flavour": false,
    "per_litre": 3.5,
-   "seen_at": "2026-09-29T10:32:07+00:00"
+   "seen_at": "2026-09-29T12:24:36+00:00"
   },
   {
    "store": "Rimi",
@@ -366,8 +438,10 @@
    "ext_id": "",
    "flavour": "Ultra Fiesta Mango",
    "zero_sugar": true,
+   "deal": "",
+   "any_flavour": false,
    "per_litre": 3.5,
-   "seen_at": "2026-09-29T10:32:07+00:00"
+   "seen_at": "2026-09-29T12:24:36+00:00"
   },
   {
    "store": "Rimi",
@@ -380,8 +454,10 @@
    "ext_id": "",
    "flavour": "The Doctor",
    "zero_sugar": true,
+   "deal": "",
+   "any_flavour": false,
    "per_litre": 3.5,
-   "seen_at": "2026-09-29T10:32:07+00:00"
+   "seen_at": "2026-09-29T12:24:36+00:00"
   }
  ]
 }

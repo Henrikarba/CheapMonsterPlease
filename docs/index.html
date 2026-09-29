@@ -217,7 +217,7 @@ function ageText(ms){
    restates the shelf price. The toggle stays for the multipacks, where it is
    the only way to compare them against singles. */
 let DATA = {updated:null, sources:[], items:[]},
-    stores = new Set(), query = "", perLitre = false, dealsOnly = false, zeroOnly = false;
+    stores = new Set(), query = "Mango Loco", perLitre = false, dealsOnly = false, zeroOnly = false;
 
 /* A store that returns nothing has no items, so it cannot be derived from
    items alone - that is exactly the case worth showing. Fall back to counting
@@ -237,16 +237,16 @@ const esc = s => String(s ?? "")
 const eur = n => n.toFixed(2).replace(".", ",");
 const best = it => Math.min(...[it.price, it.loyalty_price].filter(Boolean));
 const value = it => perLitre ? it.per_litre : best(it);
-const isDeal = it => it.loyalty_price && it.loyalty_price < it.price;
+const isDeal = it => (it.loyalty_price && it.loyalty_price < it.price) || !!it.deal;
 
 function visible(){
   const q = query.trim().toLowerCase();
   return DATA.items
     .filter(it => !stores.size || stores.has(it.store))
     .filter(it => !dealsOnly || isDeal(it))
-    .filter(it => !zeroOnly || it.zero_sugar)
+    .filter(it => !zeroOnly || it.zero_sugar || it.any_flavour)
     .filter(it => !perLitre || it.per_litre)
-    .filter(it => !q || (it.flavour + " " + it.name).toLowerCase().includes(q))
+    .filter(it => !q || it.any_flavour || (it.flavour + " " + it.name).toLowerCase().includes(q))
     .sort((a,b) => value(a) - value(b));
 }
 
@@ -284,7 +284,7 @@ function render(){
               </span>
               <span class="figures">
                 <b>${eur(value(it))} ${perLitre ? "€/L" : "€"}</b>
-                <span>${isDeal(it) ? `<s>${eur(it.price)}</s> <em>${eur(it.loyalty_price)} €</em>` : `${eur(it.price)} € tk`}</span>
+                <span>${it.deal ? `${eur(best(it))} € tk · ${esc(it.deal)}` : it.loyalty_price && it.loyalty_price < it.price ? `<s>${eur(it.price)}</s> <em>${eur(it.loyalty_price)} €</em>` : `${eur(it.price)} € tk`}</span>
               </span>
               <span class="bar"><i data-w="${(value(it)/max*100).toFixed(1)}"></i></span>
             </a></li>`).join("")}
@@ -382,7 +382,7 @@ function chips(){
       };
     } else {
       // kept focusable rather than disabled so the reason stays reachable
-      b.className = "dead" + (src.status === "stub" ? "" : " bad");
+      b.className = "dead" + (src.status === "stub" || src.status === "ok" ? "" : " bad");
       b.setAttribute("aria-disabled", "true");
       b.title = `${src.store}: ${SOURCE_NOTE[src.status] || src.status}`
         + (src.detail ? ` — ${src.detail}` : "");
@@ -392,15 +392,17 @@ function chips(){
 
   // the six flavours stocked in the most shops, so the shortcuts stay useful
   const spread = {};
-  DATA.items.forEach(i => (spread[i.flavour] ||= new Set()).add(i.store));
+  DATA.items.filter(i => !i.any_flavour)
+    .forEach(i => (spread[i.flavour] ||= new Set()).add(i.store));
   const flavourBox = document.getElementById("flavours");
-  Object.entries(spread)
+  const top = Object.entries(spread)
     .sort((a,b) => b[1].size - a[1].size || a[0].localeCompare(b[0]))
-    .slice(0,6)
-    .forEach(([flavour]) => {
+    .slice(0,6).map(([f]) => f);
+  if (!top.includes("Mango Loco")) top.unshift("Mango Loco");
+  top.forEach(flavour => {
       const b = document.createElement("button");
       b.textContent = flavour;
-      b.setAttribute("aria-pressed", "false");
+      b.setAttribute("aria-pressed", flavour === query);
       b.onclick = () => {
         const on = b.getAttribute("aria-pressed") === "true";
         flavourBox.querySelectorAll("button").forEach(x => x.setAttribute("aria-pressed","false"));
@@ -460,6 +462,7 @@ fetch("data.json", {cache:"no-store"})
           {day:"2-digit",month:"2-digit",hour:"2-digit",minute:"2-digit"})
         + " · " + ageText(age);
     stamp.classList.toggle("stale", age !== null && age > STALE_AFTER_H * 36e5);
+    document.getElementById("q").value = query;
     alertBar();
     refreshRow();
     chips();

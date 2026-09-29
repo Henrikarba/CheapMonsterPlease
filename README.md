@@ -24,6 +24,10 @@ indistinguishable from real ones.
 |----------|------------------|---------------------------------|---------|
 | rimi     | rimi.ee/epood    | HTML, `data-gtm-eec-product`    | wired   |
 | selver   | selver.ee        | Vue Storefront `_search` JSON   | wired   |
+| maxima   | maxima.ee/pakkumised | weekly offers HTML, deals only | wired |
+
+Maxima only shows up while a Monster offer is running; no offer = 0 products.
+Its "erinevad maitsed" offers match every flavour filter.
 
 ### Shops that cannot be adapters
 
@@ -35,7 +39,7 @@ carry platform pricing over a courier-picked subset, which is not a shelf price.
 coophaapsalu.ee was wired up and then removed: it worked, but it published
 west-Estonian prices under a chain name that has no single price.
 
-**Maxima / barbora.ee** — `/api/eshop/v1/cart/products` is gone (404) and search
+**barbora.ee** (Maxima's e-shop) — `/api/eshop/v1/cart/products` is gone (404) and search
 moved to Constructor.io, whose index carries no prices, only per-warehouse stock
 flags. Every product would need a second request.
 
