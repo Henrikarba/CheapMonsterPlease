@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-28T10:44:27+00:00",
+ "updated": "2026-09-29T10:32:07+00:00",
  "sources": [
   {
    "adapter": "rimi",
@@ -7,283 +7,31 @@
    "status": "ok",
    "count": 15,
    "detail": null,
-   "seen_at": "2026-09-28T10:44:27+00:00"
+   "seen_at": "2026-09-29T10:32:07+00:00"
   },
   {
    "adapter": "selver",
    "store": "Selver",
    "status": "ok",
-   "count": 20,
+   "count": 11,
    "detail": null,
-   "seen_at": "2026-09-28T10:44:27+00:00"
+   "seen_at": "2026-09-29T10:32:07+00:00"
   }
  ],
  "items": [
-  {
-   "store": "Selver",
-   "name": "Energiajook Ultra Mega, MONSTER, 553 ml",
-   "price": 1.79,
-   "url": "https://www.selver.ee/energiajook-ultra-mega-monster-553-ml",
-   "image": "/5/0/5060517884062.jpg",
-   "loyalty_price": 1.19,
-   "volume_l": 0.553,
-   "ext_id": "T000048775",
-   "flavour": "Ultra",
-   "zero_sugar": true,
-   "per_litre": 2.152,
-   "seen_at": "2026-09-28T10:44:27+00:00"
-  },
-  {
-   "store": "Selver",
-   "name": "Energiajook Energy Mega, MONSTER, 553 ml",
-   "price": 1.79,
-   "url": "https://www.selver.ee/energiajook-energy-mega-monster-553-ml",
-   "image": "/5/0/5060335634481.jpg",
-   "loyalty_price": 1.19,
-   "volume_l": 0.553,
-   "ext_id": "T000036903",
-   "flavour": "Original",
-   "zero_sugar": false,
-   "per_litre": 2.152,
-   "seen_at": "2026-09-28T10:44:27+00:00"
-  },
-  {
-   "store": "Selver",
-   "name": "Energiajook Aussie Lemonade, MONSTER, 500 ml",
-   "price": 1.65,
-   "url": "https://www.selver.ee/energiajook-aussie-lemonade-monster-500-ml",
-   "image": "/5/0/5061013941457.jpg",
-   "loyalty_price": 1.19,
-   "volume_l": 0.5,
-   "ext_id": "T000082047",
-   "flavour": "Aussie Lemonade",
-   "zero_sugar": false,
-   "per_litre": 2.38,
-   "seen_at": "2026-09-28T10:44:27+00:00"
-  },
-  {
-   "store": "Selver",
-   "name": "Energiajook Monster Ultra, MONSTER, 500 ml",
-   "price": 1.69,
-   "url": "https://www.selver.ee/energiajook-monster-ultra-monster-500-ml",
-   "image": "/5/0/5060337502085.jpg",
-   "loyalty_price": 1.19,
-   "volume_l": 0.5,
-   "ext_id": "T000042130",
-   "flavour": "Ultra",
-   "zero_sugar": true,
-   "per_litre": 2.38,
-   "seen_at": "2026-09-28T10:44:27+00:00"
-  },
-  {
-   "store": "Selver",
-   "name": "Energiajook Energy, MONSTER, 500 ml",
-   "price": 1.69,
-   "url": "https://www.selver.ee/energiajook-energy-monster-500-ml",
-   "image": "/5/0/5060166696160.jpg",
-   "loyalty_price": 1.19,
-   "volume_l": 0.5,
-   "ext_id": "T000016800",
-   "flavour": "Original",
-   "zero_sugar": false,
-   "per_litre": 2.38,
-   "seen_at": "2026-09-28T10:44:27+00:00"
-  },
-  {
-   "store": "Selver",
-   "name": "Energiajook Ultra Strawberry, MONSTER, 500 ml",
-   "price": 1.69,
-   "url": "https://www.selver.ee/energiajook-ultra-strawberry-monster-500-ml",
-   "image": "/5/0/5056784901410.jpg",
-   "loyalty_price": 1.19,
-   "volume_l": 0.5,
-   "ext_id": "T000086518",
-   "flavour": "Ultra Strawberry",
-   "zero_sugar": true,
-   "per_litre": 2.38,
-   "seen_at": "2026-09-28T10:44:27+00:00"
-  },
-  {
-   "store": "Selver",
-   "name": "Energiajook Energy Zero, MONSTER, 500 ml",
-   "price": 1.69,
-   "url": "https://www.selver.ee/energiajook-energy-zero-monster-500-ml",
-   "image": "/5/0/5061013940160.jpg",
-   "loyalty_price": 1.19,
-   "volume_l": 0.5,
-   "ext_id": "T000081809",
-   "flavour": "Zero Sugar",
-   "zero_sugar": true,
-   "per_litre": 2.38,
-   "seen_at": "2026-09-28T10:44:27+00:00"
-  },
-  {
-   "store": "Selver",
-   "name": "Energiajook Doctor Zero, MONSTER, 500 ml",
-   "price": 1.69,
-   "url": "https://www.selver.ee/energiajook-doctor-zero-monster-500-ml",
-   "image": "/5/0/5056784910528.jpg",
-   "loyalty_price": 1.19,
-   "volume_l": 0.5,
-   "ext_id": "T000091273",
-   "flavour": "Zero Sugar",
-   "zero_sugar": true,
-   "per_litre": 2.38,
-   "seen_at": "2026-09-28T10:44:27+00:00"
-  },
-  {
-   "store": "Selver",
-   "name": "Energiajook Ultra Peachy Keen, MONSTER, 500 ml",
-   "price": 1.65,
-   "url": "https://www.selver.ee/energiajook-ultra-peachy-keen-monster-500-ml",
-   "image": "/5/0/5056784901120.jpg",
-   "loyalty_price": 1.19,
-   "volume_l": 0.5,
-   "ext_id": "T000087649",
-   "flavour": "Ultra Peachy Keen",
-   "zero_sugar": true,
-   "per_litre": 2.38,
-   "seen_at": "2026-09-28T10:44:27+00:00"
-  },
-  {
-   "store": "Selver",
-   "name": "Energiajook Lando Norris Zero Sugar, MONSTER, 500 ml",
-   "price": 1.65,
-   "url": "https://www.selver.ee/energiajook-lando-norris-zero-sugar-monster-500-ml",
-   "image": "/5/0/5056784908280.jpg",
-   "loyalty_price": 1.19,
-   "volume_l": 0.5,
-   "ext_id": "T000088790",
-   "flavour": "Lando Norris",
-   "zero_sugar": true,
-   "per_litre": 2.38,
-   "seen_at": "2026-09-28T10:44:27+00:00"
-  },
-  {
-   "store": "Selver",
-   "name": "Energiajook Ultra Rosa Zero, MONSTER, 500 ml",
-   "price": 1.69,
-   "url": "https://www.selver.ee/energiajook-ultra-rosa-zero-monster-500-ml",
-   "image": "/5/0/5061013942218.jpg",
-   "loyalty_price": 1.19,
-   "volume_l": 0.5,
-   "ext_id": "T000082046",
-   "flavour": "Ultra Rosá",
-   "zero_sugar": true,
-   "per_litre": 2.38,
-   "seen_at": "2026-09-28T10:44:27+00:00"
-  },
-  {
-   "store": "Selver",
-   "name": "Energiajook Ultra Fantasy Ruby Red, MONSTER, 500 ml",
-   "price": 1.69,
-   "url": "https://www.selver.ee/energiajook-ultra-fantasy-ruby-red-monster-500-ml",
-   "image": "/5/0/5056784912096.jpg",
-   "loyalty_price": 1.19,
-   "volume_l": 0.5,
-   "ext_id": "T000091274",
-   "flavour": "Ultra",
-   "zero_sugar": true,
-   "per_litre": 2.38,
-   "seen_at": "2026-09-28T10:44:27+00:00"
-  },
-  {
-   "store": "Selver",
-   "name": "Energiajook Rio Punch, MONSTER, 500 ml",
-   "price": 1.69,
-   "url": "https://www.selver.ee/energiajook-rio-punch-monster-500-ml",
-   "image": "/5/0/5056784902394.jpg",
-   "loyalty_price": 1.19,
-   "volume_l": 0.5,
-   "ext_id": "T000086517",
-   "flavour": "Punch",
-   "zero_sugar": false,
-   "per_litre": 2.38,
-   "seen_at": "2026-09-28T10:44:27+00:00"
-  },
-  {
-   "store": "Selver",
-   "name": "Energiajook Full Throttle Zero Sugar, MONSTER, 500 ml",
-   "price": 1.69,
-   "url": "https://www.selver.ee/energiajook-full-throttle-zero-sugar-monster-500-ml",
-   "image": "/5/0/5060947544543.jpg",
-   "loyalty_price": 1.19,
-   "volume_l": 0.5,
-   "ext_id": "T000075728",
-   "flavour": "Zero Sugar",
-   "zero_sugar": true,
-   "per_litre": 2.38,
-   "seen_at": "2026-09-28T10:44:27+00:00"
-  },
-  {
-   "store": "Selver",
-   "name": "Energiajook Juice Monarch, MONSTER, 500 ml",
-   "price": 1.69,
-   "url": "https://www.selver.ee/energiajook-juice-monarch-monster-500-ml",
-   "image": "/5/0/5060896622910.jpg",
-   "loyalty_price": 1.19,
-   "volume_l": 0.5,
-   "ext_id": "T000071201",
-   "flavour": "Monarch",
-   "zero_sugar": false,
-   "per_litre": 2.38,
-   "seen_at": "2026-09-28T10:44:27+00:00"
-  },
-  {
-   "store": "Selver",
-   "name": "Energiajook Bad Apple, MONSTER, 500 ml",
-   "price": 1.69,
-   "url": "https://www.selver.ee/energiajook-bad-apple-monster-500-ml",
-   "image": "/5/0/5056784910757.jpg",
-   "loyalty_price": 1.19,
-   "volume_l": 0.5,
-   "ext_id": "T000091272",
-   "flavour": "Bad Apple",
-   "zero_sugar": false,
-   "per_litre": 2.38,
-   "seen_at": "2026-09-28T10:44:27+00:00"
-  },
-  {
-   "store": "Selver",
-   "name": "Energiajook Juiced Mango Loco, MONSTER, 500 ml",
-   "price": 1.69,
-   "url": "https://www.selver.ee/energiajook-juiced-mango-loco-monster-500-ml",
-   "image": "/5/0/5060639121489.jpg",
-   "loyalty_price": 1.19,
-   "volume_l": 0.5,
-   "ext_id": "T000053008",
-   "flavour": "Mango Loco",
-   "zero_sugar": false,
-   "per_litre": 2.38,
-   "seen_at": "2026-09-28T10:44:27+00:00"
-  },
-  {
-   "store": "Selver",
-   "name": "Energiajook Ultra Gold, MONSTER, 500 ml",
-   "price": 1.69,
-   "url": "https://www.selver.ee/energiajook-ultra-gold-monster-500-ml",
-   "image": "/5/0/5060947544895.jpg",
-   "loyalty_price": 1.19,
-   "volume_l": 0.5,
-   "ext_id": "T000078437",
-   "flavour": "Ultra Gold",
-   "zero_sugar": true,
-   "per_litre": 2.38,
-   "seen_at": "2026-09-28T10:44:27+00:00"
-  },
   {
    "store": "Selver",
    "name": "Energiajook Energy 4-pakk, MONSTER, 2 l",
    "price": 6.19,
    "url": "https://www.selver.ee/energiajook-energy-4-pakk-monster-2-l",
    "image": "/5/0/5056784906347.jpg",
-   "loyalty_price": null,
+   "loyalty_price": 4.29,
    "volume_l": 2.0,
    "ext_id": "T000089195",
    "flavour": "Original",
    "zero_sugar": false,
-   "per_litre": 3.095,
-   "seen_at": "2026-09-28T10:44:27+00:00"
+   "per_litre": 2.145,
+   "seen_at": "2026-09-29T10:32:07+00:00"
   },
   {
    "store": "Selver",
@@ -291,13 +39,139 @@
    "price": 6.19,
    "url": "https://www.selver.ee/energiajook-zero-ultra-4-pakk-monster-2-l",
    "image": "/5/0/5056784906378.jpg",
-   "loyalty_price": null,
+   "loyalty_price": 4.29,
    "volume_l": 2.0,
    "ext_id": "T000089194",
    "flavour": "Ultra Zero",
    "zero_sugar": true,
-   "per_litre": 3.095,
-   "seen_at": "2026-09-28T10:44:27+00:00"
+   "per_litre": 2.145,
+   "seen_at": "2026-09-29T10:32:07+00:00"
+  },
+  {
+   "store": "Selver",
+   "name": "Energiajook Ultra Mega, MONSTER, 553 ml",
+   "price": 1.79,
+   "url": "https://www.selver.ee/energiajook-ultra-mega-monster-553-ml",
+   "image": "/5/0/5060517884062.jpg",
+   "loyalty_price": null,
+   "volume_l": 0.553,
+   "ext_id": "T000048775",
+   "flavour": "Ultra",
+   "zero_sugar": true,
+   "per_litre": 3.237,
+   "seen_at": "2026-09-29T10:32:07+00:00"
+  },
+  {
+   "store": "Selver",
+   "name": "Energiajook Energy Mega, MONSTER, 553 ml",
+   "price": 1.79,
+   "url": "https://www.selver.ee/energiajook-energy-mega-monster-553-ml",
+   "image": "/5/0/5060335634481.jpg",
+   "loyalty_price": null,
+   "volume_l": 0.553,
+   "ext_id": "T000036903",
+   "flavour": "Original",
+   "zero_sugar": false,
+   "per_litre": 3.237,
+   "seen_at": "2026-09-29T10:32:07+00:00"
+  },
+  {
+   "store": "Selver",
+   "name": "Energiajook Monster Ultra, MONSTER, 500 ml",
+   "price": 1.69,
+   "url": "https://www.selver.ee/energiajook-monster-ultra-monster-500-ml",
+   "image": "/5/0/5060337502085.jpg",
+   "loyalty_price": null,
+   "volume_l": 0.5,
+   "ext_id": "T000042130",
+   "flavour": "Ultra",
+   "zero_sugar": true,
+   "per_litre": 3.38,
+   "seen_at": "2026-09-29T10:32:07+00:00"
+  },
+  {
+   "store": "Selver",
+   "name": "Energiajook Energy, MONSTER, 500 ml",
+   "price": 1.69,
+   "url": "https://www.selver.ee/energiajook-energy-monster-500-ml",
+   "image": "/5/0/5060166696160.jpg",
+   "loyalty_price": null,
+   "volume_l": 0.5,
+   "ext_id": "T000016800",
+   "flavour": "Original",
+   "zero_sugar": false,
+   "per_litre": 3.38,
+   "seen_at": "2026-09-29T10:32:07+00:00"
+  },
+  {
+   "store": "Selver",
+   "name": "Energiajook Energy Zero, MONSTER, 500 ml",
+   "price": 1.69,
+   "url": "https://www.selver.ee/energiajook-energy-zero-monster-500-ml",
+   "image": "/5/0/5061013940160.jpg",
+   "loyalty_price": null,
+   "volume_l": 0.5,
+   "ext_id": "T000081809",
+   "flavour": "Zero Sugar",
+   "zero_sugar": true,
+   "per_litre": 3.38,
+   "seen_at": "2026-09-29T10:32:07+00:00"
+  },
+  {
+   "store": "Selver",
+   "name": "Energiajook Ultra Rosa Zero, MONSTER, 500 ml",
+   "price": 1.69,
+   "url": "https://www.selver.ee/energiajook-ultra-rosa-zero-monster-500-ml",
+   "image": "/5/0/5061013942218.jpg",
+   "loyalty_price": null,
+   "volume_l": 0.5,
+   "ext_id": "T000082046",
+   "flavour": "Ultra Rosá",
+   "zero_sugar": true,
+   "per_litre": 3.38,
+   "seen_at": "2026-09-29T10:32:07+00:00"
+  },
+  {
+   "store": "Selver",
+   "name": "Energiajook Full Throttle Zero Sugar, MONSTER, 500 ml",
+   "price": 1.69,
+   "url": "https://www.selver.ee/energiajook-full-throttle-zero-sugar-monster-500-ml",
+   "image": "/5/0/5060947544543.jpg",
+   "loyalty_price": null,
+   "volume_l": 0.5,
+   "ext_id": "T000075728",
+   "flavour": "Zero Sugar",
+   "zero_sugar": true,
+   "per_litre": 3.38,
+   "seen_at": "2026-09-29T10:32:07+00:00"
+  },
+  {
+   "store": "Selver",
+   "name": "Energiajook Juice Monarch, MONSTER, 500 ml",
+   "price": 1.69,
+   "url": "https://www.selver.ee/energiajook-juice-monarch-monster-500-ml",
+   "image": "/5/0/5060896622910.jpg",
+   "loyalty_price": null,
+   "volume_l": 0.5,
+   "ext_id": "T000071201",
+   "flavour": "Monarch",
+   "zero_sugar": false,
+   "per_litre": 3.38,
+   "seen_at": "2026-09-29T10:32:07+00:00"
+  },
+  {
+   "store": "Selver",
+   "name": "Energiajook Juiced Mango Loco, MONSTER, 500 ml",
+   "price": 1.69,
+   "url": "https://www.selver.ee/energiajook-juiced-mango-loco-monster-500-ml",
+   "image": "/5/0/5060639121489.jpg",
+   "loyalty_price": null,
+   "volume_l": 0.5,
+   "ext_id": "T000053008",
+   "flavour": "Mango Loco",
+   "zero_sugar": false,
+   "per_litre": 3.38,
+   "seen_at": "2026-09-29T10:32:07+00:00"
   },
   {
    "store": "Rimi",
@@ -311,7 +185,7 @@
    "flavour": "Ultra Zero",
    "zero_sugar": true,
    "per_litre": 3.5,
-   "seen_at": "2026-09-28T10:44:27+00:00"
+   "seen_at": "2026-09-29T10:32:07+00:00"
   },
   {
    "store": "Rimi",
@@ -325,7 +199,7 @@
    "flavour": "Original",
    "zero_sugar": false,
    "per_litre": 3.5,
-   "seen_at": "2026-09-28T10:44:27+00:00"
+   "seen_at": "2026-09-29T10:32:07+00:00"
   },
   {
    "store": "Rimi",
@@ -339,7 +213,7 @@
    "flavour": "Mango Loco",
    "zero_sugar": false,
    "per_litre": 3.5,
-   "seen_at": "2026-09-28T10:44:27+00:00"
+   "seen_at": "2026-09-29T10:32:07+00:00"
   },
   {
    "store": "Rimi",
@@ -353,7 +227,7 @@
    "flavour": "Zero Sugar",
    "zero_sugar": true,
    "per_litre": 3.5,
-   "seen_at": "2026-09-28T10:44:27+00:00"
+   "seen_at": "2026-09-29T10:32:07+00:00"
   },
   {
    "store": "Rimi",
@@ -367,7 +241,7 @@
    "flavour": "Ultra Strawberry",
    "zero_sugar": true,
    "per_litre": 3.5,
-   "seen_at": "2026-09-28T10:44:27+00:00"
+   "seen_at": "2026-09-29T10:32:07+00:00"
   },
   {
    "store": "Rimi",
@@ -381,7 +255,7 @@
    "flavour": "Ultra Gold",
    "zero_sugar": true,
    "per_litre": 3.5,
-   "seen_at": "2026-09-28T10:44:27+00:00"
+   "seen_at": "2026-09-29T10:32:07+00:00"
   },
   {
    "store": "Rimi",
@@ -395,7 +269,7 @@
    "flavour": "Ultra Rosá",
    "zero_sugar": true,
    "per_litre": 3.5,
-   "seen_at": "2026-09-28T10:44:27+00:00"
+   "seen_at": "2026-09-29T10:32:07+00:00"
   },
   {
    "store": "Rimi",
@@ -409,7 +283,7 @@
    "flavour": "Ultra Peachy Keen",
    "zero_sugar": true,
    "per_litre": 3.5,
-   "seen_at": "2026-09-28T10:44:27+00:00"
+   "seen_at": "2026-09-29T10:32:07+00:00"
   },
   {
    "store": "Rimi",
@@ -423,7 +297,7 @@
    "flavour": "Lando Norris",
    "zero_sugar": true,
    "per_litre": 3.5,
-   "seen_at": "2026-09-28T10:44:27+00:00"
+   "seen_at": "2026-09-29T10:32:07+00:00"
   },
   {
    "store": "Rimi",
@@ -437,7 +311,7 @@
    "flavour": "Punch",
    "zero_sugar": false,
    "per_litre": 3.5,
-   "seen_at": "2026-09-28T10:44:27+00:00"
+   "seen_at": "2026-09-29T10:32:07+00:00"
   },
   {
    "store": "Rimi",
@@ -451,7 +325,7 @@
    "flavour": "Bad Apple",
    "zero_sugar": false,
    "per_litre": 3.5,
-   "seen_at": "2026-09-28T10:44:27+00:00"
+   "seen_at": "2026-09-29T10:32:07+00:00"
   },
   {
    "store": "Rimi",
@@ -465,7 +339,7 @@
    "flavour": "Monarch",
    "zero_sugar": false,
    "per_litre": 3.5,
-   "seen_at": "2026-09-28T10:44:27+00:00"
+   "seen_at": "2026-09-29T10:32:07+00:00"
   },
   {
    "store": "Rimi",
@@ -479,7 +353,7 @@
    "flavour": "Aussie Lemonade",
    "zero_sugar": false,
    "per_litre": 3.5,
-   "seen_at": "2026-09-28T10:44:27+00:00"
+   "seen_at": "2026-09-29T10:32:07+00:00"
   },
   {
    "store": "Rimi",
@@ -493,7 +367,7 @@
    "flavour": "Ultra Fiesta Mango",
    "zero_sugar": true,
    "per_litre": 3.5,
-   "seen_at": "2026-09-28T10:44:27+00:00"
+   "seen_at": "2026-09-29T10:32:07+00:00"
   },
   {
    "store": "Rimi",
@@ -507,7 +381,7 @@
    "flavour": "The Doctor",
    "zero_sugar": true,
    "per_litre": 3.5,
-   "seen_at": "2026-09-28T10:44:27+00:00"
+   "seen_at": "2026-09-29T10:32:07+00:00"
   }
  ]
 }
