@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-30T10:22:52+00:00",
+ "updated": "2026-10-01T10:49:44+00:00",
  "sources": [
   {
    "adapter": "rimi",
@@ -7,15 +7,15 @@
    "status": "ok",
    "count": 16,
    "detail": null,
-   "seen_at": "2026-09-30T10:22:52+00:00"
+   "seen_at": "2026-10-01T10:49:44+00:00"
   },
   {
    "adapter": "selver",
    "store": "Selver",
    "status": "ok",
-   "count": 11,
+   "count": 10,
    "detail": null,
-   "seen_at": "2026-09-30T10:22:52+00:00"
+   "seen_at": "2026-10-01T10:49:44+00:00"
   },
   {
    "adapter": "maxima",
@@ -23,7 +23,7 @@
    "status": "ok",
    "count": 1,
    "detail": null,
-   "seen_at": "2026-09-30T10:22:52+00:00"
+   "seen_at": "2026-10-01T10:49:44+00:00"
   }
  ],
  "items": [
@@ -41,7 +41,7 @@
    "deal": "Osta 2 · Aitäh · kuni 05.10",
    "any_flavour": true,
    "per_litre": 2.0,
-   "seen_at": "2026-09-30T10:22:52+00:00"
+   "seen_at": "2026-10-01T10:49:44+00:00"
   },
   {
    "store": "Selver",
@@ -57,7 +57,7 @@
    "deal": "",
    "any_flavour": false,
    "per_litre": 2.145,
-   "seen_at": "2026-09-30T10:22:52+00:00"
+   "seen_at": "2026-10-01T10:49:44+00:00"
   },
   {
    "store": "Selver",
@@ -73,7 +73,7 @@
    "deal": "",
    "any_flavour": false,
    "per_litre": 2.145,
-   "seen_at": "2026-09-30T10:22:52+00:00"
+   "seen_at": "2026-10-01T10:49:44+00:00"
   },
   {
    "store": "Selver",
@@ -89,7 +89,7 @@
    "deal": "",
    "any_flavour": false,
    "per_litre": 3.237,
-   "seen_at": "2026-09-30T10:22:52+00:00"
+   "seen_at": "2026-10-01T10:49:44+00:00"
   },
   {
    "store": "Selver",
@@ -105,7 +105,7 @@
    "deal": "",
    "any_flavour": false,
    "per_litre": 3.237,
-   "seen_at": "2026-09-30T10:22:52+00:00"
+   "seen_at": "2026-10-01T10:49:44+00:00"
   },
   {
    "store": "Rimi",
@@ -121,23 +121,7 @@
    "deal": "",
    "any_flavour": false,
    "per_litre": 3.345,
-   "seen_at": "2026-09-30T10:22:52+00:00"
-  },
-  {
-   "store": "Selver",
-   "name": "Energiajook Monster Ultra, MONSTER, 500 ml",
-   "price": 1.69,
-   "url": "https://www.selver.ee/energiajook-monster-ultra-monster-500-ml",
-   "image": "/5/0/5060337502085.jpg",
-   "loyalty_price": null,
-   "volume_l": 0.5,
-   "ext_id": "T000042130",
-   "flavour": "Ultra",
-   "zero_sugar": true,
-   "deal": "",
-   "any_flavour": false,
-   "per_litre": 3.38,
-   "seen_at": "2026-09-30T10:22:52+00:00"
+   "seen_at": "2026-10-01T10:49:44+00:00"
   },
   {
    "store": "Selver",
@@ -153,7 +137,7 @@
    "deal": "",
    "any_flavour": false,
    "per_litre": 3.38,
-   "seen_at": "2026-09-30T10:22:52+00:00"
+   "seen_at": "2026-10-01T10:49:44+00:00"
   },
   {
    "store": "Selver",
@@ -169,7 +153,7 @@
    "deal": "",
    "any_flavour": false,
    "per_litre": 3.38,
-   "seen_at": "2026-09-30T10:22:52+00:00"
+   "seen_at": "2026-10-01T10:49:44+00:00"
   },
   {
    "store": "Selver",
@@ -185,7 +169,7 @@
    "deal": "",
    "any_flavour": false,
    "per_litre": 3.38,
-   "seen_at": "2026-09-30T10:22:52+00:00"
+   "seen_at": "2026-10-01T10:49:44+00:00"
   },
   {
    "store": "Selver",
@@ -201,7 +185,7 @@
    "deal": "",
    "any_flavour": false,
    "per_litre": 3.38,
-   "seen_at": "2026-09-30T10:22:52+00:00"
+   "seen_at": "2026-10-01T10:49:44+00:00"
   },
   {
    "store": "Selver",
@@ -217,7 +201,7 @@
    "deal": "",
    "any_flavour": false,
    "per_litre": 3.38,
-   "seen_at": "2026-09-30T10:22:52+00:00"
+   "seen_at": "2026-10-01T10:49:44+00:00"
   },
   {
    "store": "Selver",
@@ -233,7 +217,7 @@
    "deal": "",
    "any_flavour": false,
    "per_litre": 3.38,
-   "seen_at": "2026-09-30T10:22:52+00:00"
+   "seen_at": "2026-10-01T10:49:44+00:00"
   },
   {
    "store": "Rimi",
@@ -249,7 +233,7 @@
    "deal": "",
    "any_flavour": false,
    "per_litre": 3.5,
-   "seen_at": "2026-09-30T10:22:52+00:00"
+   "seen_at": "2026-10-01T10:49:44+00:00"
   },
   {
    "store": "Rimi",
@@ -265,7 +249,7 @@
    "deal": "",
    "any_flavour": false,
    "per_litre": 3.5,
-   "seen_at": "2026-09-30T10:22:52+00:00"
+   "seen_at": "2026-10-01T10:49:44+00:00"
   },
   {
    "store": "Rimi",
@@ -281,7 +265,7 @@
    "deal": "",
    "any_flavour": false,
    "per_litre": 3.5,
-   "seen_at": "2026-09-30T10:22:52+00:00"
+   "seen_at": "2026-10-01T10:49:44+00:00"
   },
   {
    "store": "Rimi",
@@ -297,7 +281,7 @@
    "deal": "",
    "any_flavour": false,
    "per_litre": 3.5,
-   "seen_at": "2026-09-30T10:22:52+00:00"
+   "seen_at": "2026-10-01T10:49:44+00:00"
   },
   {
    "store": "Rimi",
@@ -313,7 +297,7 @@
    "deal": "",
    "any_flavour": false,
    "per_litre": 3.5,
-   "seen_at": "2026-09-30T10:22:52+00:00"
+   "seen_at": "2026-10-01T10:49:44+00:00"
   },
   {
    "store": "Rimi",
@@ -329,7 +313,7 @@
    "deal": "",
    "any_flavour": false,
    "per_litre": 3.5,
-   "seen_at": "2026-09-30T10:22:52+00:00"
+   "seen_at": "2026-10-01T10:49:44+00:00"
   },
   {
    "store": "Rimi",
@@ -345,7 +329,7 @@
    "deal": "",
    "any_flavour": false,
    "per_litre": 3.5,
-   "seen_at": "2026-09-30T10:22:52+00:00"
+   "seen_at": "2026-10-01T10:49:44+00:00"
   },
   {
    "store": "Rimi",
@@ -361,7 +345,7 @@
    "deal": "",
    "any_flavour": false,
    "per_litre": 3.5,
-   "seen_at": "2026-09-30T10:22:52+00:00"
+   "seen_at": "2026-10-01T10:49:44+00:00"
   },
   {
    "store": "Rimi",
@@ -377,7 +361,7 @@
    "deal": "",
    "any_flavour": false,
    "per_litre": 3.5,
-   "seen_at": "2026-09-30T10:22:52+00:00"
+   "seen_at": "2026-10-01T10:49:44+00:00"
   },
   {
    "store": "Rimi",
@@ -393,7 +377,7 @@
    "deal": "",
    "any_flavour": false,
    "per_litre": 3.5,
-   "seen_at": "2026-09-30T10:22:52+00:00"
+   "seen_at": "2026-10-01T10:49:44+00:00"
   },
   {
    "store": "Rimi",
@@ -409,7 +393,7 @@
    "deal": "",
    "any_flavour": false,
    "per_litre": 3.5,
-   "seen_at": "2026-09-30T10:22:52+00:00"
+   "seen_at": "2026-10-01T10:49:44+00:00"
   },
   {
    "store": "Rimi",
@@ -425,7 +409,7 @@
    "deal": "",
    "any_flavour": false,
    "per_litre": 3.5,
-   "seen_at": "2026-09-30T10:22:52+00:00"
+   "seen_at": "2026-10-01T10:49:44+00:00"
   },
   {
    "store": "Rimi",
@@ -441,7 +425,7 @@
    "deal": "",
    "any_flavour": false,
    "per_litre": 3.5,
-   "seen_at": "2026-09-30T10:22:52+00:00"
+   "seen_at": "2026-10-01T10:49:44+00:00"
   },
   {
    "store": "Rimi",
@@ -457,7 +441,7 @@
    "deal": "",
    "any_flavour": false,
    "per_litre": 3.5,
-   "seen_at": "2026-09-30T10:22:52+00:00"
+   "seen_at": "2026-10-01T10:49:44+00:00"
   },
   {
    "store": "Rimi",
@@ -473,7 +457,7 @@
    "deal": "",
    "any_flavour": false,
    "per_litre": 3.5,
-   "seen_at": "2026-09-30T10:22:52+00:00"
+   "seen_at": "2026-10-01T10:49:44+00:00"
   }
  ]
 }
