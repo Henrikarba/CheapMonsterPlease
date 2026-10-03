@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-02T10:24:04+00:00",
+ "updated": "2026-10-03T09:45:45+00:00",
  "sources": [
   {
    "adapter": "rimi",
@@ -7,7 +7,7 @@
    "status": "ok",
    "count": 15,
    "detail": null,
-   "seen_at": "2026-10-02T10:24:04+00:00"
+   "seen_at": "2026-10-03T09:45:45+00:00"
   },
   {
    "adapter": "selver",
@@ -15,7 +15,7 @@
    "status": "ok",
    "count": 10,
    "detail": null,
-   "seen_at": "2026-10-02T10:24:04+00:00"
+   "seen_at": "2026-10-03T09:45:45+00:00"
   },
   {
    "adapter": "maxima",
@@ -23,7 +23,7 @@
    "status": "ok",
    "count": 1,
    "detail": null,
-   "seen_at": "2026-10-02T10:24:04+00:00"
+   "seen_at": "2026-10-03T09:45:45+00:00"
   }
  ],
  "items": [
@@ -41,7 +41,7 @@
    "deal": "Osta 2 · Aitäh · kuni 05.10",
    "any_flavour": true,
    "per_litre": 2.0,
-   "seen_at": "2026-10-02T10:24:04+00:00"
+   "seen_at": "2026-10-03T09:45:45+00:00"
   },
   {
    "store": "Selver",
@@ -57,7 +57,7 @@
    "deal": "",
    "any_flavour": false,
    "per_litre": 2.145,
-   "seen_at": "2026-10-02T10:24:04+00:00"
+   "seen_at": "2026-10-03T09:45:45+00:00"
   },
   {
    "store": "Selver",
@@ -73,7 +73,7 @@
    "deal": "",
    "any_flavour": false,
    "per_litre": 2.145,
-   "seen_at": "2026-10-02T10:24:04+00:00"
+   "seen_at": "2026-10-03T09:45:45+00:00"
   },
   {
    "store": "Selver",
@@ -89,7 +89,7 @@
    "deal": "",
    "any_flavour": false,
    "per_litre": 3.237,
-   "seen_at": "2026-10-02T10:24:04+00:00"
+   "seen_at": "2026-10-03T09:45:45+00:00"
   },
   {
    "store": "Selver",
@@ -105,7 +105,7 @@
    "deal": "",
    "any_flavour": false,
    "per_litre": 3.237,
-   "seen_at": "2026-10-02T10:24:04+00:00"
+   "seen_at": "2026-10-03T09:45:45+00:00"
   },
   {
    "store": "Selver",
@@ -121,7 +121,7 @@
    "deal": "",
    "any_flavour": false,
    "per_litre": 3.38,
-   "seen_at": "2026-10-02T10:24:04+00:00"
+   "seen_at": "2026-10-03T09:45:45+00:00"
   },
   {
    "store": "Selver",
@@ -137,7 +137,7 @@
    "deal": "",
    "any_flavour": false,
    "per_litre": 3.38,
-   "seen_at": "2026-10-02T10:24:04+00:00"
+   "seen_at": "2026-10-03T09:45:45+00:00"
   },
   {
    "store": "Selver",
@@ -153,7 +153,7 @@
    "deal": "",
    "any_flavour": false,
    "per_litre": 3.38,
-   "seen_at": "2026-10-02T10:24:04+00:00"
+   "seen_at": "2026-10-03T09:45:45+00:00"
   },
   {
    "store": "Selver",
@@ -169,7 +169,7 @@
    "deal": "",
    "any_flavour": false,
    "per_litre": 3.38,
-   "seen_at": "2026-10-02T10:24:04+00:00"
+   "seen_at": "2026-10-03T09:45:45+00:00"
   },
   {
    "store": "Selver",
@@ -185,7 +185,7 @@
    "deal": "",
    "any_flavour": false,
    "per_litre": 3.38,
-   "seen_at": "2026-10-02T10:24:04+00:00"
+   "seen_at": "2026-10-03T09:45:45+00:00"
   },
   {
    "store": "Selver",
@@ -201,7 +201,7 @@
    "deal": "",
    "any_flavour": false,
    "per_litre": 3.38,
-   "seen_at": "2026-10-02T10:24:04+00:00"
+   "seen_at": "2026-10-03T09:45:45+00:00"
   },
   {
    "store": "Rimi",
@@ -217,7 +217,7 @@
    "deal": "",
    "any_flavour": false,
    "per_litre": 3.5,
-   "seen_at": "2026-10-02T10:24:04+00:00"
+   "seen_at": "2026-10-03T09:45:45+00:00"
   },
   {
    "store": "Rimi",
@@ -233,7 +233,7 @@
    "deal": "",
    "any_flavour": false,
    "per_litre": 3.5,
-   "seen_at": "2026-10-02T10:24:04+00:00"
+   "seen_at": "2026-10-03T09:45:45+00:00"
   },
   {
    "store": "Rimi",
@@ -249,7 +249,7 @@
    "deal": "",
    "any_flavour": false,
    "per_litre": 3.5,
-   "seen_at": "2026-10-02T10:24:04+00:00"
+   "seen_at": "2026-10-03T09:45:45+00:00"
   },
   {
    "store": "Rimi",
@@ -265,7 +265,7 @@
    "deal": "",
    "any_flavour": false,
    "per_litre": 3.5,
-   "seen_at": "2026-10-02T10:24:04+00:00"
+   "seen_at": "2026-10-03T09:45:45+00:00"
   },
   {
    "store": "Rimi",
@@ -281,7 +281,7 @@
    "deal": "",
    "any_flavour": false,
    "per_litre": 3.5,
-   "seen_at": "2026-10-02T10:24:04+00:00"
+   "seen_at": "2026-10-03T09:45:45+00:00"
   },
   {
    "store": "Rimi",
@@ -297,7 +297,7 @@
    "deal": "",
    "any_flavour": false,
    "per_litre": 3.5,
-   "seen_at": "2026-10-02T10:24:04+00:00"
+   "seen_at": "2026-10-03T09:45:45+00:00"
   },
   {
    "store": "Rimi",
@@ -313,7 +313,7 @@
    "deal": "",
    "any_flavour": false,
    "per_litre": 3.5,
-   "seen_at": "2026-10-02T10:24:04+00:00"
+   "seen_at": "2026-10-03T09:45:45+00:00"
   },
   {
    "store": "Rimi",
@@ -329,7 +329,7 @@
    "deal": "",
    "any_flavour": false,
    "per_litre": 3.5,
-   "seen_at": "2026-10-02T10:24:04+00:00"
+   "seen_at": "2026-10-03T09:45:45+00:00"
   },
   {
    "store": "Rimi",
@@ -345,7 +345,7 @@
    "deal": "",
    "any_flavour": false,
    "per_litre": 3.5,
-   "seen_at": "2026-10-02T10:24:04+00:00"
+   "seen_at": "2026-10-03T09:45:45+00:00"
   },
   {
    "store": "Rimi",
@@ -361,7 +361,7 @@
    "deal": "",
    "any_flavour": false,
    "per_litre": 3.5,
-   "seen_at": "2026-10-02T10:24:04+00:00"
+   "seen_at": "2026-10-03T09:45:45+00:00"
   },
   {
    "store": "Rimi",
@@ -377,7 +377,7 @@
    "deal": "",
    "any_flavour": false,
    "per_litre": 3.5,
-   "seen_at": "2026-10-02T10:24:04+00:00"
+   "seen_at": "2026-10-03T09:45:45+00:00"
   },
   {
    "store": "Rimi",
@@ -393,7 +393,7 @@
    "deal": "",
    "any_flavour": false,
    "per_litre": 3.5,
-   "seen_at": "2026-10-02T10:24:04+00:00"
+   "seen_at": "2026-10-03T09:45:45+00:00"
   },
   {
    "store": "Rimi",
@@ -409,7 +409,7 @@
    "deal": "",
    "any_flavour": false,
    "per_litre": 3.5,
-   "seen_at": "2026-10-02T10:24:04+00:00"
+   "seen_at": "2026-10-03T09:45:45+00:00"
   },
   {
    "store": "Rimi",
@@ -425,7 +425,7 @@
    "deal": "",
    "any_flavour": false,
    "per_litre": 3.5,
-   "seen_at": "2026-10-02T10:24:04+00:00"
+   "seen_at": "2026-10-03T09:45:45+00:00"
   },
   {
    "store": "Rimi",
@@ -441,7 +441,7 @@
    "deal": "",
    "any_flavour": false,
    "per_litre": 3.5,
-   "seen_at": "2026-10-02T10:24:04+00:00"
+   "seen_at": "2026-10-03T09:45:45+00:00"
   }
  ]
 }
