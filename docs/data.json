@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-03T09:45:45+00:00",
+ "updated": "2026-10-04T10:29:18+00:00",
  "sources": [
   {
    "adapter": "rimi",
@@ -7,7 +7,7 @@
    "status": "ok",
    "count": 15,
    "detail": null,
-   "seen_at": "2026-10-03T09:45:45+00:00"
+   "seen_at": "2026-10-04T10:29:18+00:00"
   },
   {
    "adapter": "selver",
@@ -15,7 +15,7 @@
    "status": "ok",
    "count": 10,
    "detail": null,
-   "seen_at": "2026-10-03T09:45:45+00:00"
+   "seen_at": "2026-10-04T10:29:18+00:00"
   },
   {
    "adapter": "maxima",
@@ -23,7 +23,7 @@
    "status": "ok",
    "count": 1,
    "detail": null,
-   "seen_at": "2026-10-03T09:45:45+00:00"
+   "seen_at": "2026-10-04T10:29:18+00:00"
   }
  ],
  "items": [
@@ -41,7 +41,7 @@
    "deal": "Osta 2 · Aitäh · kuni 05.10",
    "any_flavour": true,
    "per_litre": 2.0,
-   "seen_at": "2026-10-03T09:45:45+00:00"
+   "seen_at": "2026-10-04T10:29:18+00:00"
   },
   {
    "store": "Selver",
@@ -57,7 +57,7 @@
    "deal": "",
    "any_flavour": false,
    "per_litre": 2.145,
-   "seen_at": "2026-10-03T09:45:45+00:00"
+   "seen_at": "2026-10-04T10:29:18+00:00"
   },
   {
    "store": "Selver",
@@ -73,7 +73,7 @@
    "deal": "",
    "any_flavour": false,
    "per_litre": 2.145,
-   "seen_at": "2026-10-03T09:45:45+00:00"
+   "seen_at": "2026-10-04T10:29:18+00:00"
   },
   {
    "store": "Selver",
@@ -89,7 +89,7 @@
    "deal": "",
    "any_flavour": false,
    "per_litre": 3.237,
-   "seen_at": "2026-10-03T09:45:45+00:00"
+   "seen_at": "2026-10-04T10:29:18+00:00"
   },
   {
    "store": "Selver",
@@ -105,7 +105,7 @@
    "deal": "",
    "any_flavour": false,
    "per_litre": 3.237,
-   "seen_at": "2026-10-03T09:45:45+00:00"
+   "seen_at": "2026-10-04T10:29:18+00:00"
   },
   {
    "store": "Selver",
@@ -121,7 +121,7 @@
    "deal": "",
    "any_flavour": false,
    "per_litre": 3.38,
-   "seen_at": "2026-10-03T09:45:45+00:00"
+   "seen_at": "2026-10-04T10:29:18+00:00"
   },
   {
    "store": "Selver",
@@ -137,7 +137,7 @@
    "deal": "",
    "any_flavour": false,
    "per_litre": 3.38,
-   "seen_at": "2026-10-03T09:45:45+00:00"
+   "seen_at": "2026-10-04T10:29:18+00:00"
   },
   {
    "store": "Selver",
@@ -153,7 +153,7 @@
    "deal": "",
    "any_flavour": false,
    "per_litre": 3.38,
-   "seen_at": "2026-10-03T09:45:45+00:00"
+   "seen_at": "2026-10-04T10:29:18+00:00"
   },
   {
    "store": "Selver",
@@ -169,7 +169,7 @@
    "deal": "",
    "any_flavour": false,
    "per_litre": 3.38,
-   "seen_at": "2026-10-03T09:45:45+00:00"
+   "seen_at": "2026-10-04T10:29:18+00:00"
   },
   {
    "store": "Selver",
@@ -185,7 +185,7 @@
    "deal": "",
    "any_flavour": false,
    "per_litre": 3.38,
-   "seen_at": "2026-10-03T09:45:45+00:00"
+   "seen_at": "2026-10-04T10:29:18+00:00"
   },
   {
    "store": "Selver",
@@ -201,7 +201,7 @@
    "deal": "",
    "any_flavour": false,
    "per_litre": 3.38,
-   "seen_at": "2026-10-03T09:45:45+00:00"
+   "seen_at": "2026-10-04T10:29:18+00:00"
   },
   {
    "store": "Rimi",
@@ -217,7 +217,7 @@
    "deal": "",
    "any_flavour": false,
    "per_litre": 3.5,
-   "seen_at": "2026-10-03T09:45:45+00:00"
+   "seen_at": "2026-10-04T10:29:18+00:00"
   },
   {
    "store": "Rimi",
@@ -233,7 +233,7 @@
    "deal": "",
    "any_flavour": false,
    "per_litre": 3.5,
-   "seen_at": "2026-10-03T09:45:45+00:00"
+   "seen_at": "2026-10-04T10:29:18+00:00"
   },
   {
    "store": "Rimi",
@@ -249,7 +249,7 @@
    "deal": "",
    "any_flavour": false,
    "per_litre": 3.5,
-   "seen_at": "2026-10-03T09:45:45+00:00"
+   "seen_at": "2026-10-04T10:29:18+00:00"
   },
   {
    "store": "Rimi",
@@ -265,23 +265,7 @@
    "deal": "",
    "any_flavour": false,
    "per_litre": 3.5,
-   "seen_at": "2026-10-03T09:45:45+00:00"
-  },
-  {
-   "store": "Rimi",
-   "name": "Energiajook Monster Ultra Strawb. Dreams 0,5l",
-   "price": 1.75,
-   "url": "https://www.rimi.ee/epood/ee/tooted/joogid/energiajook/energiajook-monster-ultra-strawb-dreams-0-5l/p/1375080",
-   "image": "https://rimibaltic-res.cloudinary.com/image/upload/b_white,c_limit,dpr_auto,f_webp,h_216,q_1,w_216/d_ecommerce:backend-fallback.png/MAT_1375080_PCE_EE",
-   "loyalty_price": null,
-   "volume_l": 0.5,
-   "ext_id": "",
-   "flavour": "Ultra Strawberry",
-   "zero_sugar": true,
-   "deal": "",
-   "any_flavour": false,
-   "per_litre": 3.5,
-   "seen_at": "2026-10-03T09:45:45+00:00"
+   "seen_at": "2026-10-04T10:29:18+00:00"
   },
   {
    "store": "Rimi",
@@ -297,7 +281,23 @@
    "deal": "",
    "any_flavour": false,
    "per_litre": 3.5,
-   "seen_at": "2026-10-03T09:45:45+00:00"
+   "seen_at": "2026-10-04T10:29:18+00:00"
+  },
+  {
+   "store": "Rimi",
+   "name": "Energiajook Monster Ultra Strawb. Dreams 0,5l",
+   "price": 1.75,
+   "url": "https://www.rimi.ee/epood/ee/tooted/joogid/energiajook/energiajook-monster-ultra-strawb-dreams-0-5l/p/1375080",
+   "image": "https://rimibaltic-res.cloudinary.com/image/upload/b_white,c_limit,dpr_auto,f_webp,h_216,q_1,w_216/d_ecommerce:backend-fallback.png/MAT_1375080_PCE_EE",
+   "loyalty_price": null,
+   "volume_l": 0.5,
+   "ext_id": "",
+   "flavour": "Ultra Strawberry",
+   "zero_sugar": true,
+   "deal": "",
+   "any_flavour": false,
+   "per_litre": 3.5,
+   "seen_at": "2026-10-04T10:29:18+00:00"
   },
   {
    "store": "Rimi",
@@ -313,23 +313,7 @@
    "deal": "",
    "any_flavour": false,
    "per_litre": 3.5,
-   "seen_at": "2026-10-03T09:45:45+00:00"
-  },
-  {
-   "store": "Rimi",
-   "name": "En.j. Monster Ultra Peachy Keen mag.ain. 0,5l",
-   "price": 1.75,
-   "url": "https://www.rimi.ee/epood/ee/tooted/joogid/energiajook/en-j-monster-ultra-peachy-keen-mag-ain-0-5l/p/1375178",
-   "image": "https://rimibaltic-res.cloudinary.com/image/upload/b_white,c_limit,dpr_auto,f_webp,h_216,q_1,w_216/d_ecommerce:backend-fallback.png/MAT_1375178_PCE_EE",
-   "loyalty_price": null,
-   "volume_l": 0.5,
-   "ext_id": "",
-   "flavour": "Ultra Peachy Keen",
-   "zero_sugar": true,
-   "deal": "",
-   "any_flavour": false,
-   "per_litre": 3.5,
-   "seen_at": "2026-10-03T09:45:45+00:00"
+   "seen_at": "2026-10-04T10:29:18+00:00"
   },
   {
    "store": "Rimi",
@@ -345,7 +329,23 @@
    "deal": "",
    "any_flavour": false,
    "per_litre": 3.5,
-   "seen_at": "2026-10-03T09:45:45+00:00"
+   "seen_at": "2026-10-04T10:29:18+00:00"
+  },
+  {
+   "store": "Rimi",
+   "name": "En.j. Monster Ultra Peachy Keen mag.ain. 0,5l",
+   "price": 1.75,
+   "url": "https://www.rimi.ee/epood/ee/tooted/joogid/energiajook/en-j-monster-ultra-peachy-keen-mag-ain-0-5l/p/1375178",
+   "image": "https://rimibaltic-res.cloudinary.com/image/upload/b_white,c_limit,dpr_auto,f_webp,h_216,q_1,w_216/d_ecommerce:backend-fallback.png/MAT_1375178_PCE_EE",
+   "loyalty_price": null,
+   "volume_l": 0.5,
+   "ext_id": "",
+   "flavour": "Ultra Peachy Keen",
+   "zero_sugar": true,
+   "deal": "",
+   "any_flavour": false,
+   "per_litre": 3.5,
+   "seen_at": "2026-10-04T10:29:18+00:00"
   },
   {
    "store": "Rimi",
@@ -361,7 +361,7 @@
    "deal": "",
    "any_flavour": false,
    "per_litre": 3.5,
-   "seen_at": "2026-10-03T09:45:45+00:00"
+   "seen_at": "2026-10-04T10:29:18+00:00"
   },
   {
    "store": "Rimi",
@@ -377,7 +377,7 @@
    "deal": "",
    "any_flavour": false,
    "per_litre": 3.5,
-   "seen_at": "2026-10-03T09:45:45+00:00"
+   "seen_at": "2026-10-04T10:29:18+00:00"
   },
   {
    "store": "Rimi",
@@ -393,7 +393,7 @@
    "deal": "",
    "any_flavour": false,
    "per_litre": 3.5,
-   "seen_at": "2026-10-03T09:45:45+00:00"
+   "seen_at": "2026-10-04T10:29:18+00:00"
   },
   {
    "store": "Rimi",
@@ -409,7 +409,7 @@
    "deal": "",
    "any_flavour": false,
    "per_litre": 3.5,
-   "seen_at": "2026-10-03T09:45:45+00:00"
+   "seen_at": "2026-10-04T10:29:18+00:00"
   },
   {
    "store": "Rimi",
@@ -425,7 +425,7 @@
    "deal": "",
    "any_flavour": false,
    "per_litre": 3.5,
-   "seen_at": "2026-10-03T09:45:45+00:00"
+   "seen_at": "2026-10-04T10:29:18+00:00"
   },
   {
    "store": "Rimi",
@@ -441,7 +441,7 @@
    "deal": "",
    "any_flavour": false,
    "per_litre": 3.5,
-   "seen_at": "2026-10-03T09:45:45+00:00"
+   "seen_at": "2026-10-04T10:29:18+00:00"
   }
  ]
 }
