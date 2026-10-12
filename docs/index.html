@@ -144,6 +144,7 @@ footer{margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);
   </figure>
 
   <div class="filters">
+    <div class="row" id="products"><label>Jook</label></div>
     <div class="row"><label for="q">Maitse</label>
       <input type="search" id="q" placeholder="mango loco, ultra, espresso…" autocomplete="off">
       <span class="count" id="count"></span>
@@ -213,7 +214,15 @@ function ageText(ms){
    restates the shelf price. The toggle stays for the multipacks, where it is
    the only way to compare them against singles. */
 let DATA = {updated:null, sources:[], items:[]},
-    stores = new Set(), query = "Mango Loco", perLitre = false, dealsOnly = false, zeroOnly = false;
+    stores = new Set(), query = "Mango Loco", perLitre = false, dealsOnly = false, zeroOnly = false,
+    product = "monster";
+
+// default flavour, per-litre view and search hint when switching drink
+const PRODUCTS = {
+  monster: {label:"Monster", query:"Mango Loco", perLitre:false, hint:"mango loco, ultra, espresso…"},
+  cola:    {label:"Coca-Cola", query:"", perLitre:true, hint:"purk, pudel, 6-pakk…"}
+};
+const productOf = it => it.product || "monster";
 
 /* A store that returns nothing has no items, so it cannot be derived from
    items alone - that is exactly the case worth showing. Fall back to counting
@@ -238,6 +247,7 @@ const isDeal = it => (it.loyalty_price && it.loyalty_price < it.price) || !!it.d
 function visible(){
   const q = query.trim().toLowerCase();
   return DATA.items
+    .filter(it => productOf(it) === product)
     .filter(it => !stores.size || stores.has(it.store))
     .filter(it => !dealsOnly || isDeal(it))
     .filter(it => !zeroOnly || it.zero_sugar || it.any_flavour)
@@ -358,19 +368,63 @@ function refreshRow(){
     });
 }
 
+function clearRow(box){
+  box.querySelectorAll("button").forEach(b => b.remove());
+}
+
+function productChips(){
+  const box = document.getElementById("products");
+  const have = new Set(DATA.items.map(productOf));
+  Object.entries(PRODUCTS).filter(([k]) => have.has(k)).forEach(([key, spec]) => {
+    const b = document.createElement("button");
+    b.textContent = spec.label;
+    b.setAttribute("aria-pressed", key === product);
+    b.onclick = () => {
+      if (key === product) return;
+      box.querySelectorAll("button").forEach(x => x.setAttribute("aria-pressed","false"));
+      b.setAttribute("aria-pressed","true");
+      setProduct(key);
+    };
+    box.appendChild(b);
+  });
+  document.getElementById("products").hidden = have.size < 2;
+}
+
+function setProduct(key){
+  const spec = PRODUCTS[key];
+  product = key;
+  query = spec.query;
+  perLitre = spec.perLitre;
+  zeroOnly = false;
+  const q = document.getElementById("q");
+  q.value = query;
+  q.placeholder = spec.hint;
+  const unit = document.getElementById("unit");
+  unit.setAttribute("aria-pressed", perLitre);
+  unit.textContent = perLitre ? "hind / liiter" : "hind / tükk";
+  const zero = document.getElementById("zero");
+  zero.setAttribute("aria-pressed", "false");
+  zero.hidden = key !== "monster";
+  document.getElementById("flavours").hidden = key !== "monster";
+  chips();
+  render();
+}
+
 function chips(){
   const storeBox = document.getElementById("stores");
+  clearRow(storeBox);
   sources().forEach(src => {
-    const live = src.status === "ok" && src.count > 0;
+    const cnt = src.counts ? (src.counts[product] || 0) : src.count;
+    const live = src.status === "ok" && cnt > 0;
     const b = document.createElement("button");
     b.append(src.store);
     const n = document.createElement("span");
     n.className = "n";
-    n.textContent = live ? src.count : src.status === "stub" ? "–" : "0";
+    n.textContent = live ? cnt : src.status === "stub" ? "–" : "0";
     b.append(n);
 
     if (live){
-      b.setAttribute("aria-pressed", "false");
+      b.setAttribute("aria-pressed", stores.has(src.store));
       b.onclick = () => {
         stores.has(src.store) ? stores.delete(src.store) : stores.add(src.store);
         b.setAttribute("aria-pressed", stores.has(src.store));
@@ -388,13 +442,15 @@ function chips(){
 
   // the six flavours stocked in the most shops, so the shortcuts stay useful
   const spread = {};
-  DATA.items.filter(i => !i.any_flavour)
+  DATA.items.filter(i => productOf(i) === product && !i.any_flavour)
     .forEach(i => (spread[i.flavour] ||= new Set()).add(i.store));
   const flavourBox = document.getElementById("flavours");
+  clearRow(flavourBox);
   const top = Object.entries(spread)
     .sort((a,b) => b[1].size - a[1].size || a[0].localeCompare(b[0]))
     .slice(0,6).map(([f]) => f);
-  if (!top.includes("Mango Loco")) top.unshift("Mango Loco");
+  const pin = PRODUCTS[product].query;
+  if (pin && !top.includes(pin)) top.unshift(pin);
   top.forEach(flavour => {
       const b = document.createElement("button");
       b.textContent = flavour;
@@ -461,6 +517,7 @@ fetch("data.json", {cache:"no-store"})
     document.getElementById("q").value = query;
     alertBar();
     refreshRow();
+    productChips();
     chips();
     render();
   })

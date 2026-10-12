@@ -1,9 +1,11 @@
 # Monster index
 
 Daily Monster Energy prices from Estonian grocery e-shops, published as a static page.
+Also tracks regular Coca-Cola (no Zero/Light/flavoured). Products live in `PRODUCTS` in `scrape.py`.
 
     pip install -r requirements.txt
     python scrape.py --only rimi     # try one store, prints, saves nothing
+    python scrape.py --only rimi --product cola
     python scrape.py                 # all stores -> docs/data.json
 
 Publish: repo settings -> Pages -> deploy from branch `main`, folder `/docs`.

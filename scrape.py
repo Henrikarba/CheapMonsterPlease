@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
 """
-Monster index - collects Monster Energy prices from Estonian grocery e-shops.
+Monster index - collects Monster Energy (and Coca-Cola) prices from Estonian grocery e-shops.
 
 Usage:
     python scrape.py                 # scrape all stores, write docs/data.json
     python scrape.py --only rimi     # single store, prints results, writes nothing
+    python scrape.py --only rimi --product cola
 
 Every adapter returns a list of Product. Adapters are allowed to fail; one
 broken store must never take down the run.
@@ -56,6 +57,7 @@ class Product:
     zero_sugar: bool = False
     deal: str = ""                    # e.g. "Osta 2 · kuni 05.10"
     any_flavour: bool = False         # one offer covering the whole range
+    product: str = "monster"          # key into PRODUCTS
 
     def __post_init__(self):
         if self.volume_l is None:
@@ -80,6 +82,8 @@ MULTIPACK_RE = re.compile(r"(\d+)\s*[x×*]\s*(\d+[.,]?\d*)\s*(l|ml|cl)\b", re.I)
 
 
 def _litres(value: float, unit: str) -> float:
+    if unit == "l" and value >= 50:  # Selver: "4x330 l"
+        unit = "ml"
     return {"l": value, "cl": value / 100, "ml": value / 1000}[unit]
 
 
@@ -126,6 +130,37 @@ def is_monster(name: str) -> bool:
     if NOT_A_DRINK_RE.search(low):
         return False
     return bool(DRINK_RE.search(low)) or parse_volume(name) is not None
+
+
+# Normal Coca-Cola only: no Zero/Light/diet, no flavoured variants, no sweets.
+NOT_PLAIN_COLA_RE = re.compile(
+    r"zero|light|diet|suhkruvaba|sugar\s*free|no\s*sugar|cherry|kirss|vanil|"
+    r"lime|laim|lemon|sidrun|orange|apelsin|raspberry|vaarika|spiced|"
+    r"kumm|komm|n[äa]ts|candy|gummy|huulepalsam|lip|"
+    r"kokteil|al\.\s*j|alkohol|bacardi|jack\s*daniel|\brum\b|whisk|viski",
+    re.I,
+)
+
+
+def pack_label(label: str, name: str) -> str:
+    """'Coca-Cola 6x0,33l purk' -> 'Coca-Cola 6-pakk'"""
+    m = MULTIPACK_RE.search(name) or re.search(r"(\d+)\s*-?\s*(?:pakk|kast)", name, re.I)
+    if m:
+        return f"{label} {m.group(1)}-pakk"
+    if re.search(r"\bpu?rk\b|\bcan\b", name, re.I):
+        return f"{label} purk"
+    if re.search(r"pudel|\bpet\b", name, re.I) or (parse_volume(name) or 0) >= 0.5:
+        return f"{label} pudel"
+    return label
+
+
+def is_cola(name: str) -> bool:
+    low = name.lower()
+    if not re.search(r"coca[\s\-]*cola", low):
+        return False
+    if NOT_PLAIN_COLA_RE.search(low):
+        return False
+    return parse_volume(name) is not None
 
 
 # --------------------------------------------------------------------------
@@ -248,7 +283,7 @@ def money(value) -> float | None:
 # is server-rendered and you parse HTML instead.
 # --------------------------------------------------------------------------
 
-def scrape_rimi() -> list[Product]:
+def scrape_rimi(query: str, match) -> list[Product]:
     """Rimi ePood is server-rendered. Product cards carry a GTM data attribute
     holding a JSON blob with name and price, which is far more stable than
     scraping the price spans."""
@@ -257,7 +292,7 @@ def scrape_rimi() -> list[Product]:
     page = 1
     while page <= 5:
         r = s.get("https://www.rimi.ee/epood/ee/otsing",
-                  params={"query": "monster", "currentPage": page, "pageSize": 80},
+                  params={"query": query, "currentPage": page, "pageSize": 80},
                   timeout=TIMEOUT)
         r.raise_for_status()
         soup = BeautifulSoup(r.text, "html.parser")
@@ -280,7 +315,7 @@ def scrape_rimi() -> list[Product]:
             if not name:
                 el = card.select_one(".card__name, .card__url")
                 name = el.get_text(strip=True) if el else None
-            if not name or not is_monster(name):
+            if not name or not match(name):
                 continue
             if price is None:
                 eur = card.select_one(".price-tag .major, .price__integer")
@@ -305,7 +340,7 @@ def scrape_rimi() -> list[Product]:
     return out
 
 
-def scrape_selver() -> list[Product]:
+def scrape_selver(query: str, match) -> list[Product]:
     """Selver runs a Vue Storefront front end backed by an Elasticsearch proxy,
     so the catalogue is queryable as JSON. Two traps live in this index:
 
@@ -325,7 +360,7 @@ def scrape_selver() -> list[Product]:
     """
     s = session()
     body = {
-        "query": {"query_string": {"query": "monster"}},
+        "query": {"query_string": {"query": query}},
         "size": 100,
     }
     r = s.post(
@@ -339,7 +374,7 @@ def scrape_selver() -> list[Product]:
     for h in hits:
         d = h.get("_source", {})
         name = d.get("name") or ""
-        if not is_monster(name):
+        if not match(name):
             continue
         # shelf price, then the current campaign price if one is running
         base = money(d.get("original_price_incl_tax")) or money(d.get("regular_price"))
@@ -370,7 +405,7 @@ def scrape_selver() -> list[Product]:
 MAXIMA = "https://www.maxima.ee"
 
 
-def scrape_maxima() -> list[Product]:
+def scrape_maxima(query: str, match) -> list[Product]:
     """Maxima has no e-shop, only the weekly offers page. The list endpoint
     returns every offer as HTML; the site's search box filters it client-side.
 
@@ -388,7 +423,7 @@ def scrape_maxima() -> list[Product]:
     for card in cards:
         h = card.select_one("h4")
         name = h.get_text(" ", strip=True) if h else ""
-        if not is_monster(name):
+        if not match(name):
             continue
         eur = card.select_one(".price-eur")
         cents = card.select_one(".price-cents")
@@ -440,6 +475,12 @@ def scrape_maxima() -> list[Product]:
     return out
 
 
+# key -> shop search term, title matcher, display label
+PRODUCTS = {
+    "monster": {"query": "monster", "match": is_monster, "label": "Monster"},
+    "cola": {"query": "coca-cola", "match": is_cola, "label": "Coca-Cola"},
+}
+
 ADAPTERS = {
     "rimi": scrape_rimi,
     "selver": scrape_selver,
@@ -474,7 +515,7 @@ def export(products: list[Product], report: list[dict]) -> dict:
     # a paginated shop search can return the same product twice; keep the cheaper
     best: dict[tuple[str, str], Product] = {}
     for p in products:
-        key = (p.store, p.name)
+        key = (p.product, p.store, p.name)
         if key not in best or p.best_price < best[key].best_price:
             best[key] = p
 
@@ -489,6 +530,7 @@ def export(products: list[Product], report: list[dict]) -> dict:
         "updated": now,
         "sources": [{"adapter": r["adapter"], "store": r["store"],
                      "status": r["status"], "count": r["count"],
+                     "counts": r.get("counts", {}),
                      "detail": r.get("detail"), "seen_at": now}
                     for r in report],
         "items": items,
@@ -504,13 +546,14 @@ def export(products: list[Product], report: list[dict]) -> dict:
 
 # --------------------------------------------------------------------------
 
-def run(only: str | None) -> tuple[list[Product], list[dict]]:
+def run(only: str | None, product: str | None = None) -> tuple[list[Product], list[dict]]:
     """Returns the products plus one status row per adapter.
 
     A wired adapter that returns zero is reported as "empty", not as success:
     Selver once did exactly that for a broken query and nothing anywhere said so.
     """
     names = [only] if only else list(ADAPTERS)
+    keys = [product] if product else list(PRODUCTS)
     found: list[Product] = []
     report: list[dict] = []
     for name in names:
@@ -520,12 +563,26 @@ def run(only: str | None) -> tuple[list[Product], list[dict]]:
             continue
         store = STORE_NAMES.get(name, name.title())
         try:
-            items = fn()
+            items, counts = [], {}
+            for key in keys:
+                spec = PRODUCTS[key]
+                got = fn(spec["query"], spec["match"])
+                if key != "monster":
+                    # Monster flavour/zero parsing means nothing for other drinks
+                    for p in got:
+                        p.flavour = pack_label(spec["label"], p.name)
+                        p.zero_sugar = p.any_flavour = False
+                for p in got:
+                    p.product = key
+                counts[key] = len(got)
+                items.extend(got)
+                time.sleep(DELAY)
             found.extend(items)
             if items or name in MAY_BE_EMPTY:
-                print(f"{name:8s} {len(items):3d} products")
+                print(f"{name:8s} " + ", ".join(f"{k} {n}" for k, n in counts.items()))
                 report.append({"adapter": name, "store": store,
-                               "status": "ok", "count": len(items)})
+                               "status": "ok", "count": len(items),
+                               "counts": counts})
             else:
                 print(f"{name:8s}   0 products - adapter is wired, so this is "
                       f"probably drift", file=sys.stderr)
@@ -548,9 +605,10 @@ def run(only: str | None) -> tuple[list[Product], list[dict]]:
 def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--only", help="run a single store adapter, write nothing")
+    ap.add_argument("--product", choices=list(PRODUCTS), help="with --only: one product")
     args = ap.parse_args()
 
-    products, report = run(args.only)
+    products, report = run(args.only, args.product)
 
     if args.only:
         for p in sorted(products, key=lambda x: (x.per_litre is None, x.per_litre)):

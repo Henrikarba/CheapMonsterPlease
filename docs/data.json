@@ -1,32 +1,180 @@
 {
- "updated": "2026-10-12T11:47:42+00:00",
+ "updated": "2026-10-12T13:52:43+00:00",
  "sources": [
   {
    "adapter": "rimi",
    "store": "Rimi",
    "status": "ok",
-   "count": 16,
+   "count": 22,
+   "counts": {
+    "monster": 16,
+    "cola": 6
+   },
    "detail": null,
-   "seen_at": "2026-10-12T11:47:42+00:00"
+   "seen_at": "2026-10-12T13:52:43+00:00"
   },
   {
    "adapter": "selver",
    "store": "Selver",
    "status": "ok",
-   "count": 11,
+   "count": 21,
+   "counts": {
+    "monster": 11,
+    "cola": 10
+   },
    "detail": null,
-   "seen_at": "2026-10-12T11:47:42+00:00"
+   "seen_at": "2026-10-12T13:52:43+00:00"
   },
   {
    "adapter": "maxima",
    "store": "Maxima",
    "status": "ok",
-   "count": 0,
+   "count": 1,
+   "counts": {
+    "monster": 0,
+    "cola": 1
+   },
    "detail": null,
-   "seen_at": "2026-10-12T11:47:42+00:00"
+   "seen_at": "2026-10-12T13:52:43+00:00"
   }
  ],
  "items": [
+  {
+   "store": "Rimi",
+   "name": "Karastusjook Coca-Cola 1,5l",
+   "price": 1.39,
+   "url": "https://www.rimi.ee/epood/ee/tooted/joogid/karastusjoogid/limonaad-karastusjook/karastusjook-coca-cola-1-5l/p/1360279",
+   "image": "https://rimibaltic-res.cloudinary.com/image/upload/b_white,c_limit,dpr_auto,f_webp,h_216,q_1,w_216/d_ecommerce:backend-fallback.png/MAT_1360279_PCE_EE",
+   "loyalty_price": null,
+   "volume_l": 1.5,
+   "ext_id": "",
+   "flavour": "Coca-Cola pudel",
+   "zero_sugar": false,
+   "deal": "",
+   "any_flavour": false,
+   "product": "cola",
+   "per_litre": 0.927,
+   "seen_at": "2026-10-12T13:52:43+00:00"
+  },
+  {
+   "store": "Selver",
+   "name": "Karastusjook Coca-Cola, COCA-COLA, 1,5 L",
+   "price": 2.29,
+   "url": "https://www.selver.ee/karastusjook-coca-cola-coca-cola-1-5-l",
+   "image": "/5/0/5000112620047.jpg",
+   "loyalty_price": 1.49,
+   "volume_l": 1.5,
+   "ext_id": "T000039639",
+   "flavour": "Coca-Cola pudel",
+   "zero_sugar": false,
+   "deal": "",
+   "any_flavour": false,
+   "product": "cola",
+   "per_litre": 0.993,
+   "seen_at": "2026-10-12T13:52:43+00:00"
+  },
+  {
+   "store": "Selver",
+   "name": "Karastusjook Coca-Cola, COCA-COLA, 2 L",
+   "price": 2.73,
+   "url": "https://www.selver.ee/karastusjook-coca-cola-coca-cola-2-l",
+   "image": "/5/0/5000112651355.jpg",
+   "loyalty_price": null,
+   "volume_l": 2.0,
+   "ext_id": "T000013602",
+   "flavour": "Coca-Cola pudel",
+   "zero_sugar": false,
+   "deal": "",
+   "any_flavour": false,
+   "product": "cola",
+   "per_litre": 1.365,
+   "seen_at": "2026-10-12T13:52:43+00:00"
+  },
+  {
+   "store": "Rimi",
+   "name": "Karastusjook Coca-Cola 2l",
+   "price": 2.85,
+   "url": "https://www.rimi.ee/epood/ee/tooted/joogid/karastusjoogid/limonaad-karastusjook/karastusjook-coca-cola-2l/p/1353351",
+   "image": "https://rimibaltic-res.cloudinary.com/image/upload/b_white,c_limit,dpr_auto,f_webp,h_216,q_1,w_216/d_ecommerce:backend-fallback.png/MAT_1353351_PCE_EE",
+   "loyalty_price": null,
+   "volume_l": 2.0,
+   "ext_id": "",
+   "flavour": "Coca-Cola pudel",
+   "zero_sugar": false,
+   "deal": "",
+   "any_flavour": false,
+   "product": "cola",
+   "per_litre": 1.425,
+   "seen_at": "2026-10-12T13:52:43+00:00"
+  },
+  {
+   "store": "Selver",
+   "name": "Karastusjook Coca-Cola, COCA-COLA, 850 ml",
+   "price": 1.49,
+   "url": "https://www.selver.ee/karastusjook-coca-cola-coca-cola-850-ml",
+   "image": "/5/4/5449000034519.jpg",
+   "loyalty_price": null,
+   "volume_l": 0.85,
+   "ext_id": "T000092101",
+   "flavour": "Coca-Cola pudel",
+   "zero_sugar": false,
+   "deal": "",
+   "any_flavour": false,
+   "product": "cola",
+   "per_litre": 1.753,
+   "seen_at": "2026-10-12T13:52:43+00:00"
+  },
+  {
+   "store": "Rimi",
+   "name": "Karastusjook Coca Cola 0,5l",
+   "price": 0.95,
+   "url": "https://www.rimi.ee/epood/ee/tooted/joogid/karastusjoogid/limonaad-karastusjook/karastusjook-coca-cola-0-5l/p/1350156",
+   "image": "https://rimibaltic-res.cloudinary.com/image/upload/b_white,c_limit,dpr_auto,f_webp,h_216,q_1,w_216/d_ecommerce:backend-fallback.png/MAT_1350156_PCE_EE",
+   "loyalty_price": null,
+   "volume_l": 0.5,
+   "ext_id": "",
+   "flavour": "Coca-Cola pudel",
+   "zero_sugar": false,
+   "deal": "",
+   "any_flavour": false,
+   "product": "cola",
+   "per_litre": 1.9,
+   "seen_at": "2026-10-12T13:52:43+00:00"
+  },
+  {
+   "store": "Selver",
+   "name": "Karastusjook Coca-Cola 6-pakk, COCA-COLA, 6 x 330 ml",
+   "price": 5.99,
+   "url": "https://www.selver.ee/karastusjook-coca-cola-6-pakk-coca-cola-6-x-330-ml",
+   "image": "/5/4/5449000000965.jpg",
+   "loyalty_price": 3.79,
+   "volume_l": 1.98,
+   "ext_id": "T000017337",
+   "flavour": "Coca-Cola 6-pakk",
+   "zero_sugar": false,
+   "deal": "",
+   "any_flavour": false,
+   "product": "cola",
+   "per_litre": 1.914,
+   "seen_at": "2026-10-12T13:52:43+00:00"
+  },
+  {
+   "store": "Maxima",
+   "name": "Karastusjook COCA COLA, 850ml",
+   "price": 1.69,
+   "url": "https://www.maxima.ee/pakkumised",
+   "image": "https://offers.maxima.ee/media/MarketingOffer/6abc28025cfb9.png",
+   "loyalty_price": null,
+   "volume_l": 0.85,
+   "ext_id": "ea4f652d-2fd4-4e8f-8846-800aeabe26e5",
+   "flavour": "Coca-Cola pudel",
+   "zero_sugar": false,
+   "deal": "Aitäh · kuni 04.01",
+   "any_flavour": false,
+   "product": "cola",
+   "per_litre": 1.988,
+   "seen_at": "2026-10-12T13:52:43+00:00"
+  },
   {
    "store": "Selver",
    "name": "Energiajook Energy 4-pakk, MONSTER, 2 l",
@@ -40,8 +188,9 @@
    "zero_sugar": false,
    "deal": "",
    "any_flavour": false,
+   "product": "monster",
    "per_litre": 2.145,
-   "seen_at": "2026-10-12T11:47:42+00:00"
+   "seen_at": "2026-10-12T13:52:43+00:00"
   },
   {
    "store": "Selver",
@@ -56,8 +205,77 @@
    "zero_sugar": true,
    "deal": "",
    "any_flavour": false,
+   "product": "monster",
    "per_litre": 2.145,
-   "seen_at": "2026-10-12T11:47:42+00:00"
+   "seen_at": "2026-10-12T13:52:43+00:00"
+  },
+  {
+   "store": "Selver",
+   "name": "Karastusjook Coca-Cola, COCA-COLA, 500 ml",
+   "price": 1.27,
+   "url": "https://www.selver.ee/karastusjook-coca-cola-coca-cola-500-ml",
+   "image": "/4/7/47402126.jpg",
+   "loyalty_price": null,
+   "volume_l": 0.5,
+   "ext_id": "T000009868",
+   "flavour": "Coca-Cola pudel",
+   "zero_sugar": false,
+   "deal": "",
+   "any_flavour": false,
+   "product": "cola",
+   "per_litre": 2.54,
+   "seen_at": "2026-10-12T13:52:43+00:00"
+  },
+  {
+   "store": "Selver",
+   "name": "Karastusjook Coca-Cola 4-pakk, COCA-COLA, 4x330 l",
+   "price": 3.49,
+   "url": "https://www.selver.ee/karastusjook-coca-cola-4-pakk-coca-cola-4x330-l",
+   "image": "/5/0/5000112678147.jpg",
+   "loyalty_price": null,
+   "volume_l": 1.32,
+   "ext_id": "T000090548",
+   "flavour": "Coca-Cola 4-pakk",
+   "zero_sugar": false,
+   "deal": "",
+   "any_flavour": false,
+   "product": "cola",
+   "per_litre": 2.644,
+   "seen_at": "2026-10-12T13:52:43+00:00"
+  },
+  {
+   "store": "Selver",
+   "name": "Karastusjook Coca-Cola, COCA-COLA, 200 ml",
+   "price": 0.8,
+   "url": "https://www.selver.ee/karastusjook-coca-cola-coca-cola-200-ml",
+   "image": "/5/4/5449000011114.jpg",
+   "loyalty_price": 0.59,
+   "volume_l": 0.2,
+   "ext_id": "T000036250",
+   "flavour": "Coca-Cola",
+   "zero_sugar": false,
+   "deal": "",
+   "any_flavour": false,
+   "product": "cola",
+   "per_litre": 2.95,
+   "seen_at": "2026-10-12T13:52:43+00:00"
+  },
+  {
+   "store": "Rimi",
+   "name": "Karastusjook Coca-Cola 6x0,33l purk",
+   "price": 6.19,
+   "url": "https://www.rimi.ee/epood/ee/tooted/joogid/karastusjoogid/limonaad-karastusjook/karastusjook-coca-cola-6x0-33l-purk/p/1350647",
+   "image": "https://rimibaltic-res.cloudinary.com/image/upload/b_white,c_limit,dpr_auto,f_webp,h_216,q_1,w_216/d_ecommerce:backend-fallback.png/MAT_1350647_PCE_EE",
+   "loyalty_price": null,
+   "volume_l": 1.98,
+   "ext_id": "",
+   "flavour": "Coca-Cola 6-pakk",
+   "zero_sugar": false,
+   "deal": "",
+   "any_flavour": false,
+   "product": "cola",
+   "per_litre": 3.126,
+   "seen_at": "2026-10-12T13:52:43+00:00"
   },
   {
    "store": "Selver",
@@ -72,8 +290,9 @@
    "zero_sugar": true,
    "deal": "",
    "any_flavour": false,
+   "product": "monster",
    "per_litre": 3.237,
-   "seen_at": "2026-10-12T11:47:42+00:00"
+   "seen_at": "2026-10-12T13:52:43+00:00"
   },
   {
    "store": "Selver",
@@ -88,8 +307,9 @@
    "zero_sugar": false,
    "deal": "",
    "any_flavour": false,
+   "product": "monster",
    "per_litre": 3.237,
-   "seen_at": "2026-10-12T11:47:42+00:00"
+   "seen_at": "2026-10-12T13:52:43+00:00"
   },
   {
    "store": "Rimi",
@@ -104,8 +324,9 @@
    "zero_sugar": false,
    "deal": "",
    "any_flavour": false,
+   "product": "monster",
    "per_litre": 3.345,
-   "seen_at": "2026-10-12T11:47:42+00:00"
+   "seen_at": "2026-10-12T13:52:43+00:00"
   },
   {
    "store": "Selver",
@@ -120,8 +341,9 @@
    "zero_sugar": true,
    "deal": "",
    "any_flavour": false,
+   "product": "monster",
    "per_litre": 3.38,
-   "seen_at": "2026-10-12T11:47:42+00:00"
+   "seen_at": "2026-10-12T13:52:43+00:00"
   },
   {
    "store": "Selver",
@@ -136,8 +358,9 @@
    "zero_sugar": false,
    "deal": "",
    "any_flavour": false,
+   "product": "monster",
    "per_litre": 3.38,
-   "seen_at": "2026-10-12T11:47:42+00:00"
+   "seen_at": "2026-10-12T13:52:43+00:00"
   },
   {
    "store": "Selver",
@@ -152,8 +375,9 @@
    "zero_sugar": true,
    "deal": "",
    "any_flavour": false,
+   "product": "monster",
    "per_litre": 3.38,
-   "seen_at": "2026-10-12T11:47:42+00:00"
+   "seen_at": "2026-10-12T13:52:43+00:00"
   },
   {
    "store": "Selver",
@@ -168,8 +392,9 @@
    "zero_sugar": true,
    "deal": "",
    "any_flavour": false,
+   "product": "monster",
    "per_litre": 3.38,
-   "seen_at": "2026-10-12T11:47:42+00:00"
+   "seen_at": "2026-10-12T13:52:43+00:00"
   },
   {
    "store": "Selver",
@@ -184,8 +409,9 @@
    "zero_sugar": true,
    "deal": "",
    "any_flavour": false,
+   "product": "monster",
    "per_litre": 3.38,
-   "seen_at": "2026-10-12T11:47:42+00:00"
+   "seen_at": "2026-10-12T13:52:43+00:00"
   },
   {
    "store": "Selver",
@@ -200,8 +426,9 @@
    "zero_sugar": false,
    "deal": "",
    "any_flavour": false,
+   "product": "monster",
    "per_litre": 3.38,
-   "seen_at": "2026-10-12T11:47:42+00:00"
+   "seen_at": "2026-10-12T13:52:43+00:00"
   },
   {
    "store": "Selver",
@@ -216,8 +443,9 @@
    "zero_sugar": false,
    "deal": "",
    "any_flavour": false,
+   "product": "monster",
    "per_litre": 3.38,
-   "seen_at": "2026-10-12T11:47:42+00:00"
+   "seen_at": "2026-10-12T13:52:43+00:00"
   },
   {
    "store": "Rimi",
@@ -232,8 +460,9 @@
    "zero_sugar": true,
    "deal": "",
    "any_flavour": false,
+   "product": "monster",
    "per_litre": 3.5,
-   "seen_at": "2026-10-12T11:47:42+00:00"
+   "seen_at": "2026-10-12T13:52:43+00:00"
   },
   {
    "store": "Rimi",
@@ -248,8 +477,9 @@
    "zero_sugar": false,
    "deal": "",
    "any_flavour": false,
+   "product": "monster",
    "per_litre": 3.5,
-   "seen_at": "2026-10-12T11:47:42+00:00"
+   "seen_at": "2026-10-12T13:52:43+00:00"
   },
   {
    "store": "Rimi",
@@ -264,8 +494,9 @@
    "zero_sugar": false,
    "deal": "",
    "any_flavour": false,
+   "product": "monster",
    "per_litre": 3.5,
-   "seen_at": "2026-10-12T11:47:42+00:00"
+   "seen_at": "2026-10-12T13:52:43+00:00"
   },
   {
    "store": "Rimi",
@@ -280,8 +511,9 @@
    "zero_sugar": true,
    "deal": "",
    "any_flavour": false,
+   "product": "monster",
    "per_litre": 3.5,
-   "seen_at": "2026-10-12T11:47:42+00:00"
+   "seen_at": "2026-10-12T13:52:43+00:00"
   },
   {
    "store": "Rimi",
@@ -296,8 +528,9 @@
    "zero_sugar": true,
    "deal": "",
    "any_flavour": false,
+   "product": "monster",
    "per_litre": 3.5,
-   "seen_at": "2026-10-12T11:47:42+00:00"
+   "seen_at": "2026-10-12T13:52:43+00:00"
   },
   {
    "store": "Rimi",
@@ -312,8 +545,9 @@
    "zero_sugar": true,
    "deal": "",
    "any_flavour": false,
+   "product": "monster",
    "per_litre": 3.5,
-   "seen_at": "2026-10-12T11:47:42+00:00"
+   "seen_at": "2026-10-12T13:52:43+00:00"
   },
   {
    "store": "Rimi",
@@ -328,8 +562,9 @@
    "zero_sugar": false,
    "deal": "",
    "any_flavour": false,
+   "product": "monster",
    "per_litre": 3.5,
-   "seen_at": "2026-10-12T11:47:42+00:00"
+   "seen_at": "2026-10-12T13:52:43+00:00"
   },
   {
    "store": "Rimi",
@@ -344,8 +579,9 @@
    "zero_sugar": true,
    "deal": "",
    "any_flavour": false,
+   "product": "monster",
    "per_litre": 3.5,
-   "seen_at": "2026-10-12T11:47:42+00:00"
+   "seen_at": "2026-10-12T13:52:43+00:00"
   },
   {
    "store": "Rimi",
@@ -360,8 +596,9 @@
    "zero_sugar": false,
    "deal": "",
    "any_flavour": false,
+   "product": "monster",
    "per_litre": 3.5,
-   "seen_at": "2026-10-12T11:47:42+00:00"
+   "seen_at": "2026-10-12T13:52:43+00:00"
   },
   {
    "store": "Rimi",
@@ -376,8 +613,9 @@
    "zero_sugar": false,
    "deal": "",
    "any_flavour": false,
+   "product": "monster",
    "per_litre": 3.5,
-   "seen_at": "2026-10-12T11:47:42+00:00"
+   "seen_at": "2026-10-12T13:52:43+00:00"
   },
   {
    "store": "Rimi",
@@ -392,8 +630,9 @@
    "zero_sugar": true,
    "deal": "",
    "any_flavour": false,
+   "product": "monster",
    "per_litre": 3.5,
-   "seen_at": "2026-10-12T11:47:42+00:00"
+   "seen_at": "2026-10-12T13:52:43+00:00"
   },
   {
    "store": "Rimi",
@@ -408,8 +647,9 @@
    "zero_sugar": false,
    "deal": "",
    "any_flavour": false,
+   "product": "monster",
    "per_litre": 3.5,
-   "seen_at": "2026-10-12T11:47:42+00:00"
+   "seen_at": "2026-10-12T13:52:43+00:00"
   },
   {
    "store": "Rimi",
@@ -424,8 +664,9 @@
    "zero_sugar": true,
    "deal": "",
    "any_flavour": false,
+   "product": "monster",
    "per_litre": 3.5,
-   "seen_at": "2026-10-12T11:47:42+00:00"
+   "seen_at": "2026-10-12T13:52:43+00:00"
   },
   {
    "store": "Rimi",
@@ -440,8 +681,9 @@
    "zero_sugar": true,
    "deal": "",
    "any_flavour": false,
+   "product": "monster",
    "per_litre": 3.5,
-   "seen_at": "2026-10-12T11:47:42+00:00"
+   "seen_at": "2026-10-12T13:52:43+00:00"
   },
   {
    "store": "Rimi",
@@ -456,8 +698,77 @@
    "zero_sugar": true,
    "deal": "",
    "any_flavour": false,
+   "product": "monster",
    "per_litre": 3.5,
-   "seen_at": "2026-10-12T11:47:42+00:00"
+   "seen_at": "2026-10-12T13:52:43+00:00"
+  },
+  {
+   "store": "Selver",
+   "name": "Karastusjook Coca-Cola 24-kast, COCA-COLA, 24 x 330 ml",
+   "price": 28.97,
+   "url": "https://www.selver.ee/karastusjook-coca-cola-24-kast-coca-cola-24-x-330-ml",
+   "image": "/0/2/0216000000470.jpg",
+   "loyalty_price": null,
+   "volume_l": 7.92,
+   "ext_id": "T000068063",
+   "flavour": "Coca-Cola 24-pakk",
+   "zero_sugar": false,
+   "deal": "",
+   "any_flavour": false,
+   "product": "cola",
+   "per_litre": 3.658,
+   "seen_at": "2026-10-12T13:52:43+00:00"
+  },
+  {
+   "store": "Selver",
+   "name": "Karastusjook Coca-Cola, COCA-COLA, 330 ml",
+   "price": 1.21,
+   "url": "https://www.selver.ee/karastusjook-coca-cola-coca-cola-330-ml-t000048152",
+   "image": "/5/4/5449000214911.jpg",
+   "loyalty_price": null,
+   "volume_l": 0.33,
+   "ext_id": "T000048152",
+   "flavour": "Coca-Cola",
+   "zero_sugar": false,
+   "deal": "",
+   "any_flavour": false,
+   "product": "cola",
+   "per_litre": 3.667,
+   "seen_at": "2026-10-12T13:52:43+00:00"
+  },
+  {
+   "store": "Rimi",
+   "name": "Karastusjook Coca-Cola 0,33l prk",
+   "price": 1.25,
+   "url": "https://www.rimi.ee/epood/ee/tooted/joogid/karastusjoogid/limonaad-karastusjook/karastusjook-coca-cola-0-33l-prk/p/1351912",
+   "image": "https://rimibaltic-res.cloudinary.com/image/upload/b_white,c_limit,dpr_auto,f_webp,h_216,q_1,w_216/d_ecommerce:backend-fallback.png/MAT_1351912_PCE_EE",
+   "loyalty_price": null,
+   "volume_l": 0.33,
+   "ext_id": "",
+   "flavour": "Coca-Cola purk",
+   "zero_sugar": false,
+   "deal": "",
+   "any_flavour": false,
+   "product": "cola",
+   "per_litre": 3.788,
+   "seen_at": "2026-10-12T13:52:43+00:00"
+  },
+  {
+   "store": "Rimi",
+   "name": "Karastusjook Coca-Cola 0,33l pudel",
+   "price": 1.35,
+   "url": "https://www.rimi.ee/epood/ee/tooted/joogid/karastusjoogid/limonaad-karastusjook/karastusjook-coca-cola-0-33l-pudel/p/1366666",
+   "image": "https://rimibaltic-res.cloudinary.com/image/upload/b_white,c_limit,dpr_auto,f_webp,h_216,q_1,w_216/d_ecommerce:backend-fallback.png/MAT_1366666_PCE_EE",
+   "loyalty_price": null,
+   "volume_l": 0.33,
+   "ext_id": "",
+   "flavour": "Coca-Cola pudel",
+   "zero_sugar": false,
+   "deal": "",
+   "any_flavour": false,
+   "product": "cola",
+   "per_litre": 4.091,
+   "seen_at": "2026-10-12T13:52:43+00:00"
   }
  ]
 }
