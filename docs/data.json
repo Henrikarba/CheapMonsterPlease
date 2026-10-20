@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-19T09:45:03+00:00",
+ "updated": "2026-10-20T09:18:35+00:00",
  "sources": [
   {
    "adapter": "rimi",
@@ -11,7 +11,7 @@
     "cola": 6
    },
    "detail": null,
-   "seen_at": "2026-10-19T09:45:03+00:00"
+   "seen_at": "2026-10-20T09:18:35+00:00"
   },
   {
    "adapter": "selver",
@@ -23,62 +23,45 @@
     "cola": 10
    },
    "detail": null,
-   "seen_at": "2026-10-19T09:45:03+00:00"
+   "seen_at": "2026-10-20T09:18:35+00:00"
   },
   {
    "adapter": "maxima",
    "store": "Maxima",
    "status": "ok",
-   "count": 1,
+   "count": 2,
    "counts": {
     "monster": 0,
-    "cola": 1
+    "cola": 2
    },
    "detail": null,
-   "seen_at": "2026-10-19T09:45:03+00:00"
+   "seen_at": "2026-10-20T09:18:35+00:00"
   }
  ],
  "items": [
   {
-   "store": "Rimi",
-   "name": "Karastusjook Coca-Cola 1,5l",
-   "price": 1.39,
-   "url": "https://www.rimi.ee/epood/ee/tooted/joogid/karastusjoogid/limonaad-karastusjook/karastusjook-coca-cola-1-5l/p/1360279",
-   "image": "https://rimibaltic-res.cloudinary.com/image/upload/b_white,c_limit,dpr_auto,f_webp,h_216,q_1,w_216/d_ecommerce:backend-fallback.png/MAT_1360279_PCE_EE",
+   "store": "Maxima",
+   "name": "Karastusjook Coca-Cola, 2 x 1,5 l",
+   "price": 3.59,
+   "url": "https://www.maxima.ee/pakkumised",
+   "image": "https://offers.maxima.ee/media/MarketingOffer/6ad5c5d625178.png",
    "loyalty_price": null,
-   "volume_l": 1.5,
-   "ext_id": "",
-   "flavour": "Coca-Cola pudel",
+   "volume_l": 3.0,
+   "ext_id": "bbbce51c-ddc9-4c7b-b3a0-3d562f7bc2bc",
+   "flavour": "Coca-Cola 2-pakk",
    "zero_sugar": false,
-   "deal": "",
+   "deal": "Aitäh · kuni 26.10",
    "any_flavour": false,
    "product": "cola",
-   "per_litre": 0.927,
-   "seen_at": "2026-10-19T09:45:03+00:00"
-  },
-  {
-   "store": "Selver",
-   "name": "Karastusjook Coca-Cola, COCA-COLA, 1,5 L",
-   "price": 2.29,
-   "url": "https://www.selver.ee/karastusjook-coca-cola-coca-cola-1-5-l",
-   "image": "/5/0/5000112620047.jpg",
-   "loyalty_price": 1.49,
-   "volume_l": 1.5,
-   "ext_id": "T000039639",
-   "flavour": "Coca-Cola pudel",
-   "zero_sugar": false,
-   "deal": "",
-   "any_flavour": false,
-   "product": "cola",
-   "per_litre": 0.993,
-   "seen_at": "2026-10-19T09:45:03+00:00"
+   "per_litre": 1.197,
+   "seen_at": "2026-10-20T09:18:35+00:00"
   },
   {
    "store": "Selver",
    "name": "Karastusjook Coca-Cola, COCA-COLA, 2 L",
    "price": 2.73,
    "url": "https://www.selver.ee/karastusjook-coca-cola-coca-cola-2-l",
-   "image": "/5/0/5000112651355.jpg",
+   "image": "/4/7/4743050000045.jpg",
    "loyalty_price": null,
    "volume_l": 2.0,
    "ext_id": "T000013602",
@@ -88,7 +71,7 @@
    "any_flavour": false,
    "product": "cola",
    "per_litre": 1.365,
-   "seen_at": "2026-10-19T09:45:03+00:00"
+   "seen_at": "2026-10-20T09:18:35+00:00"
   },
   {
    "store": "Rimi",
@@ -105,7 +88,41 @@
    "any_flavour": false,
    "product": "cola",
    "per_litre": 1.425,
-   "seen_at": "2026-10-19T09:45:03+00:00"
+   "seen_at": "2026-10-20T09:18:35+00:00"
+  },
+  {
+   "store": "Rimi",
+   "name": "Karastusjook Coca-Cola 1,5l",
+   "price": 2.25,
+   "url": "https://www.rimi.ee/epood/ee/tooted/joogid/karastusjoogid/limonaad-karastusjook/karastusjook-coca-cola-1-5l/p/1360279",
+   "image": "https://rimibaltic-res.cloudinary.com/image/upload/b_white,c_limit,dpr_auto,f_webp,h_216,q_1,w_216/d_ecommerce:backend-fallback.png/MAT_1360279_PCE_EE",
+   "loyalty_price": null,
+   "volume_l": 1.5,
+   "ext_id": "",
+   "flavour": "Coca-Cola pudel",
+   "zero_sugar": false,
+   "deal": "",
+   "any_flavour": false,
+   "product": "cola",
+   "per_litre": 1.5,
+   "seen_at": "2026-10-20T09:18:35+00:00"
+  },
+  {
+   "store": "Selver",
+   "name": "Karastusjook Coca-Cola, COCA-COLA, 1,5 L",
+   "price": 2.29,
+   "url": "https://www.selver.ee/karastusjook-coca-cola-coca-cola-1-5-l",
+   "image": "/5/0/5000112620047.jpg",
+   "loyalty_price": null,
+   "volume_l": 1.5,
+   "ext_id": "T000039639",
+   "flavour": "Coca-Cola pudel",
+   "zero_sugar": false,
+   "deal": "",
+   "any_flavour": false,
+   "product": "cola",
+   "per_litre": 1.527,
+   "seen_at": "2026-10-20T09:18:35+00:00"
   },
   {
    "store": "Selver",
@@ -122,24 +139,160 @@
    "any_flavour": false,
    "product": "cola",
    "per_litre": 1.753,
-   "seen_at": "2026-10-19T09:45:03+00:00"
+   "seen_at": "2026-10-20T09:18:35+00:00"
   },
   {
    "store": "Rimi",
-   "name": "Karastusjook Coca Cola 0,5l",
-   "price": 0.95,
-   "url": "https://www.rimi.ee/epood/ee/tooted/joogid/karastusjoogid/limonaad-karastusjook/karastusjook-coca-cola-0-5l/p/1350156",
-   "image": "https://rimibaltic-res.cloudinary.com/image/upload/b_white,c_limit,dpr_auto,f_webp,h_216,q_1,w_216/d_ecommerce:backend-fallback.png/MAT_1350156_PCE_EE",
+   "name": "Energiajook Monster Energy 0,5l",
+   "price": 0.99,
+   "url": "https://www.rimi.ee/epood/ee/tooted/joogid/energiajook/energiajook-monster-energy-0-5l/p/1355076",
+   "image": "https://rimibaltic-res.cloudinary.com/image/upload/b_white,c_limit,dpr_auto,f_webp,h_216,q_1,w_216/d_ecommerce:backend-fallback.png/MAT_1355076_PCE_EE",
    "loyalty_price": null,
    "volume_l": 0.5,
    "ext_id": "",
-   "flavour": "Coca-Cola pudel",
+   "flavour": "Original",
    "zero_sugar": false,
    "deal": "",
    "any_flavour": false,
-   "product": "cola",
-   "per_litre": 1.9,
-   "seen_at": "2026-10-19T09:45:03+00:00"
+   "product": "monster",
+   "per_litre": 1.98,
+   "seen_at": "2026-10-20T09:18:35+00:00"
+  },
+  {
+   "store": "Rimi",
+   "name": "Energiajook Monster Zero Ultra suhkruvab.0,5l",
+   "price": 0.99,
+   "url": "https://www.rimi.ee/epood/ee/tooted/joogid/energiajook/energiajook-monster-zero-ultra-suhkruvab-0-5l/p/1361974",
+   "image": "https://rimibaltic-res.cloudinary.com/image/upload/b_white,c_limit,dpr_auto,f_webp,h_216,q_1,w_216/d_ecommerce:backend-fallback.png/MAT_1361974_PCE_EE",
+   "loyalty_price": null,
+   "volume_l": 0.5,
+   "ext_id": "",
+   "flavour": "Ultra Zero",
+   "zero_sugar": true,
+   "deal": "",
+   "any_flavour": false,
+   "product": "monster",
+   "per_litre": 1.98,
+   "seen_at": "2026-10-20T09:18:35+00:00"
+  },
+  {
+   "store": "Rimi",
+   "name": "Energiajook Monster Juice Mango Loco 0,5l",
+   "price": 0.99,
+   "url": "https://www.rimi.ee/epood/ee/tooted/joogid/energiajook/energiajook-monster-juice-mango-loco-0-5l/p/1365350",
+   "image": "https://rimibaltic-res.cloudinary.com/image/upload/b_white,c_limit,dpr_auto,f_webp,h_216,q_1,w_216/d_ecommerce:backend-fallback.png/MAT_1365350_PCE_EE",
+   "loyalty_price": null,
+   "volume_l": 0.5,
+   "ext_id": "",
+   "flavour": "Mango Loco",
+   "zero_sugar": false,
+   "deal": "",
+   "any_flavour": false,
+   "product": "monster",
+   "per_litre": 1.98,
+   "seen_at": "2026-10-20T09:18:35+00:00"
+  },
+  {
+   "store": "Rimi",
+   "name": "Energiajook Monster Bad Apple m.a. 0,5l",
+   "price": 0.99,
+   "url": "https://www.rimi.ee/epood/ee/tooted/joogid/energiajook/energiajook-monster-bad-apple-m-a-0-5l/p/1376290",
+   "image": "https://rimibaltic-res.cloudinary.com/image/upload/b_white,c_limit,dpr_auto,f_webp,h_216,q_1,w_216/d_ecommerce:backend-fallback.png/MAT_1376290_PCE_EE",
+   "loyalty_price": null,
+   "volume_l": 0.5,
+   "ext_id": "",
+   "flavour": "Bad Apple",
+   "zero_sugar": false,
+   "deal": "",
+   "any_flavour": false,
+   "product": "monster",
+   "per_litre": 1.98,
+   "seen_at": "2026-10-20T09:18:35+00:00"
+  },
+  {
+   "store": "Rimi",
+   "name": "Energiajook Monster Ultra Strawb. Dreams 0,5l",
+   "price": 0.99,
+   "url": "https://www.rimi.ee/epood/ee/tooted/joogid/energiajook/energiajook-monster-ultra-strawb-dreams-0-5l/p/1375080",
+   "image": "https://rimibaltic-res.cloudinary.com/image/upload/b_white,c_limit,dpr_auto,f_webp,h_216,q_1,w_216/d_ecommerce:backend-fallback.png/MAT_1375080_PCE_EE",
+   "loyalty_price": null,
+   "volume_l": 0.5,
+   "ext_id": "",
+   "flavour": "Ultra Strawberry",
+   "zero_sugar": true,
+   "deal": "",
+   "any_flavour": false,
+   "product": "monster",
+   "per_litre": 1.98,
+   "seen_at": "2026-10-20T09:18:35+00:00"
+  },
+  {
+   "store": "Rimi",
+   "name": "En.jook Monster Juice Monarch m.ain. 0,5l",
+   "price": 0.99,
+   "url": "https://www.rimi.ee/epood/ee/tooted/joogid/energiajook/en-jook-monster-juice-monarch-m-ain-0-5l/p/1370604",
+   "image": "https://rimibaltic-res.cloudinary.com/image/upload/b_white,c_limit,dpr_auto,f_webp,h_216,q_1,w_216/d_ecommerce:backend-fallback.png/MAT_1370604_PCE_EE",
+   "loyalty_price": null,
+   "volume_l": 0.5,
+   "ext_id": "",
+   "flavour": "Monarch",
+   "zero_sugar": false,
+   "deal": "",
+   "any_flavour": false,
+   "product": "monster",
+   "per_litre": 1.98,
+   "seen_at": "2026-10-20T09:18:35+00:00"
+  },
+  {
+   "store": "Rimi",
+   "name": "En.j. Monster Ultra Lando Norris m.ain. 0,5l",
+   "price": 0.99,
+   "url": "https://www.rimi.ee/epood/ee/tooted/joogid/energiajook/en-j-monster-ultra-lando-norris-m-ain-0-5l/p/1375816",
+   "image": "https://rimibaltic-res.cloudinary.com/image/upload/b_white,c_limit,dpr_auto,f_webp,h_216,q_1,w_216/d_ecommerce:backend-fallback.png/MAT_1375816_PCE_EE",
+   "loyalty_price": null,
+   "volume_l": 0.5,
+   "ext_id": "",
+   "flavour": "Lando Norris",
+   "zero_sugar": true,
+   "deal": "",
+   "any_flavour": false,
+   "product": "monster",
+   "per_litre": 1.98,
+   "seen_at": "2026-10-20T09:18:35+00:00"
+  },
+  {
+   "store": "Rimi",
+   "name": "En.jook. Monster Aussie Lemonade m.ain. 0,5l",
+   "price": 0.99,
+   "url": "https://www.rimi.ee/epood/ee/tooted/joogid/energiajook/en-jook-monster-aussie-lemonade-m-ain-0-5l/p/1374661",
+   "image": "https://rimibaltic-res.cloudinary.com/image/upload/b_white,c_limit,dpr_auto,f_webp,h_216,q_1,w_216/d_ecommerce:backend-fallback.png/MAT_1374661_PCE_EE",
+   "loyalty_price": null,
+   "volume_l": 0.5,
+   "ext_id": "",
+   "flavour": "Aussie Lemonade",
+   "zero_sugar": false,
+   "deal": "",
+   "any_flavour": false,
+   "product": "monster",
+   "per_litre": 1.98,
+   "seen_at": "2026-10-20T09:18:35+00:00"
+  },
+  {
+   "store": "Rimi",
+   "name": "Energiajook Monster Rossi Zero VR46 m.a. 0,5l",
+   "price": 0.99,
+   "url": "https://www.rimi.ee/epood/ee/tooted/joogid/energiajook/energiajook-monster-rossi-zero-vr46-m-a-0-5l/p/1376289",
+   "image": "https://rimibaltic-res.cloudinary.com/image/upload/b_white,c_limit,dpr_auto,f_webp,h_216,q_1,w_216/d_ecommerce:backend-fallback.png/MAT_1376289_PCE_EE",
+   "loyalty_price": null,
+   "volume_l": 0.5,
+   "ext_id": "",
+   "flavour": "The Doctor",
+   "zero_sugar": true,
+   "deal": "",
+   "any_flavour": false,
+   "product": "monster",
+   "per_litre": 1.98,
+   "seen_at": "2026-10-20T09:18:35+00:00"
   },
   {
    "store": "Maxima",
@@ -156,41 +309,58 @@
    "any_flavour": false,
    "product": "cola",
    "per_litre": 1.988,
-   "seen_at": "2026-10-19T09:45:03+00:00"
+   "seen_at": "2026-10-20T09:18:35+00:00"
   },
   {
    "store": "Selver",
-   "name": "Energiajook Energy 4-pakk, MONSTER, 2 l",
-   "price": 6.19,
-   "url": "https://www.selver.ee/energiajook-energy-4-pakk-monster-2-l",
-   "image": "/5/0/5056784906347.jpg",
-   "loyalty_price": 4.29,
-   "volume_l": 2.0,
-   "ext_id": "T000089195",
+   "name": "Energiajook Ultra Mega, MONSTER, 553 ml",
+   "price": 1.79,
+   "url": "https://www.selver.ee/energiajook-ultra-mega-monster-553-ml",
+   "image": "/5/0/5060517884062.jpg",
+   "loyalty_price": 1.29,
+   "volume_l": 0.553,
+   "ext_id": "T000048775",
+   "flavour": "Ultra",
+   "zero_sugar": true,
+   "deal": "",
+   "any_flavour": false,
+   "product": "monster",
+   "per_litre": 2.333,
+   "seen_at": "2026-10-20T09:18:35+00:00"
+  },
+  {
+   "store": "Selver",
+   "name": "Energiajook Energy Mega, MONSTER, 553 ml",
+   "price": 1.79,
+   "url": "https://www.selver.ee/energiajook-energy-mega-monster-553-ml",
+   "image": "/5/0/5060335634481.jpg",
+   "loyalty_price": 1.29,
+   "volume_l": 0.553,
+   "ext_id": "T000036903",
    "flavour": "Original",
    "zero_sugar": false,
    "deal": "",
    "any_flavour": false,
    "product": "monster",
-   "per_litre": 2.145,
-   "seen_at": "2026-10-19T09:45:03+00:00"
+   "per_litre": 2.333,
+   "seen_at": "2026-10-20T09:18:35+00:00"
   },
   {
-   "store": "Selver",
-   "name": "Energiajook Zero Ultra 4-pakk, MONSTER, 2 l",
-   "price": 6.19,
-   "url": "https://www.selver.ee/energiajook-zero-ultra-4-pakk-monster-2-l",
-   "image": "/5/0/5056784906378.jpg",
-   "loyalty_price": 4.29,
-   "volume_l": 2.0,
-   "ext_id": "T000089194",
-   "flavour": "Ultra Zero",
-   "zero_sugar": true,
+   "store": "Rimi",
+   "name": "Karastusjook Coca Cola 0,5l",
+   "price": 1.25,
+   "url": "https://www.rimi.ee/epood/ee/tooted/joogid/karastusjoogid/limonaad-karastusjook/karastusjook-coca-cola-0-5l/p/1350156",
+   "image": "https://rimibaltic-res.cloudinary.com/image/upload/b_white,c_limit,dpr_auto,f_webp,h_216,q_1,w_216/d_ecommerce:backend-fallback.png/MAT_1350156_PCE_EE",
+   "loyalty_price": null,
+   "volume_l": 0.5,
+   "ext_id": "",
+   "flavour": "Coca-Cola pudel",
+   "zero_sugar": false,
    "deal": "",
    "any_flavour": false,
-   "product": "monster",
-   "per_litre": 2.145,
-   "seen_at": "2026-10-19T09:45:03+00:00"
+   "product": "cola",
+   "per_litre": 2.5,
+   "seen_at": "2026-10-20T09:18:35+00:00"
   },
   {
    "store": "Selver",
@@ -207,7 +377,7 @@
    "any_flavour": false,
    "product": "cola",
    "per_litre": 2.54,
-   "seen_at": "2026-10-19T09:45:03+00:00"
+   "seen_at": "2026-10-20T09:18:35+00:00"
   },
   {
    "store": "Selver",
@@ -224,24 +394,7 @@
    "any_flavour": false,
    "product": "cola",
    "per_litre": 2.644,
-   "seen_at": "2026-10-19T09:45:03+00:00"
-  },
-  {
-   "store": "Selver",
-   "name": "Karastusjook Coca-Cola, COCA-COLA, 200 ml",
-   "price": 0.8,
-   "url": "https://www.selver.ee/karastusjook-coca-cola-coca-cola-200-ml",
-   "image": "/5/4/5449000011114.jpg",
-   "loyalty_price": 0.59,
-   "volume_l": 0.2,
-   "ext_id": "T000036250",
-   "flavour": "Coca-Cola",
-   "zero_sugar": false,
-   "deal": "",
-   "any_flavour": false,
-   "product": "cola",
-   "per_litre": 2.95,
-   "seen_at": "2026-10-19T09:45:03+00:00"
+   "seen_at": "2026-10-20T09:18:35+00:00"
   },
   {
    "store": "Selver",
@@ -258,7 +411,41 @@
    "any_flavour": false,
    "product": "cola",
    "per_litre": 3.025,
-   "seen_at": "2026-10-19T09:45:03+00:00"
+   "seen_at": "2026-10-20T09:18:35+00:00"
+  },
+  {
+   "store": "Selver",
+   "name": "Energiajook Energy 4-pakk, MONSTER, 2 l",
+   "price": 6.19,
+   "url": "https://www.selver.ee/energiajook-energy-4-pakk-monster-2-l",
+   "image": "/5/0/5056784906347.jpg",
+   "loyalty_price": null,
+   "volume_l": 2.0,
+   "ext_id": "T000089195",
+   "flavour": "Original",
+   "zero_sugar": false,
+   "deal": "",
+   "any_flavour": false,
+   "product": "monster",
+   "per_litre": 3.095,
+   "seen_at": "2026-10-20T09:18:35+00:00"
+  },
+  {
+   "store": "Selver",
+   "name": "Energiajook Zero Ultra 4-pakk, MONSTER, 2 l",
+   "price": 6.19,
+   "url": "https://www.selver.ee/energiajook-zero-ultra-4-pakk-monster-2-l",
+   "image": "/5/0/5056784906378.jpg",
+   "loyalty_price": null,
+   "volume_l": 2.0,
+   "ext_id": "T000089194",
+   "flavour": "Ultra Zero",
+   "zero_sugar": true,
+   "deal": "",
+   "any_flavour": false,
+   "product": "monster",
+   "per_litre": 3.095,
+   "seen_at": "2026-10-20T09:18:35+00:00"
   },
   {
    "store": "Rimi",
@@ -275,41 +462,7 @@
    "any_flavour": false,
    "product": "cola",
    "per_litre": 3.126,
-   "seen_at": "2026-10-19T09:45:03+00:00"
-  },
-  {
-   "store": "Selver",
-   "name": "Energiajook Ultra Mega, MONSTER, 553 ml",
-   "price": 1.79,
-   "url": "https://www.selver.ee/energiajook-ultra-mega-monster-553-ml",
-   "image": "/5/0/5060517884062.jpg",
-   "loyalty_price": null,
-   "volume_l": 0.553,
-   "ext_id": "T000048775",
-   "flavour": "Ultra",
-   "zero_sugar": true,
-   "deal": "",
-   "any_flavour": false,
-   "product": "monster",
-   "per_litre": 3.237,
-   "seen_at": "2026-10-19T09:45:03+00:00"
-  },
-  {
-   "store": "Selver",
-   "name": "Energiajook Energy Mega, MONSTER, 553 ml",
-   "price": 1.79,
-   "url": "https://www.selver.ee/energiajook-energy-mega-monster-553-ml",
-   "image": "/5/0/5060335634481.jpg",
-   "loyalty_price": null,
-   "volume_l": 0.553,
-   "ext_id": "T000036903",
-   "flavour": "Original",
-   "zero_sugar": false,
-   "deal": "",
-   "any_flavour": false,
-   "product": "monster",
-   "per_litre": 3.237,
-   "seen_at": "2026-10-19T09:45:03+00:00"
+   "seen_at": "2026-10-20T09:18:35+00:00"
   },
   {
    "store": "Selver",
@@ -326,7 +479,7 @@
    "any_flavour": false,
    "product": "monster",
    "per_litre": 3.38,
-   "seen_at": "2026-10-19T09:45:03+00:00"
+   "seen_at": "2026-10-20T09:18:35+00:00"
   },
   {
    "store": "Selver",
@@ -343,7 +496,7 @@
    "any_flavour": false,
    "product": "monster",
    "per_litre": 3.38,
-   "seen_at": "2026-10-19T09:45:03+00:00"
+   "seen_at": "2026-10-20T09:18:35+00:00"
   },
   {
    "store": "Selver",
@@ -360,7 +513,7 @@
    "any_flavour": false,
    "product": "monster",
    "per_litre": 3.38,
-   "seen_at": "2026-10-19T09:45:03+00:00"
+   "seen_at": "2026-10-20T09:18:35+00:00"
   },
   {
    "store": "Selver",
@@ -377,7 +530,7 @@
    "any_flavour": false,
    "product": "monster",
    "per_litre": 3.38,
-   "seen_at": "2026-10-19T09:45:03+00:00"
+   "seen_at": "2026-10-20T09:18:35+00:00"
   },
   {
    "store": "Selver",
@@ -394,7 +547,7 @@
    "any_flavour": false,
    "product": "monster",
    "per_litre": 3.38,
-   "seen_at": "2026-10-19T09:45:03+00:00"
+   "seen_at": "2026-10-20T09:18:35+00:00"
   },
   {
    "store": "Selver",
@@ -411,7 +564,7 @@
    "any_flavour": false,
    "product": "monster",
    "per_litre": 3.38,
-   "seen_at": "2026-10-19T09:45:03+00:00"
+   "seen_at": "2026-10-20T09:18:35+00:00"
   },
   {
    "store": "Selver",
@@ -428,58 +581,7 @@
    "any_flavour": false,
    "product": "monster",
    "per_litre": 3.38,
-   "seen_at": "2026-10-19T09:45:03+00:00"
-  },
-  {
-   "store": "Rimi",
-   "name": "Energiajook Monster Zero Ultra suhkruvab.0,5l",
-   "price": 1.75,
-   "url": "https://www.rimi.ee/epood/ee/tooted/joogid/energiajook/energiajook-monster-zero-ultra-suhkruvab-0-5l/p/1361974",
-   "image": "https://rimibaltic-res.cloudinary.com/image/upload/b_white,c_limit,dpr_auto,f_webp,h_216,q_1,w_216/d_ecommerce:backend-fallback.png/MAT_1361974_PCE_EE",
-   "loyalty_price": null,
-   "volume_l": 0.5,
-   "ext_id": "",
-   "flavour": "Ultra Zero",
-   "zero_sugar": true,
-   "deal": "",
-   "any_flavour": false,
-   "product": "monster",
-   "per_litre": 3.5,
-   "seen_at": "2026-10-19T09:45:03+00:00"
-  },
-  {
-   "store": "Rimi",
-   "name": "Energiajook Monster Energy 0,5l",
-   "price": 1.75,
-   "url": "https://www.rimi.ee/epood/ee/tooted/joogid/energiajook/energiajook-monster-energy-0-5l/p/1355076",
-   "image": "https://rimibaltic-res.cloudinary.com/image/upload/b_white,c_limit,dpr_auto,f_webp,h_216,q_1,w_216/d_ecommerce:backend-fallback.png/MAT_1355076_PCE_EE",
-   "loyalty_price": null,
-   "volume_l": 0.5,
-   "ext_id": "",
-   "flavour": "Original",
-   "zero_sugar": false,
-   "deal": "",
-   "any_flavour": false,
-   "product": "monster",
-   "per_litre": 3.5,
-   "seen_at": "2026-10-19T09:45:03+00:00"
-  },
-  {
-   "store": "Rimi",
-   "name": "Energiajook Monster Juice Mango Loco 0,5l",
-   "price": 1.75,
-   "url": "https://www.rimi.ee/epood/ee/tooted/joogid/energiajook/energiajook-monster-juice-mango-loco-0-5l/p/1365350",
-   "image": "https://rimibaltic-res.cloudinary.com/image/upload/b_white,c_limit,dpr_auto,f_webp,h_216,q_1,w_216/d_ecommerce:backend-fallback.png/MAT_1365350_PCE_EE",
-   "loyalty_price": null,
-   "volume_l": 0.5,
-   "ext_id": "",
-   "flavour": "Mango Loco",
-   "zero_sugar": false,
-   "deal": "",
-   "any_flavour": false,
-   "product": "monster",
-   "per_litre": 3.5,
-   "seen_at": "2026-10-19T09:45:03+00:00"
+   "seen_at": "2026-10-20T09:18:35+00:00"
   },
   {
    "store": "Rimi",
@@ -496,7 +598,7 @@
    "any_flavour": false,
    "product": "monster",
    "per_litre": 3.5,
-   "seen_at": "2026-10-19T09:45:03+00:00"
+   "seen_at": "2026-10-20T09:18:35+00:00"
   },
   {
    "store": "Rimi",
@@ -513,41 +615,7 @@
    "any_flavour": false,
    "product": "monster",
    "per_litre": 3.5,
-   "seen_at": "2026-10-19T09:45:03+00:00"
-  },
-  {
-   "store": "Rimi",
-   "name": "Energiajook Monster Bad Apple m.a. 0,5l",
-   "price": 1.75,
-   "url": "https://www.rimi.ee/epood/ee/tooted/joogid/energiajook/energiajook-monster-bad-apple-m-a-0-5l/p/1376290",
-   "image": "https://rimibaltic-res.cloudinary.com/image/upload/b_white,c_limit,dpr_auto,f_webp,h_216,q_1,w_216/d_ecommerce:backend-fallback.png/MAT_1376290_PCE_EE",
-   "loyalty_price": null,
-   "volume_l": 0.5,
-   "ext_id": "",
-   "flavour": "Bad Apple",
-   "zero_sugar": false,
-   "deal": "",
-   "any_flavour": false,
-   "product": "monster",
-   "per_litre": 3.5,
-   "seen_at": "2026-10-19T09:45:03+00:00"
-  },
-  {
-   "store": "Rimi",
-   "name": "Energiajook Monster Ultra Strawb. Dreams 0,5l",
-   "price": 1.75,
-   "url": "https://www.rimi.ee/epood/ee/tooted/joogid/energiajook/energiajook-monster-ultra-strawb-dreams-0-5l/p/1375080",
-   "image": "https://rimibaltic-res.cloudinary.com/image/upload/b_white,c_limit,dpr_auto,f_webp,h_216,q_1,w_216/d_ecommerce:backend-fallback.png/MAT_1375080_PCE_EE",
-   "loyalty_price": null,
-   "volume_l": 0.5,
-   "ext_id": "",
-   "flavour": "Ultra Strawberry",
-   "zero_sugar": true,
-   "deal": "",
-   "any_flavour": false,
-   "product": "monster",
-   "per_litre": 3.5,
-   "seen_at": "2026-10-19T09:45:03+00:00"
+   "seen_at": "2026-10-20T09:18:35+00:00"
   },
   {
    "store": "Rimi",
@@ -564,7 +632,7 @@
    "any_flavour": false,
    "product": "monster",
    "per_litre": 3.5,
-   "seen_at": "2026-10-19T09:45:03+00:00"
+   "seen_at": "2026-10-20T09:18:35+00:00"
   },
   {
    "store": "Rimi",
@@ -581,58 +649,7 @@
    "any_flavour": false,
    "product": "monster",
    "per_litre": 3.5,
-   "seen_at": "2026-10-19T09:45:03+00:00"
-  },
-  {
-   "store": "Rimi",
-   "name": "En.jook Monster Juice Monarch m.ain. 0,5l",
-   "price": 1.75,
-   "url": "https://www.rimi.ee/epood/ee/tooted/joogid/energiajook/en-jook-monster-juice-monarch-m-ain-0-5l/p/1370604",
-   "image": "https://rimibaltic-res.cloudinary.com/image/upload/b_white,c_limit,dpr_auto,f_webp,h_216,q_1,w_216/d_ecommerce:backend-fallback.png/MAT_1370604_PCE_EE",
-   "loyalty_price": null,
-   "volume_l": 0.5,
-   "ext_id": "",
-   "flavour": "Monarch",
-   "zero_sugar": false,
-   "deal": "",
-   "any_flavour": false,
-   "product": "monster",
-   "per_litre": 3.5,
-   "seen_at": "2026-10-19T09:45:03+00:00"
-  },
-  {
-   "store": "Rimi",
-   "name": "En.j. Monster Ultra Lando Norris m.ain. 0,5l",
-   "price": 1.75,
-   "url": "https://www.rimi.ee/epood/ee/tooted/joogid/energiajook/en-j-monster-ultra-lando-norris-m-ain-0-5l/p/1375816",
-   "image": "https://rimibaltic-res.cloudinary.com/image/upload/b_white,c_limit,dpr_auto,f_webp,h_216,q_1,w_216/d_ecommerce:backend-fallback.png/MAT_1375816_PCE_EE",
-   "loyalty_price": null,
-   "volume_l": 0.5,
-   "ext_id": "",
-   "flavour": "Lando Norris",
-   "zero_sugar": true,
-   "deal": "",
-   "any_flavour": false,
-   "product": "monster",
-   "per_litre": 3.5,
-   "seen_at": "2026-10-19T09:45:03+00:00"
-  },
-  {
-   "store": "Rimi",
-   "name": "En.jook. Monster Aussie Lemonade m.ain. 0,5l",
-   "price": 1.75,
-   "url": "https://www.rimi.ee/epood/ee/tooted/joogid/energiajook/en-jook-monster-aussie-lemonade-m-ain-0-5l/p/1374661",
-   "image": "https://rimibaltic-res.cloudinary.com/image/upload/b_white,c_limit,dpr_auto,f_webp,h_216,q_1,w_216/d_ecommerce:backend-fallback.png/MAT_1374661_PCE_EE",
-   "loyalty_price": null,
-   "volume_l": 0.5,
-   "ext_id": "",
-   "flavour": "Aussie Lemonade",
-   "zero_sugar": false,
-   "deal": "",
-   "any_flavour": false,
-   "product": "monster",
-   "per_litre": 3.5,
-   "seen_at": "2026-10-19T09:45:03+00:00"
+   "seen_at": "2026-10-20T09:18:35+00:00"
   },
   {
    "store": "Rimi",
@@ -649,24 +666,7 @@
    "any_flavour": false,
    "product": "monster",
    "per_litre": 3.5,
-   "seen_at": "2026-10-19T09:45:03+00:00"
-  },
-  {
-   "store": "Rimi",
-   "name": "Energiajook Monster Rossi Zero VR46 m.a. 0,5l",
-   "price": 1.75,
-   "url": "https://www.rimi.ee/epood/ee/tooted/joogid/energiajook/energiajook-monster-rossi-zero-vr46-m-a-0-5l/p/1376289",
-   "image": "https://rimibaltic-res.cloudinary.com/image/upload/b_white,c_limit,dpr_auto,f_webp,h_216,q_1,w_216/d_ecommerce:backend-fallback.png/MAT_1376289_PCE_EE",
-   "loyalty_price": null,
-   "volume_l": 0.5,
-   "ext_id": "",
-   "flavour": "The Doctor",
-   "zero_sugar": true,
-   "deal": "",
-   "any_flavour": false,
-   "product": "monster",
-   "per_litre": 3.5,
-   "seen_at": "2026-10-19T09:45:03+00:00"
+   "seen_at": "2026-10-20T09:18:35+00:00"
   },
   {
    "store": "Selver",
@@ -683,7 +683,7 @@
    "any_flavour": false,
    "product": "cola",
    "per_litre": 3.658,
-   "seen_at": "2026-10-19T09:45:03+00:00"
+   "seen_at": "2026-10-20T09:18:35+00:00"
   },
   {
    "store": "Selver",
@@ -700,7 +700,7 @@
    "any_flavour": false,
    "product": "cola",
    "per_litre": 3.667,
-   "seen_at": "2026-10-19T09:45:03+00:00"
+   "seen_at": "2026-10-20T09:18:35+00:00"
   },
   {
    "store": "Rimi",
@@ -717,7 +717,24 @@
    "any_flavour": false,
    "product": "cola",
    "per_litre": 3.788,
-   "seen_at": "2026-10-19T09:45:03+00:00"
+   "seen_at": "2026-10-20T09:18:35+00:00"
+  },
+  {
+   "store": "Selver",
+   "name": "Karastusjook Coca-Cola, COCA-COLA, 200 ml",
+   "price": 0.8,
+   "url": "https://www.selver.ee/karastusjook-coca-cola-coca-cola-200-ml",
+   "image": "/5/4/5449000011114.jpg",
+   "loyalty_price": null,
+   "volume_l": 0.2,
+   "ext_id": "T000036250",
+   "flavour": "Coca-Cola",
+   "zero_sugar": false,
+   "deal": "",
+   "any_flavour": false,
+   "product": "cola",
+   "per_litre": 4.0,
+   "seen_at": "2026-10-20T09:18:35+00:00"
   },
   {
    "store": "Rimi",
@@ -734,7 +751,7 @@
    "any_flavour": false,
    "product": "cola",
    "per_litre": 4.091,
-   "seen_at": "2026-10-19T09:45:03+00:00"
+   "seen_at": "2026-10-20T09:18:35+00:00"
   }
  ]
 }
