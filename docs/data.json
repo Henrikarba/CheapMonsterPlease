@@ -1,17 +1,17 @@
 {
- "updated": "2026-10-28T10:27:32+00:00",
+ "updated": "2026-10-29T10:47:59+00:00",
  "sources": [
   {
    "adapter": "rimi",
    "store": "Rimi",
    "status": "ok",
-   "count": 20,
+   "count": 23,
    "counts": {
-    "monster": 14,
-    "cola": 6
+    "monster": 16,
+    "cola": 7
    },
    "detail": null,
-   "seen_at": "2026-10-28T10:27:32+00:00"
+   "seen_at": "2026-10-29T10:47:59+00:00"
   },
   {
    "adapter": "selver",
@@ -23,7 +23,7 @@
     "cola": 10
    },
    "detail": null,
-   "seen_at": "2026-10-28T10:27:32+00:00"
+   "seen_at": "2026-10-29T10:47:59+00:00"
   },
   {
    "adapter": "maxima",
@@ -35,7 +35,7 @@
     "cola": 1
    },
    "detail": null,
-   "seen_at": "2026-10-28T10:27:32+00:00"
+   "seen_at": "2026-10-29T10:47:59+00:00"
   }
  ],
  "items": [
@@ -54,7 +54,7 @@
    "any_flavour": false,
    "product": "cola",
    "per_litre": 1.365,
-   "seen_at": "2026-10-28T10:27:32+00:00"
+   "seen_at": "2026-10-29T10:47:59+00:00"
   },
   {
    "store": "Rimi",
@@ -71,7 +71,7 @@
    "any_flavour": false,
    "product": "cola",
    "per_litre": 1.425,
-   "seen_at": "2026-10-28T10:27:32+00:00"
+   "seen_at": "2026-10-29T10:47:59+00:00"
   },
   {
    "store": "Rimi",
@@ -88,7 +88,7 @@
    "any_flavour": false,
    "product": "cola",
    "per_litre": 1.5,
-   "seen_at": "2026-10-28T10:27:32+00:00"
+   "seen_at": "2026-10-29T10:47:59+00:00"
   },
   {
    "store": "Selver",
@@ -105,7 +105,7 @@
    "any_flavour": false,
    "product": "cola",
    "per_litre": 1.527,
-   "seen_at": "2026-10-28T10:27:32+00:00"
+   "seen_at": "2026-10-29T10:47:59+00:00"
   },
   {
    "store": "Selver",
@@ -122,7 +122,7 @@
    "any_flavour": false,
    "product": "cola",
    "per_litre": 1.753,
-   "seen_at": "2026-10-28T10:27:32+00:00"
+   "seen_at": "2026-10-29T10:47:59+00:00"
   },
   {
    "store": "Rimi",
@@ -139,7 +139,7 @@
    "any_flavour": false,
    "product": "monster",
    "per_litre": 1.98,
-   "seen_at": "2026-10-28T10:27:32+00:00"
+   "seen_at": "2026-10-29T10:47:59+00:00"
   },
   {
    "store": "Rimi",
@@ -156,7 +156,7 @@
    "any_flavour": false,
    "product": "monster",
    "per_litre": 1.98,
-   "seen_at": "2026-10-28T10:27:32+00:00"
+   "seen_at": "2026-10-29T10:47:59+00:00"
   },
   {
    "store": "Rimi",
@@ -173,7 +173,7 @@
    "any_flavour": false,
    "product": "monster",
    "per_litre": 1.98,
-   "seen_at": "2026-10-28T10:27:32+00:00"
+   "seen_at": "2026-10-29T10:47:59+00:00"
   },
   {
    "store": "Rimi",
@@ -190,7 +190,7 @@
    "any_flavour": false,
    "product": "monster",
    "per_litre": 1.98,
-   "seen_at": "2026-10-28T10:27:32+00:00"
+   "seen_at": "2026-10-29T10:47:59+00:00"
   },
   {
    "store": "Rimi",
@@ -207,7 +207,7 @@
    "any_flavour": false,
    "product": "monster",
    "per_litre": 1.98,
-   "seen_at": "2026-10-28T10:27:32+00:00"
+   "seen_at": "2026-10-29T10:47:59+00:00"
   },
   {
    "store": "Rimi",
@@ -224,7 +224,7 @@
    "any_flavour": false,
    "product": "monster",
    "per_litre": 1.98,
-   "seen_at": "2026-10-28T10:27:32+00:00"
+   "seen_at": "2026-10-29T10:47:59+00:00"
   },
   {
    "store": "Rimi",
@@ -241,7 +241,7 @@
    "any_flavour": false,
    "product": "monster",
    "per_litre": 1.98,
-   "seen_at": "2026-10-28T10:27:32+00:00"
+   "seen_at": "2026-10-29T10:47:59+00:00"
   },
   {
    "store": "Rimi",
@@ -258,7 +258,7 @@
    "any_flavour": false,
    "product": "monster",
    "per_litre": 1.98,
-   "seen_at": "2026-10-28T10:27:32+00:00"
+   "seen_at": "2026-10-29T10:47:59+00:00"
   },
   {
    "store": "Rimi",
@@ -275,7 +275,24 @@
    "any_flavour": false,
    "product": "monster",
    "per_litre": 1.98,
-   "seen_at": "2026-10-28T10:27:32+00:00"
+   "seen_at": "2026-10-29T10:47:59+00:00"
+  },
+  {
+   "store": "Rimi",
+   "name": "Karastusjook Coca-Cola 0,85l",
+   "price": 1.69,
+   "url": "https://www.rimi.ee/epood/ee/tooted/joogid/karastusjoogid/limonaad-karastusjook/karastusjook-coca-cola-0-85l/p/1375088",
+   "image": "https://rimibaltic-res.cloudinary.com/image/upload/b_white,c_limit,dpr_auto,f_webp,h_216,q_1,w_216/d_ecommerce:backend-fallback.png/MAT_1375088_PCE_EE",
+   "loyalty_price": null,
+   "volume_l": 0.85,
+   "ext_id": "",
+   "flavour": "Coca-Cola pudel",
+   "zero_sugar": false,
+   "deal": "",
+   "any_flavour": false,
+   "product": "cola",
+   "per_litre": 1.988,
+   "seen_at": "2026-10-29T10:47:59+00:00"
   },
   {
    "store": "Maxima",
@@ -292,7 +309,7 @@
    "any_flavour": false,
    "product": "cola",
    "per_litre": 1.988,
-   "seen_at": "2026-10-28T10:27:32+00:00"
+   "seen_at": "2026-10-29T10:47:59+00:00"
   },
   {
    "store": "Selver",
@@ -309,7 +326,7 @@
    "any_flavour": false,
    "product": "monster",
    "per_litre": 2.333,
-   "seen_at": "2026-10-28T10:27:32+00:00"
+   "seen_at": "2026-10-29T10:47:59+00:00"
   },
   {
    "store": "Selver",
@@ -326,7 +343,7 @@
    "any_flavour": false,
    "product": "monster",
    "per_litre": 2.333,
-   "seen_at": "2026-10-28T10:27:32+00:00"
+   "seen_at": "2026-10-29T10:47:59+00:00"
   },
   {
    "store": "Rimi",
@@ -343,7 +360,7 @@
    "any_flavour": false,
    "product": "cola",
    "per_litre": 2.5,
-   "seen_at": "2026-10-28T10:27:32+00:00"
+   "seen_at": "2026-10-29T10:47:59+00:00"
   },
   {
    "store": "Selver",
@@ -360,7 +377,7 @@
    "any_flavour": false,
    "product": "cola",
    "per_litre": 2.54,
-   "seen_at": "2026-10-28T10:27:32+00:00"
+   "seen_at": "2026-10-29T10:47:59+00:00"
   },
   {
    "store": "Selver",
@@ -377,7 +394,7 @@
    "any_flavour": false,
    "product": "cola",
    "per_litre": 2.644,
-   "seen_at": "2026-10-28T10:27:32+00:00"
+   "seen_at": "2026-10-29T10:47:59+00:00"
   },
   {
    "store": "Selver",
@@ -394,7 +411,7 @@
    "any_flavour": false,
    "product": "cola",
    "per_litre": 3.025,
-   "seen_at": "2026-10-28T10:27:32+00:00"
+   "seen_at": "2026-10-29T10:47:59+00:00"
   },
   {
    "store": "Selver",
@@ -411,7 +428,7 @@
    "any_flavour": false,
    "product": "monster",
    "per_litre": 3.095,
-   "seen_at": "2026-10-28T10:27:32+00:00"
+   "seen_at": "2026-10-29T10:47:59+00:00"
   },
   {
    "store": "Selver",
@@ -428,7 +445,7 @@
    "any_flavour": false,
    "product": "monster",
    "per_litre": 3.095,
-   "seen_at": "2026-10-28T10:27:32+00:00"
+   "seen_at": "2026-10-29T10:47:59+00:00"
   },
   {
    "store": "Rimi",
@@ -445,7 +462,41 @@
    "any_flavour": false,
    "product": "cola",
    "per_litre": 3.126,
-   "seen_at": "2026-10-28T10:27:32+00:00"
+   "seen_at": "2026-10-29T10:47:59+00:00"
+  },
+  {
+   "store": "Rimi",
+   "name": "Energiajook Monster Energy m.a. 4x0,5l",
+   "price": 6.69,
+   "url": "https://www.rimi.ee/epood/ee/tooted/joogid/energiajook/energiajook-monster-energy-m-a-4x0-5l/p/1376148",
+   "image": "",
+   "loyalty_price": null,
+   "volume_l": 2.0,
+   "ext_id": "",
+   "flavour": "M A 4X",
+   "zero_sugar": false,
+   "deal": "",
+   "any_flavour": false,
+   "product": "monster",
+   "per_litre": 3.345,
+   "seen_at": "2026-10-29T10:47:59+00:00"
+  },
+  {
+   "store": "Rimi",
+   "name": "Energiajook Monster Zero Ultra m.a. 4x0,5l",
+   "price": 6.69,
+   "url": "https://www.rimi.ee/epood/ee/tooted/joogid/energiajook/energiajook-monster-zero-ultra-m-a-4x0-5l/p/1376152",
+   "image": "",
+   "loyalty_price": null,
+   "volume_l": 2.0,
+   "ext_id": "",
+   "flavour": "Ultra Zero",
+   "zero_sugar": true,
+   "deal": "",
+   "any_flavour": false,
+   "product": "monster",
+   "per_litre": 3.345,
+   "seen_at": "2026-10-29T10:47:59+00:00"
   },
   {
    "store": "Selver",
@@ -462,7 +513,7 @@
    "any_flavour": false,
    "product": "monster",
    "per_litre": 3.38,
-   "seen_at": "2026-10-28T10:27:32+00:00"
+   "seen_at": "2026-10-29T10:47:59+00:00"
   },
   {
    "store": "Selver",
@@ -479,7 +530,7 @@
    "any_flavour": false,
    "product": "monster",
    "per_litre": 3.38,
-   "seen_at": "2026-10-28T10:27:32+00:00"
+   "seen_at": "2026-10-29T10:47:59+00:00"
   },
   {
    "store": "Selver",
@@ -496,7 +547,7 @@
    "any_flavour": false,
    "product": "monster",
    "per_litre": 3.38,
-   "seen_at": "2026-10-28T10:27:32+00:00"
+   "seen_at": "2026-10-29T10:47:59+00:00"
   },
   {
    "store": "Selver",
@@ -513,7 +564,7 @@
    "any_flavour": false,
    "product": "monster",
    "per_litre": 3.38,
-   "seen_at": "2026-10-28T10:27:32+00:00"
+   "seen_at": "2026-10-29T10:47:59+00:00"
   },
   {
    "store": "Selver",
@@ -530,7 +581,7 @@
    "any_flavour": false,
    "product": "monster",
    "per_litre": 3.38,
-   "seen_at": "2026-10-28T10:27:32+00:00"
+   "seen_at": "2026-10-29T10:47:59+00:00"
   },
   {
    "store": "Selver",
@@ -547,7 +598,7 @@
    "any_flavour": false,
    "product": "monster",
    "per_litre": 3.38,
-   "seen_at": "2026-10-28T10:27:32+00:00"
+   "seen_at": "2026-10-29T10:47:59+00:00"
   },
   {
    "store": "Selver",
@@ -564,7 +615,7 @@
    "any_flavour": false,
    "product": "monster",
    "per_litre": 3.38,
-   "seen_at": "2026-10-28T10:27:32+00:00"
+   "seen_at": "2026-10-29T10:47:59+00:00"
   },
   {
    "store": "Rimi",
@@ -581,7 +632,7 @@
    "any_flavour": false,
    "product": "monster",
    "per_litre": 3.5,
-   "seen_at": "2026-10-28T10:27:32+00:00"
+   "seen_at": "2026-10-29T10:47:59+00:00"
   },
   {
    "store": "Rimi",
@@ -598,7 +649,7 @@
    "any_flavour": false,
    "product": "monster",
    "per_litre": 3.5,
-   "seen_at": "2026-10-28T10:27:32+00:00"
+   "seen_at": "2026-10-29T10:47:59+00:00"
   },
   {
    "store": "Rimi",
@@ -615,7 +666,7 @@
    "any_flavour": false,
    "product": "monster",
    "per_litre": 3.5,
-   "seen_at": "2026-10-28T10:27:32+00:00"
+   "seen_at": "2026-10-29T10:47:59+00:00"
   },
   {
    "store": "Rimi",
@@ -632,7 +683,7 @@
    "any_flavour": false,
    "product": "monster",
    "per_litre": 3.5,
-   "seen_at": "2026-10-28T10:27:32+00:00"
+   "seen_at": "2026-10-29T10:47:59+00:00"
   },
   {
    "store": "Rimi",
@@ -649,7 +700,7 @@
    "any_flavour": false,
    "product": "monster",
    "per_litre": 3.5,
-   "seen_at": "2026-10-28T10:27:32+00:00"
+   "seen_at": "2026-10-29T10:47:59+00:00"
   },
   {
    "store": "Selver",
@@ -666,7 +717,7 @@
    "any_flavour": false,
    "product": "cola",
    "per_litre": 3.658,
-   "seen_at": "2026-10-28T10:27:32+00:00"
+   "seen_at": "2026-10-29T10:47:59+00:00"
   },
   {
    "store": "Selver",
@@ -683,7 +734,7 @@
    "any_flavour": false,
    "product": "cola",
    "per_litre": 3.667,
-   "seen_at": "2026-10-28T10:27:32+00:00"
+   "seen_at": "2026-10-29T10:47:59+00:00"
   },
   {
    "store": "Rimi",
@@ -700,7 +751,7 @@
    "any_flavour": false,
    "product": "cola",
    "per_litre": 3.788,
-   "seen_at": "2026-10-28T10:27:32+00:00"
+   "seen_at": "2026-10-29T10:47:59+00:00"
   },
   {
    "store": "Selver",
@@ -717,7 +768,7 @@
    "any_flavour": false,
    "product": "cola",
    "per_litre": 4.0,
-   "seen_at": "2026-10-28T10:27:32+00:00"
+   "seen_at": "2026-10-29T10:47:59+00:00"
   },
   {
    "store": "Rimi",
@@ -734,7 +785,7 @@
    "any_flavour": false,
    "product": "cola",
    "per_litre": 4.091,
-   "seen_at": "2026-10-28T10:27:32+00:00"
+   "seen_at": "2026-10-29T10:47:59+00:00"
   }
  ]
 }
